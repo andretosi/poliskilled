@@ -1,0 +1,14 @@
+<article class="activity-card" data-kind="{{ activity.kind }}">
+    <div class="card-topline">
+        <span class="kind-label kind-{{ activity.kind }}">{{ activity.get_kind_display }}</span>
+        {% if activity.is_sample %}<span class="sample-label">Esempio</span>{% endif %}
+        <span class="card-symbol" aria-hidden="true">{% include "hub/partials/skill_icon.html" with icon=activity.icon_name %}</span>
+    </div>
+    <h2><a href="{{ activity.get_absolute_url }}">{{ activity.title }}</a></h2>
+    <p class="card-organizers">{% for org in activity.organizations.all %}{{ org.short_name|default:org.name }}{% if not forloop.last %} · {% endif %}{% endfor %}</p>
+    {% if activity.program %}<p class="card-program">{{ activity.get_program_display }}</p>{% endif %}
+    <div class="card-meta">
+        <span>{% if activity.starts_at %}{{ activity.starts_at|date:"d M Y" }}{% else %}Livello {{ activity.level }} · {{ activity.get_level_display }}{% endif %}</span>
+        {% if activity.technology %}<span>Tecnologia</span>{% endif %}{% if activity.community %}<span>Persone</span>{% endif %}
+    </div>
+</article>

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-width catalog-section" id="catalogo" aria-labelledby="catalog-title">
+    {% include "hub/partials/launchpad.html" %}
+    <form class="filters" method="get" action="{% url 'home' %}" role="search" aria-label="Cerca e filtra attività">
+        <div class="search-row">
+            <label class="sr-only" for="activity-search">Cerca attività o ente</label>
+            <input id="activity-search" type="search" name="q" value="{{ query }}" placeholder="Cerca attività o ente" maxlength="120">
+            <button class="button" name="tipo" value="{{ kind }}" data-search-submit>Cerca</button>
+        </div>
+        <div class="filter-tabs" role="group" aria-label="Tipo di attività">
+            <button name="tipo" value="" aria-pressed="{% if not kind %}true{% else %}false{% endif %}">Tutte</button>
+            <button name="tipo" value="event" aria-pressed="{% if kind == 'event' %}true{% else %}false{% endif %}">Eventi</button>
+            <button name="tipo" value="course" aria-pressed="{% if kind == 'course' %}true{% else %}false{% endif %}">Corsi</button>
+            <button name="tipo" value="project" aria-pressed="{% if kind == 'project' %}true{% else %}false{% endif %}">Progetti</button>
+        </div>
+        <div class="results-toolbar">
+            <p class="result-count">{{ count }} attività{% if query %} per “{{ query }}”{% endif %}</p>
+            <div class="tag-filter">
+                <label class="sr-only" for="tag">Interesse: aggiorna i risultati alla selezione</label>
+                <select id="tag" name="tag" data-auto-filter>
+                    <option value="">Tutti gli interessi</option>
+                    <option value="technology" {% if tag == 'technology' %}selected{% endif %}>Tecnologia</option>
+                    <option value="community" {% if tag == 'community' %}selected{% endif %}>Persone</option>
+                </select>
+                <noscript><button class="button outline" name="tipo" value="{{ kind }}">Applica</button></noscript>
+            </div>
+        </div>
+        {% if query or kind or tag %}<a class="clear-filters" href="{% url 'home' %}">Rimuovi filtri <span aria-hidden="true">×</span></a>{% endif %}
+    </form>
+    <div class="activity-grid">
+        {% for activity in activities %}
+            {% include "hub/partials/card.html" %}
+        {% empty %}
+            <div class="empty-state">
+                <h2>Nessuna attività trovata</h2>
+                <p>Prova un altro termine o rimuovi i filtri.</p>
+                <a href="{% url 'home' %}" class="button outline">Mostra tutte le attività</a>
+            </div>
+        {% endfor %}
+    </div>
+    {% include "hub/partials/pagination.html" %}
+</section>
+{% endblock %}

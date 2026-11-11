@@ -1,0 +1,9 @@
+# Replace the placeholder with the real domain. Gunicorn is reachable only on loopback.
+poliskilled.example.org {
+    request_body {
+        max_size 4MB
+    }
+    reverse_proxy 127.0.0.1:8000 {
+        header_up X-Real-IP {remote_host}
+    }
+}

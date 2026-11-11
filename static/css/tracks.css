@@ -1,0 +1,310 @@
+/* A bounded palette gives every new path a stable color without custom CSS. */
+.tone-0 {
+  --track: #ffdf28;
+  --track-soft: #302e18;
+}
+.tone-1 {
+  --track: #35ecd0;
+  --track-soft: #12342e;
+}
+.tone-2 {
+  --track: #ff6247;
+  --track-soft: #38231f;
+}
+.tone-3 {
+  --track: #8098ff;
+  --track-soft: #202b43;
+}
+.tone-4 {
+  --track: #e879ff;
+  --track-soft: #34233e;
+}
+.tone-5 {
+  --track: #a1ef45;
+  --track-soft: #28351b;
+}
+.title-mark {
+  color: var(--accent);
+}
+.track-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.track-tab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  padding: 12px;
+  min-height: 56px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.track-tab[aria-current] {
+  background: var(--track-soft);
+  border-color: var(--track);
+  color: var(--track);
+}
+.track-index {
+  font: 11px var(--mono);
+  opacity: 0.8;
+}
+.skill-map {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  position: relative;
+}
+.skill-map::before,
+.skill-map::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  border-color: var(--track);
+}
+.skill-map::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  color: var(--track);
+}
+.skill-map::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  color: var(--track);
+}
+.skill-map-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 16px 16px;
+}
+.skill-map-header h2 {
+  font-size: 20px;
+  max-width: 20ch;
+  margin-bottom: 0;
+  line-height: 1.15;
+}
+.skill-map-header .eyebrow {
+  font-size: 9px;
+  margin-bottom: 7px;
+}
+.track-progress {
+  flex-shrink: 0;
+  width: 94px;
+}
+.track-progress b {
+  display: block;
+  font: 700 28px/1 var(--mono);
+  color: var(--track);
+  margin-bottom: 8px;
+}
+.track-progress b span {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+}
+.track-progress label {
+  display: block;
+  font-size: 8px;
+  white-space: nowrap;
+}
+.track-progress progress {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border: 0;
+  background: var(--line);
+  accent-color: var(--track);
+}
+progress::-webkit-progress-bar {
+  background: var(--line);
+}
+progress::-webkit-progress-value {
+  background: var(--track);
+}
+.map-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  border-top: 1px solid var(--line);
+  padding-inline: 16px;
+  color: var(--muted);
+  font: 10px var(--mono);
+}
+.reset-progress {
+  min-height: 44px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 10px;
+  padding: 8px 0;
+  text-decoration: underline;
+}
+.tree-scroll {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-color: var(--track) var(--paper);
+}
+.tree-canvas {
+  width: max-content;
+  min-width: 100%;
+  position: relative;
+  padding: 22px 28px 0;
+  overflow: hidden;
+}
+.tree-connections {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.tree-connections path {
+  fill: none;
+  stroke: #6b828f;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+.tree-connections path.is-active {
+  stroke: var(--track);
+  stroke-width: 3;
+}
+.tree-stage {
+  position: relative;
+  padding-bottom: 28px;
+}
+.stage-label {
+  width: max-content;
+  max-width: 100%;
+  padding-right: 6px;
+  background: var(--paper);
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font: 9px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--track);
+  margin: 0 0 18px 0;
+}
+.stage-nodes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 4px;
+}
+.tree-origin {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin: -3px auto 20px;
+  color: var(--track);
+  font: 9px var(--mono);
+  letter-spacing: 0.15em;
+}
+.tree-origin span {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--track);
+  font-size: 16px;
+}
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  padding: 14px 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font: 10px var(--mono);
+}
+.map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.map-legend span:last-child {
+  margin-left: auto;
+  font-size: 9px;
+}
+.map-legend i {
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--muted);
+}
+.map-legend i.done {
+  border-color: var(--track);
+  background: var(--track);
+}
+@media (min-width: 768px) {
+  .track-tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .track-tab {
+    min-width: 240px;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .skill-map-header {
+    padding: 24px 32px;
+  }
+  .skill-map-header h2 {
+    font-size: 30px;
+    max-width: none;
+  }
+  .track-progress {
+    width: 150px;
+  }
+  .track-progress b {
+    font-size: 38px;
+  }
+  .track-progress b span {
+    font-size: 20px;
+  }
+  .skill-map-header .eyebrow,
+  .track-progress label {
+    font-size: 10px;
+  }
+  .map-toolbar {
+    padding-inline: 32px;
+  }
+  .tree-canvas {
+    max-width: none;
+    margin: auto;
+    padding: 28px 80px 0;
+  }
+  .tree-stage {
+    padding-bottom: 38px;
+  }
+  .stage-label {
+    position: absolute;
+    left: -56px;
+    top: 20px;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0;
+    font-size: 10px;
+    max-width: 80px;
+    line-height: 1.5;
+  }
+  .stage-nodes {
+    gap: 40px;
+  }
+  .map-legend {
+    padding-inline: 32px;
+  }
+}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="page-width empty-state">
+        <h1>Questo spazio è riservato.</h1>
+        <p>Il tuo account non ha i permessi per questa azione.</p>
+        <a class="button" href="{% url 'home' %}">Torna a esplorare</a>
+    </div>
+{% endblock %}

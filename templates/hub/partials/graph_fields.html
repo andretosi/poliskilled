@@ -1,0 +1,16 @@
+<details class="optional-details" {% if form.errors %}open{% endif %}>
+    <summary>Percorsi e collegamenti <span class="muted">· facoltativi</span></summary>
+    {% include "hub/partials/form_field.html" with field=form.tracks %}
+    <fieldset class="icon-options">
+        <legend>Icona della tappa</legend>
+        {% for choice in form.icon %}
+            <label class="icon-option">{{ choice.tag }}{% include "hub/partials/skill_icon.html" with icon=choice.data.value %}<span>{{ choice.choice_label }}</span></label>
+        {% endfor %}
+    </fieldset>
+    {{ form.icon.errors }}
+    <label for="predecessor-search">Tappe precedenti</label>
+    <p class="small-note" id="predecessor-help">Collega le attività da fare prima di questa. Le tappe successive e la posizione nella mappa si aggiornano da sole.</p>
+    <input type="search" id="predecessor-search" placeholder="Filtra le attività…" data-predecessor-search aria-describedby="predecessor-help">
+    <div class="predecessor-options">{{ form.predecessors }}</div>
+    {{ form.predecessors.errors }}
+</details>

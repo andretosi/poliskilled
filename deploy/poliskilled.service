@@ -1,0 +1,20 @@
+[Unit]
+Description=PoliSkilled Django
+After=network.target
+
+[Service]
+User=poliskilled
+Group=poliskilled
+WorkingDirectory=/srv/poliskilled
+EnvironmentFile=/etc/poliskilled.env
+ExecStart=/srv/poliskilled/.venv/bin/gunicorn poliskilled.wsgi:application --bind 127.0.0.1:8000 --workers 2 --threads 2 --timeout 30 --access-logfile - --access-logformat "%%(m)s %%(s)s %%(L)s"
+Restart=on-failure
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/poliskilled/var /srv/poliskilled/media
+
+[Install]
+WantedBy=multi-user.target

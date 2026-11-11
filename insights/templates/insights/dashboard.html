@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Risultati — PoliSkilled{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'insights/insights.css' %}">
+<div class="page-width insights-page">
+    <header class="insights-heading">
+        <div><p class="eyebrow">{% if global_report %}Vista amministratore{% else %}I tuoi enti{% endif %} · Solo dati aggregati</p><h1>Risultati<span class="title-mark" aria-hidden="true"> /</span></h1><p class="muted">Come vengono scoperte le attività e seguiti i percorsi.</p></div>
+        <form method="get" class="insights-filters">
+            <label for="insight-month">Mese<input id="insight-month" type="month" name="mese" value="{{ month_value }}" min="{{ min_month }}" max="{{ max_month }}" required></label>
+            <label for="insight-org">Ente<select name="ente" id="insight-org"><option value="">{% if global_report %}Tutti gli enti{% else %}Tutti i miei enti{% endif %}</option>{% for org in organizations %}<option value="{{ org.pk }}" {% if org == selected_organization %}selected{% endif %}>{{ org.name }}</option>{% endfor %}</select></label>
+            <button type="submit" class="button outline">Applica</button>
+        </form>
+    </header>
+    <p class="insights-method">{% if selected_organization %}<strong>{{ selected_organization.name }}</strong> · {% endif %}Visualizzazioni e visitatori: {{ month|date:"F Y" }}. Interessi, completamenti e follower: situazione attuale.</p>
+    <div class="insights-metrics">
+        <article><p>Visitatori del sito</p><strong>{{ site_visitors }}</strong><span>Browser stimati nel mese · intero sito</span></article>
+        <article><p>Visualizzazioni attività</p><strong>{{ view_count }}</strong><span>Nel mese · attività della vista selezionata</span></article>
+        <article><p>Attività pubblicate</p><strong>{{ published_count }}</strong><span>Attualmente pubblicate su {{ activity_count }} totali</span></article>
+        <article><p>In calendario nel mese</p><strong>{{ scheduled_count }}</strong><span>Attività pubblicate con data nel mese selezionato</span></article>
+        <article><p>Persone interessate</p><strong>{{ interested_count }}</strong><span>Account distinti con almeno un interesse</span></article>
+        <article><p>Persone con completamenti</p><strong>{{ completed_count }}</strong><span>Account distinti con almeno una tappa completata</span></article>
+    </div>
+    <section class="insights-panel" aria-labelledby="activity-trend-title">
+        <div class="insights-panel-heading"><h2 id="activity-trend-title">Visualizzazioni delle attività</h2><span class="eyebrow">{{ month|date:"F Y" }}</span></div>
+        {% include "insights/partials/chart.html" with points=chart chart_id="activity-trend" description="Visualizzazioni giornaliere delle attività della vista selezionata" %}
+        {% if not view_count %}<p class="muted">Nessuna visualizzazione registrata nel mese selezionato.</p>{% endif %}
+    </section>
+    {% if site_chart %}<section class="insights-panel" aria-labelledby="site-trend-title"><div class="insights-panel-heading"><h2 id="site-trend-title">Pubblico del sito</h2><span>{{ site_views }} visualizzazioni nel mese</span></div>{% include "insights/partials/chart.html" with points=site_chart chart_id="site-trend" description="Visualizzazioni giornaliere delle pagine pubbliche del sito" %}</section>{% endif %}
+    <section class="insights-panel" aria-labelledby="activity-results-title">
+        <div class="insights-panel-heading"><h2 id="activity-results-title">Risultati per attività</h2><span class="eyebrow">Più viste nel mese</span></div>
+        {% if activity_rows %}<div class="insights-table-scroll" role="region" tabindex="0" aria-label="Risultati delle attività, scorrimento orizzontale">
+            <table class="insights-table"><caption class="sr-only">Visualizzazioni e browser distinti nel mese; account interessati e completamenti attuali.</caption><thead><tr><th scope="col">Attività</th><th scope="col">Stato</th><th scope="col">Visualizzazioni</th><th scope="col">Visitatori</th><th scope="col">Interessati</th><th scope="col">Completamenti</th></tr></thead><tbody>
+            {% for activity in activity_rows %}<tr><th scope="row">{{ activity.title }}<small>{{ activity.get_kind_display }}</small></th><td>{{ activity.get_status_display }}</td><td>{{ activity.insight_views }}</td><td>{{ activity.insight_reach }}</td><td>{{ activity.insight_interested }}</td><td>{{ activity.insight_completed }}</td></tr>{% endfor %}
+            </tbody></table>
+        </div>{% else %}<div class="empty-state"><h3>Ancora nessuna attività</h3><p>I risultati appariranno quando un’attività sarà associata a questa vista.</p></div>{% endif %}
+        {% if activity_rows.has_other_pages %}<nav class="insights-pagination" aria-label="Pagine dei risultati">{% if activity_rows.has_previous %}<a class="inline-link" href="?mese={{ month_value }}&amp;ente={{ selected_organization.pk|default:'' }}&amp;page={{ activity_rows.previous_page_number }}">← Precedenti</a>{% endif %}<span>Pagina {{ activity_rows.number }} di {{ activity_rows.paginator.num_pages }}</span>{% if activity_rows.has_next %}<a class="inline-link" href="?mese={{ month_value }}&amp;ente={{ selected_organization.pk|default:'' }}&amp;page={{ activity_rows.next_page_number }}">Successive →</a>{% endif %}</nav>{% endif %}
+    </section>
+    <section class="insights-panel" aria-labelledby="track-results-title">
+        <h2 id="track-results-title">Percorsi{% if not global_report or selected_organization %} con le tue attività{% endif %}</h2>
+        <div class="insights-tracks">{% for row in track_rows %}<article><h3>{{ row.track.title }}</h3><dl><div><dt>Follower del percorso</dt><dd>{{ row.followers }}</dd></div><div><dt>{% if global_report and not selected_organization %}Persone coinvolte{% else %}Persone sulle tue tappe{% endif %}</dt><dd>{{ row.engaged }}</dd></div><div><dt>Tappe in questa vista</dt><dd>{{ row.activities }}</dd></div></dl></article>{% empty %}<p class="muted">Nessun percorso pubblico contiene attività di questa vista.</p>{% endfor %}</div>
+        <p class="small-note">I follower sono account che hanno scelto di seguire il percorso. Le persone sulle tappe sono account distinti con un interesse o un completamento{% if global_report and not selected_organization %}; le persone coinvolte includono anche i follower{% endif %}.</p>
+    </section>
+    <aside class="insights-method" aria-label="Come leggere i dati"><p><strong>Visitatori = browser stimati, non persone identificate.</strong> Un browser viene contato una volta per mese e per attività. Browser diversi della stessa persona e cancellazioni dei cookie possono aumentare la stima. Le visite ripetute entro 30 secondi vengono ignorate.</p><p>{% if activation %}Rilevazione attiva dal {{ activation.activated_on|date:"j F Y" }}.{% else %}La rilevazione inizierà con la prima visita pubblica valida.{% endif %} Nessun dato storico viene ricostruito. Le attività condivise fra più enti sono conteggiate una sola volta. Gli interessi salvati senza account restano nel browser e non entrano nei conteggi.</p><p>Questa pagina non mostra identità, email o elenchi dei partecipanti.</p></aside>
+</div>
+{% endblock %}

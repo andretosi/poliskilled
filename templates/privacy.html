@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}I tuoi dati — PoliSkilled{% endblock %}
+{% block content %}
+<article class="page-width form-page workspace-page prose">
+  <h1 class="page-title">I tuoi dati</h1>
+  <p>Puoi esplorare PoliSkilled senza account. Progressi, interessi e percorsi seguiti restano nel tuo browser; se accedi, le scelte locali vengono aggiunte al tuo account.</p>
+  <h2>Il tuo account</h2>
+  <p>Salviamo nome utente, email, password protetta e le tue scelte. Puoi cambiare le impostazioni e togliere il consenso agli aggiornamenti quando vuoi. Per le email di servizio usiamo Resend, quando configurato. Gli aggiornamenti sono facoltativi: li ricevi solo se li hai scelti e hai confermato l'indirizzo.</p>
+  <h2>Le statistiche</h2>
+  <p>Contiamo le visite alle pagine pubbliche e le aperture delle attività. Un cookie del sito, <code>poliskilled_audience</code>, riconosce lo stesso browser fino a fine mese. Il mese dopo cambia. Nel database resta un identificativo trasformato con HMAC, separato dagli account; non salviamo indirizzi IP o dati del dispositivo per queste statistiche e non usiamo servizi di analytics esterni.</p>
+  <p>I gestori vedono i risultati complessivi. Ogni ente vede i risultati delle proprie attività, i totali dei percorsi in cui compare e il totale dei visitatori del sito. Sono conteggi: non mostriamo agli enti nomi o email di chi visita, segue o completa attività.</p>
+  <p>Gli identificativi dei browser vengono eliminati dopo 40 giorni dall'ultima rilevazione; i contatori aggregati rimangono per 24 mesi. Le scelte dell'account restano finché le rimuovi. I cookie di sessione e sicurezza servono per accedere e proteggere i moduli.</p>
+  <h2>Una domanda o una richiesta?</h2>
+  <p>PoliSkilled è un progetto di Andrea Tosi, indipendente dal Politecnico di Milano. Per informazioni sui dati o per chiedere l'eliminazione dell'account, contatta <a class="inline-link" href="https://github.com/andretosi">Andrea su GitHub</a>, evitando di pubblicare informazioni personali nelle issue.</p>
+</article>
+{% endblock %}

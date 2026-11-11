@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Gestione — PoliSkilled{% endblock %}
+{% block content %}
+<div class="page-width workspace-page">
+  <div class="section-heading"><h1 class="page-title">Gestione</h1><a class="button small" href="{% url 'review_queue' %}">Proposte · {{ pending_count }}</a></div>
+  <p><a class="inline-link" href="{% url 'insights:dashboard' %}">Risultati di tutti gli enti ↗</a></p>
+  <h2>Richieste degli enti</h2>
+  <div class="org-grid">
+    {% for org in organizations %}
+    <article class="panel">
+      {% if org.logo %}<img class="org-logo" src="{% url 'org_logo' org.pk %}" alt="" width="64" height="64">{% endif %}
+      <h3>{{ org.name }}</h3>
+      {% if org.website %}<a class="inline-link" href="{{ org.website }}" target="_blank" rel="noopener noreferrer">Sito dichiarato ↗</a>{% endif %}
+      <p class="small-note">Controlla il referente attraverso i contatti ufficiali.</p>
+      {% for member in org.members.all %}<p>{{ member.username }} · {{ member.email }}</p>{% endfor %}
+      <form method="post" action="{% url 'verify_org' org.pk %}">
+        {% csrf_token %}<input type="hidden" name="revision" value="{{ org.revision }}">
+        <label for="reason-{{ org.pk }}">Cosa va rivisto?</label><textarea id="reason-{{ org.pk }}" name="reason" maxlength="1500" rows="2"></textarea>
+        <div class="form-actions"><button class="button" name="decision" value="approve">Approva</button><button class="button outline" name="decision" value="changes">Chiedi modifiche</button></div>
+      </form>
+    </article>
+    {% empty %}<p class="muted">Nessuna richiesta in attesa.</p>{% endfor %}
+  </div>
+  <h2 class="spaced">Persone e ruoli</h2>
+  <form method="get" class="management-search"><label for="people-query">Trova un account</label><div><input id="people-query" name="q" value="{{ query }}" placeholder="Nome utente o email" maxlength="100"><button class="button">Cerca</button></div></form>
+  <div class="proposal-list">
+    {% for person in people %}<div class="panel management-person"><div><strong>{{ person.username }}</strong><p class="small-note">{{ person.email }}</p><span class="status">{% if person.site_manager %}Gestore{% else %}Account{% endif %}</span></div>
+    {% if person.role_editable %}<form method="post" action="{% url 'manage_role' person.pk %}">{% csrf_token %}<input type="hidden" name="expected" value="{{ person.site_manager|yesno:'1,0' }}"><button class="button outline small" name="enabled" value="{{ person.site_manager|yesno:'0,1' }}">{% if person.site_manager %}Rimuovi ruolo{% else %}Rendi gestore{% endif %}</button></form>{% endif %}
+    </div>{% empty %}<p>Nessun account trovato.</p>{% endfor %}
+  </div>
+  <details class="spaced"><summary>Enti · {{ all_organizations|length }}</summary><div class="proposal-list">{% for org in all_organizations %}<div class="panel management-person"><strong>{{ org.name }}</strong><span class="status">{% if org.verified %}Verificato{% elif org.review_reason %}Da rivedere{% else %}In attesa{% endif %}</span></div>{% endfor %}</div></details>
+  <details class="spaced"><summary>Ultime operazioni</summary><ul class="management-log">{% for entry in recent_actions %}<li><time>{{ entry.created_at|date:'d/m H:i' }}</time> · {{ entry.actor.username }} · {{ entry.action }} · {% if entry.subject %}{{ entry.subject.username }}{% elif entry.organization %}{{ entry.organization.name }}{% endif %}{% if entry.reason %}<p>{{ entry.reason }}</p>{% endif %}</li>{% empty %}<li>Nessuna operazione.</li>{% endfor %}</ul></details>
+</div>
+{% endblock %}

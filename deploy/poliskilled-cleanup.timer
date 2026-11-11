@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily PoliSkilled aggregate analytics retention
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

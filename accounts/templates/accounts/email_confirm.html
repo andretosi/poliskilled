@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Conferma email — PoliSkilled{% endblock %}
+{% block content %}
+<div class="page-width auth-layout"><h1 class="page-title">{% if confirmed %}Email confermata.{% else %}Conferma la tua email{% endif %}</h1>
+<div class="panel">
+{% if confirmed %}<p>Tutto fatto. Le preferenze sugli aggiornamenti restano quelle che hai scelto.</p>
+{% elif validlink %}<p>Premi il pulsante per associare questo indirizzo al tuo account. Se hai chiesto un cambio email, sostituirà quello precedente.</p>
+<form method="post">{% csrf_token %}<button class="button full">Conferma email</button></form>
+{% else %}<p>Questo link è scaduto, è già stato usato oppure l’indirizzo non è più disponibile. Puoi richiedere una nuova conferma dal tuo account.</p>{% endif %}
+<p><a class="inline-link" href="{% url 'accounts:profile' %}">Vai al tuo account</a></p>
+</div></div>
+{% endblock %}

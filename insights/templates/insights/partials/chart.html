@@ -1,0 +1,6 @@
+{% load l10n %}
+<svg class="insights-chart" viewBox="0 0 910 190" role="img" aria-labelledby="{{ chart_id }}-svg-title {{ chart_id }}-svg-desc">
+    <title id="{{ chart_id }}-svg-title">{{ description }}</title><desc id="{{ chart_id }}-svg-desc">{% for point in points %}{{ point.date|date:"j" }}: {{ point.value }}{% if not forloop.last %}; {% endif %}{% endfor %}.</desc>
+    <line x1="0" y1="160" x2="905" y2="160" class="insights-axis" />
+    {% for point in points %}<rect x="{{ point.x|unlocalize }}" y="{{ point.y|unlocalize }}" width="{{ point.width|unlocalize }}" height="{{ point.height|unlocalize }}" rx="2"><title>{{ point.date|date:"j F" }}: {{ point.value }} visualizzazioni</title></rect>{% if point.label %}<text x="{{ point.x|unlocalize }}" y="181">{{ point.date|date:"j" }}</text>{% endif %}{% endfor %}
+</svg>

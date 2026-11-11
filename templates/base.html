@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Attività, associazioni e percorsi oltre i corsi del Politecnico di Milano.">
+    <title>{% block title %}Attività — PoliSkilled{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navigation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'css/catalog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+    <link rel="stylesheet" href="{% static 'css/workspace.css' %}">
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+    <link rel="stylesheet" href="{% static 'css/management.css' %}">
+    <link rel="stylesheet" href="{% static 'insights/insights.css' %}">
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tracks.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tree-nodes.css' %}">
+    <script src="{% static 'js/progress-storage.js' %}" defer></script>
+    <script src="{% static 'js/progress.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'css/graph-form.css' %}">
+    <script src="{% static 'js/tree-geometry.js' %}" defer></script>
+    <script src="{% static 'js/tree-lines.js' %}" defer></script>
+    <script src="{% static 'js/app.js' %}" defer></script>
+</head>
+<body data-user="{% if user.is_authenticated %}{{ user.pk }}{% endif %}" data-progress-url="{% url 'progress_api' %}">
+    {{ legacy_progress|json_script:"legacy-progress" }}
+    {% include "insights/partials/client.html" %}
+    {% if user.is_authenticated %}<form data-progress-csrf hidden>{% csrf_token %}</form>{% endif %}
+    <a class="skip" href="#main">Vai al contenuto</a>
+    <header class="site-header">
+        <div class="header-inner page-width">
+            <a class="brand" href="{% url 'home' %}" aria-label="PoliSkilled, attività">Poli<span>Skilled</span></a>
+            <nav class="main-nav" aria-label="Navigazione principale">
+                <a href="{% url 'home' %}" {% if request.resolver_match.url_name == 'home' or request.resolver_match.url_name == 'activity' %}aria-current="page"{% endif %}>Attività</a>
+                <a href="{% url 'tracks' %}" {% if request.resolver_match.url_name == 'tracks' or request.resolver_match.url_name == 'track' %}aria-current="page"{% endif %}>Percorsi</a>
+                <a href="{% url 'organizations' %}" {% if request.resolver_match.url_name == 'organizations' %}aria-current="page"{% endif %}>Enti</a>
+            </nav>
+            <div class="account-nav">
+                {% if user.is_authenticated %}
+                    <details class="account-menu">
+                        <summary>Account <span aria-hidden="true">⌄</span></summary>
+                        <div class="account-popover">
+                            <a href="{% url 'progress' %}">I miei progressi</a>
+                            <a href="{% url 'accounts:profile' %}">Impostazioni account</a>
+                            {% if is_reviewer or can_propose %}<a href="{% url 'insights:dashboard' %}">Risultati</a>{% endif %}
+                            {% if has_organization %}<a href="{% url 'dashboard' %}">Le mie proposte</a><a href="{% url 'my_organizations' %}">I miei enti</a>{% endif %}
+                            <a href="{% url 'register_org' %}">Registra un ente</a>
+                            {% if is_reviewer %}<a href="{% url 'management' %}">Gestione</a>{% endif %}
+                            <form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="text-button" type="submit">Esci</button></form>
+                        </div>
+                    </details>
+                    <a class="button small" href="{% if is_reviewer %}{% url 'management' %}{% elif can_propose %}{% url 'propose' %}{% else %}{% url 'progress' %}{% endif %}">{% if is_reviewer %}Gestione{% elif can_propose %}Proponi{% else %}Progressi{% endif %}</a>
+                {% else %}
+                    <a class="login-link" href="{% url 'login' %}">Accedi</a>
+                    <a class="button small" href="{% url 'register' %}">Crea account</a>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        {% if messages %}
+            <div class="messages page-width" role="status">
+                {% for message in messages %}<p class="message {{ message.tags }}">{{ message }}</p>{% endfor %}
+            </div>
+        {% endif %}
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="site-footer page-width">
+        <a class="signature" href="https://github.com/andretosi">With love from Andrea Tosi</a>
+        <a href="{% url 'privacy' %}">I tuoi dati</a>
+        <a href="{% url 'register_org' %}">Proponi con il tuo ente ↗</a>
+        {% if demo_mode %}
+            <details class="demo-tools">
+                <summary>Accessi demo</summary>
+                <div>
+                    <form method="post" action="{% url 'demo_login' 'studente' %}">{% csrf_token %}<button class="button outline small">Entra come studente</button></form>
+                    <form method="post" action="{% url 'demo_login' 'ente' %}">{% csrf_token %}<button class="button outline small">Entra come ente</button></form>
+                    <form method="post" action="{% url 'demo_login' 'moderatore' %}">{% csrf_token %}<button class="button outline small">Entra come moderatore</button></form>
+                </div>
+            </details>
+        {% endif %}
+    </footer>
+</body>
+</html>

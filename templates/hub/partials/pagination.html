@@ -1,0 +1,11 @@
+{% if page.has_other_pages %}
+  <nav class="pagination" aria-label="Pagine del catalogo">
+    {% if page.has_previous %}
+      <a class="button outline" href="?{{ filter_query }}&amp;page={{ page.previous_page_number }}#catalogo">← Precedente</a>
+    {% endif %}
+    <span>Pagina {{ page.number }} di {{ page.paginator.num_pages }}</span>
+    {% if page.has_next %}
+      <a class="button outline" href="?{{ filter_query }}&amp;page={{ page.next_page_number }}#catalogo">Successiva →</a>
+    {% endif %}
+  </nav>
+{% endif %}

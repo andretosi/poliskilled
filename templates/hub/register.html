@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{% if organization_signup %}Registra un ente{% else %}Crea account{% endif %} — PoliSkilled{% endblock %}
+{% block content %}
+<div class="page-width form-page">
+    <h1 class="page-title">{% if organization_signup %}Registra un ente{% else %}Il tuo prossimo livello.{% endif %}</h1>
+    <p class="intro">{% if organization_signup %}L’ente sarà verificato prima di poter proporre attività.{% else %}Un account gratuito per ritrovare i tuoi progressi su ogni dispositivo. Nessun ente richiesto.{% endif %}</p>
+    <form class="panel auth-form" method="post">
+        {% csrf_token %}{{ form.as_p }}
+        <button class="button full">{% if organization_signup %}Invia richiesta{% else %}Crea account{% endif %} →</button>
+        {% if organization_signup %}
+            <p class="small-note">Usa un contatto dell’ente. Se esiste già, chiedi al suo referente di farti aggiungere.</p>
+        {% else %}
+            <p class="small-note">Le spunte di questo browser vengono importate al login. Puoi esplorare e segnare attività anche senza account.</p>
+        {% endif %}
+    </form>
+    <p class="auth-register"><a class="inline-link" href="{% url 'login' %}">Hai già un account? Accedi</a></p>
+    {% if not organization_signup %}<p><a class="inline-link" href="{% url 'register_org' %}">Rappresenti un ente? Registralo ↗</a></p>{% endif %}
+</div>
+{% endblock %}

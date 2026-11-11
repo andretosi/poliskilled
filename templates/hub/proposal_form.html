@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Proponi un’attività — PoliSkilled{% endblock %}
+{% block content %}
+    <div class="page-width form-page">
+        <a class="back-link" href="{% url 'dashboard' %}">← Le mie proposte</a>
+        <h1 class="page-title">
+            {% if activity.pk %}Modifica proposta{% else %}Nuova proposta{% endif %}
+        </h1>
+        {% if activity.status == "published" %}
+            <p class="notice">Salvando una modifica l’attività esce dal catalogo fino alla nuova approvazione.</p>
+        {% endif %}
+        <form class="panel proposal-form"
+              method="post"
+              enctype="multipart/form-data">
+            {% csrf_token %}{{ form.non_field_errors }}{{ form.revision }}{{ form.graph_baseline }}
+            {% if form.non_field_errors %}<p><a class="inline-link" href="{{ request.path }}">Ricarica la versione aggiornata ↻</a></p>{% endif %}
+            {% for field in form.visible_fields %}
+                {% if field.name == "title" or field.name == "kind" or field.name == "description" or field.name == "organizations" or field.name == "technology" or field.name == "community" %}
+                    {% include "hub/partials/form_field.html" %}
+                {% endif %}
+            {% endfor %}
+            <details class="optional-details" {% if form.errors %}open{% endif %}>
+                <summary>
+                    Livello, data, luogo e link <span class="muted">· facoltativi</span>
+                </summary>
+                {% for field in form.visible_fields %}
+                    {% if field.name == "program" or field.name == "level" or field.name == "source_url" or field.name == "starts_at" or field.name == "location" %}
+                        {% include "hub/partials/form_field.html" %}
+                    {% endif %}
+                {% endfor %}
+            </details>
+            {% include "hub/partials/graph_fields.html" %}
+            <div class="form-actions">
+                <button class="button" name="intent" value="submit">Invia in revisione</button>
+                <button class="button outline" name="intent" value="draft">Salva bozza</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

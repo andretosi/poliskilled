@@ -1,0 +1,4 @@
+{% load static %}
+<form hidden data-insights-config data-state-url="{% url 'insights:intent_state' %}" data-import-url="{% url 'insights:import_intents' %}" data-view-url="{% url 'insights:activity_view' 0 %}" data-user="{% if user.is_authenticated %}{{ user.pk }}{% endif %}">{% csrf_token %}</form>
+<script src="{% static 'insights/intent-storage.js' %}" defer></script>
+<script src="{% static 'insights/insights.js' %}" defer></script>

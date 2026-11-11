@@ -1,0 +1,3 @@
+{% extends "base.html" %}
+{% block title %}Filtro non valido — PoliSkilled{% endblock %}
+{% block content %}<div class="page-width empty-state"><h1>Filtro non valido</h1><p>{{ error }}</p><a class="button" href="{% url 'insights:dashboard' %}">Torna ai risultati</a></div>{% endblock %}

@@ -1,0 +1,15 @@
+[Unit]
+Description=PoliSkilled aggregate analytics retention
+
+[Service]
+Type=oneshot
+User=poliskilled
+Group=poliskilled
+WorkingDirectory=/srv/poliskilled
+EnvironmentFile=/etc/poliskilled.env
+ExecStart=/srv/poliskilled/.venv/bin/python manage.py cleanup_audience
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/poliskilled/var

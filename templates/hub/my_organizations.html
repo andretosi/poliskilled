@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}I miei enti — PoliSkilled{% endblock %}
+{% block content %}
+<div class="page-width workspace-page">
+  <div class="section-heading"><h1 class="page-title">I miei enti</h1><a class="button small" href="{% url 'register_org' %}">Aggiungi ente</a></div>
+  <div class="org-grid">
+    {% for org in organizations %}
+    <article class="panel org-card">
+      {% if org.logo %}<img class="org-logo" src="{% url 'org_logo' org.pk %}" alt="" width="64" height="64">{% endif %}
+      <h2>{{ org.name }}</h2>
+      <span class="status">{% if org.verified %}Verificato{% elif org.review_reason %}Da rivedere{% else %}In attesa{% endif %}</span>
+      {% if org.review_reason %}<p>{{ org.review_reason }}</p>{% endif %}
+      <a class="inline-link" href="{% url 'edit_org' org.pk %}">Profilo e logo →</a>
+      {% if org.verified %}<a class="inline-link" href="{% url 'insights:dashboard' %}?ente={{ org.pk }}">Risultati ↗</a>{% endif %}
+    </article>
+    {% empty %}<p>Porta il tuo ente su PoliSkilled.</p>{% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Le mie proposte — PoliSkilled{% endblock %}
+{% block content %}
+    <div class="page-width workspace-page">
+        <div class="section-heading">
+            <div>
+                <h1 class="page-title">Le mie proposte</h1>
+            </div>
+            {% if can_propose %}
+                <a class="button" href="{% url 'propose' %}">Nuova proposta ＋</a>
+            {% endif %}
+        </div>
+        <div class="org-memberships">
+            {% for org in organizations %}
+                <div class="panel">
+                    <b>
+                    {{ org.name }}</b>
+                    <span class="status">
+                        {% if org.verified %}Verificato ✓{% else %}In attesa di verifica{% endif %}
+                    </span>
+                </div>
+            {% empty %}
+                <p class="notice">Questo account non è associato a un ente. Un amministratore può assegnarlo dal pannello di gestione.</p>
+            {% endfor %}
+        </div>
+        {% if not can_propose and organizations %}
+            <p class="notice">Il tuo account è pronto. Per proporre attività aspetta che un moderatore verifichi il tuo ente attraverso il sito e i contatti ufficiali.</p>
+        {% endif %}
+        <div class="proposal-list">
+            {% for activity in activities %}
+                <a class="proposal-row panel" href="{{ activity.get_absolute_url }}">
+                    <div>
+                        <span class="eyebrow">
+                        {{ activity.get_kind_display }} · v{{ activity.revision }}</span>
+                        <h2>{{ activity.title }}</h2>
+                    </div>
+                    <span class="status status-{{ activity.status }}">
+                    {{ activity.get_status_display }}</span>
+                </a>
+            {% empty %}
+                <div class="empty-state">
+                    <h3>Nessuna proposta</h3>
+                    <p>Quando il tuo ente è verificato, puoi creare la prima proposta.</p>
+                    {% if can_propose %}
+                        <a class="button" href="{% url 'propose' %}">Crea una proposta</a>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

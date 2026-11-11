@@ -1,0 +1,6 @@
+Ciao!
+Conferma la tua email per PoliSkilled aprendo questo link e premendo Conferma email:
+{{ link }}
+
+Il link scade dopo 24 ore e funziona una sola volta. Se ne richiedi un altro, il precedente non sarà più valido.
+Se non hai fatto tu questa richiesta, ignora questa email. Nessun indirizzo cambia senza conferma.

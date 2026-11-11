@@ -1,0 +1,17 @@
+<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+{% if icon == "code" %}
+    <path d="m10 9-7 7 7 7m12-14 7 7-7 7M19 5l-6 22"/>
+{% elif icon == "signal" %}
+    <path d="M3 16h6l3-8 6 16 3-8h8M7 5v3M25 24v3"/>
+{% elif icon == "robot" %}
+    <rect x="6" y="9" width="20" height="17" rx="3"/><path d="M16 9V4M13 4h6M3 15v5M29 15v5M12 21h8"/><circle cx="12" cy="15" r="1"/><circle cx="20" cy="15" r="1"/>
+{% elif icon == "people" %}
+    <circle cx="16" cy="10" r="4"/><path d="M8 27v-3a8 8 0 0 1 16 0v3M4 10a3 3 0 0 1 4 4M28 10a3 3 0 0 0-4 4M3 24v-3a5 5 0 0 1 5-5m21 8v-3a5 5 0 0 0-5-5"/>
+{% elif icon == "design" %}
+    <path d="m16 3 12 7v13l-12 7-12-7V10zm0 14v13M4 10l12 7 12-7M10 7l12 7"/>
+{% elif icon == "flag" %}
+    <path d="M9 27V5h16l-4 6 4 6H9M6 27h10M13 9h5"/>
+{% else %}
+    <rect x="8" y="8" width="16" height="16" rx="2"/><path d="M12 12h8v8h-8zM12 3v5M20 3v5M12 24v5M20 24v5M3 12h5M3 20h5M24 12h5M24 20h5"/>
+{% endif %}
+</svg>

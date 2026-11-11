@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Il tuo account — PoliSkilled{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'accounts/settings.css' %}">
+<div class="page-width form-page account-settings">
+    <h1 class="page-title">Il tuo account</h1>
+    <section class="panel auth-form" aria-labelledby="profile-heading">
+        <h2 id="profile-heading">Come ti chiami qui</h2>
+        <form method="post">
+            {% csrf_token %}<input type="hidden" name="action" value="profile">
+            {{ form.as_p }}
+            <p class="small-note">Gli aggiornamenti arrivano solo dopo la conferma dell’email. Nessun invio è attivo per ora.</p>
+            <button class="button">Salva impostazioni</button>
+        </form>
+    </section>
+    <section class="panel auth-form" aria-labelledby="email-heading">
+        <h2 id="email-heading">La tua email</h2>
+        <p>{{ account.email|default:"Nessuna email associata" }}</p>
+        <p class="small-note">{% if account.email_verified_at %}Email confermata.{% else %}Email da confermare.{% endif %}</p>
+        {% if not email_available %}<p role="status">Invio email non ancora disponibile. Potrai confermare o cambiare email quando sarà attivo.</p>{% endif %}
+        {% if account.pending_email %}<p>Conferma in attesa per <strong>{{ account.pending_email }}</strong>. L’email attuale resta valida fino alla conferma.</p>{% endif %}
+        {% if email_available %}
+            {% if account.pending_email or not account.email_verified_at and account.email %}
+            <form method="post" action="{% url 'accounts:email_resend' %}">
+                {% csrf_token %}<button class="button outline">Invia di nuovo la conferma</button>
+            </form>
+            {% endif %}
+        {% endif %}
+        <details class="optional-details" {% if email_form.errors %}open{% endif %}>
+            <summary>Cambia email</summary>
+            <p class="small-note">Inserisci la password e conferma il link che arriverà al nuovo indirizzo.</p>
+            <form method="post">
+                {% csrf_token %}<input type="hidden" name="action" value="email">
+                {{ email_form.as_p }}
+                <button class="button" {% if not email_available %}disabled{% endif %}>Invia conferma alla nuova email</button>
+            </form>
+        </details>
+    </section>
+    <section class="panel" aria-labelledby="password-heading">
+        <h2 id="password-heading">Password</h2>
+        <a class="inline-link" href="{% url 'accounts:password_change' %}">Cambia password →</a>
+    </section>
+</div>
+{% endblock %}

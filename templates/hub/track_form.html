@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Gestisci percorso — PoliSkilled{% endblock %}
+{% block content %}
+<div class="page-width form-page">
+    <a class="back-link" href="{% url 'tracks' %}">← Percorsi</a>
+    <h1 class="page-title">{% if track %}Modifica percorso{% else %}Nuovo percorso{% endif %}</h1>
+    <form method="post" class="panel">
+        {% csrf_token %}{{ form.as_p }}
+        <p class="small-note">Le attività entrano nella mappa dopo l’approvazione. Livelli, collegamenti e colore sono automatici.</p>
+        <button class="button">Salva percorso</button>
+    </form>
+</div>
+{% endblock %}

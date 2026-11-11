@@ -1,0 +1,148 @@
+.skill-node {
+  position: relative;
+  width: clamp(74px, 22vw, 104px);
+  flex-shrink: 0;
+  min-width: 74px;
+}
+.skill-trigger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8px 2px 4px;
+}
+.node-emblem {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #9bb0bb;
+  color: var(--ink);
+  background: var(--paper);
+  border-radius: 50%;
+  position: relative;
+  transition:
+    border-color 0.15s,
+    background-color 0.15s;
+}
+.node-emblem svg {
+  width: 26px;
+  height: 26px;
+}
+.goal-node .node-emblem {
+  border-radius: 5px;
+}
+.node-title {
+  display: block;
+  position: relative;
+  background: var(--paper);
+  padding: 8px 3px 4px;
+  font-size: 11px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.node-check {
+  display: none;
+  position: absolute;
+  bottom: -3px;
+  right: -5px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid var(--paper);
+  background: var(--track);
+  color: #111719;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 700;
+}
+.skill-trigger:hover .node-emblem,
+.is-selected .node-emblem {
+  border-color: var(--track);
+  color: var(--track);
+}
+.skill-trigger:hover .node-title,
+.is-selected .node-title {
+  color: var(--track);
+}
+.is-complete .node-emblem {
+  background: var(--track);
+  border-color: var(--track);
+  color: #111719;
+}
+.is-complete .node-check {
+  display: grid;
+  place-items: center;
+}
+.is-complete .node-rank {
+  color: var(--track);
+}
+.tree-stage[data-stage="1"] .skill-node:not(.is-complete) .node-emblem {
+  border-color: var(--track);
+  color: var(--track);
+}
+.skill-dialog {
+  width: calc(100% - 24px);
+  max-width: 460px;
+  max-height: calc(100svh - 32px);
+  overflow-y: auto;
+  padding: 28px 22px 22px;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--track);
+  border-top: 3px solid var(--track);
+  border-radius: 4px;
+}
+.skill-dialog::backdrop {
+  background: #080b0ed9;
+}
+.skill-dialog h2 {
+  font-size: 25px;
+  margin-bottom: 14px;
+  padding-right: 18px;
+}
+.skill-dialog .eyebrow {
+  color: var(--track);
+}
+.dialog-close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 26px;
+}
+.node-purpose {
+  color: var(--track);
+  font-size: 14px;
+}
+.skill-dialog .prose {
+  color: var(--muted);
+  font-size: 14px;
+}
+.skill-dialog .button {
+  margin-top: 12px;
+}
+.skill-dialog .complete-node {
+  background: var(--track);
+  color: #111719;
+}
+@media (min-width: 768px) {
+  .skill-node {
+    width: 156px;
+  }
+  .node-emblem {
+    width: 60px;
+    height: 60px;
+  }
+  .node-emblem svg {
+    width: 32px;
+    height: 32px;
+  }
+  .node-title {
+    font-size: 13px;
+    max-width: 180px;
+  }
+}

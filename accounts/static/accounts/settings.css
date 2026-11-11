@@ -1,0 +1,6 @@
+.account-settings { padding-bottom: 32px; }
+.account-settings > .panel { margin-block: 24px; }
+.account-settings p, .account-settings strong { overflow-wrap: anywhere; }
+.account-settings .optional-details { margin-top: 24px; }
+.account-settings summary { cursor: pointer; min-height: 44px; }
+.account-settings button:disabled { opacity: .6; cursor: not-allowed; }

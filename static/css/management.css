@@ -1,0 +1,8 @@
+.org-logo { object-fit: contain; border: 1px solid var(--line); padding: 6px; border-radius: 4px; margin-bottom: 12px; background: var(--surface); }
+.management-search { max-width: 640px; margin-block: 20px; }
+.management-search > div { display: flex; gap: 8px; }
+.management-person { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.management-person > div { min-width: 0; overflow-wrap: anywhere; }
+.management-person p { margin: 4px 0 10px; }
+.management-log { padding-left: 20px; font-size: 13px; }
+.management-log li { padding-block: 10px; border-bottom: 1px solid var(--line); }

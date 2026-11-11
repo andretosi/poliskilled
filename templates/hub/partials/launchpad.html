@@ -1,0 +1,12 @@
+<div class="launchpad">
+    <div>
+        <p class="eyebrow">Polimi / oltre i corsi</p>
+        <h1 id="catalog-title">Scegli il tuo<br><span>prossimo progetto.</span></h1>
+    </div>
+    <a class="launch-link" href="{% url 'tracks' %}"><b aria-hidden="true">↗</b><span>Apri<br>skill tree</span></a>
+</div>
+{% if tracks %}
+<nav class="home-tracks" aria-label="Percorsi in evidenza">
+    {% for item in tracks %}<a class="tone-{{ item.color_index }}" href="{% url 'track' item.slug %}"><span>{{ item.title }}</span><span aria-hidden="true">↗</span></a>{% endfor %}
+</nav>
+{% endif %}

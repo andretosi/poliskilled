@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Revisione — PoliSkilled{% endblock %}
+{% block content %}
+    <div class="page-width workspace-page">
+        <h1 class="page-title">Revisione</h1>
+        <div class="section-heading">
+            <h2>Proposte da esaminare</h2>
+            <span class="status">{{ activities|length }} in attesa</span>
+        </div>
+        <div class="proposal-list">
+            {% for activity in activities %}
+                <a class="proposal-row panel" href="{{ activity.get_absolute_url }}">
+                    <div>
+                        <span class="eyebrow">
+                            {% for org in activity.organizations.all %}{{ org.short_name|default:org.name }}{% if not forloop.last %} × {% endif %}
+            {% endfor %} · v{{ activity.revision }}</span>
+        <h3>{{ activity.title }}</h3>
+    </div>
+    <span class="status status-pending">In revisione</span>
+    </a>
+{% empty %}
+    <div class="empty-state">
+        <h3>Nessuna proposta in attesa</h3>
+        <p>Le nuove proposte compariranno qui.</p>
+    </div>
+{% endfor %}
+</div>
+<a class="inline-link spaced" href="{% url 'management' %}">Gestisci enti e persone →</a>
+</div>
+{% endblock %}

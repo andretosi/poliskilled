@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% load insights_tags %}
+{% block title %}{{ activity.title }} — PoliSkilled{% endblock %}
+{% block content %}
+    <div class="page-width detail-page">
+        <a class="back-link" href="{% url 'home' %}#catalogo">← Attività</a>
+        <div class="detail-grid">
+            <article>
+                <p class="eyebrow detail-eyebrow">
+                    {{ activity.get_kind_display }} · {% if activity.technology %}TECNOLOGIA{% endif %}
+                    {% if activity.community %}· PERSONE{% endif %}
+                </p>
+                <h1 class="page-title">{{ activity.title }}</h1>
+                {% if activity.is_sample %}
+                    <p class="notice">Esempio dimostrativo, non un’attività programmata.</p>
+                {% endif %}
+                <div class="prose">{{ activity.description|linebreaks }}</div>
+                {% if activity.tracks.exists or previous or following %}
+                    <section class="activity-paths">
+                        <h2>Collegamenti suggeriti</h2>
+                        {% for track in activity.tracks.all %}<p><a class="inline-link" href="{% url 'track' track.slug %}">{{ track.title }} ↗</a></p>{% endfor %}
+                        {% if previous %}<h3>Tappe precedenti</h3><ul>{% for item in previous %}<li><a class="inline-link" href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>{% endfor %}</ul>{% endif %}
+                        {% if following %}<h3>Prosegui con</h3><ul>{% for item in following %}<li><a class="inline-link" href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>{% endfor %}</ul>{% endif %}
+                        {% if activity.status != "published" %}<p class="small-note">La mappa si aggiornerà dopo l’approvazione.</p>{% endif %}
+                    </section>
+                {% endif %}
+            </article>
+            <aside class="detail-aside panel">
+                <p class="eyebrow">Organizzato da</p>
+                {% for org in activity.organizations.all %}
+                    <div class="organizer-line">
+                        {% if org.logo %}<img class="org-logo" src="{% url 'org_logo' org.pk %}" width="48" height="48" alt="">{% endif %}
+                        <span>
+                            <b>
+                            {{ org.name }}</b>
+                            <small>{% if org.verified %}Ente verificato{% else %}Ente in verifica{% endif %}</small>
+                        </span>
+                    </div>
+                {% endfor %}
+                {% if activity.status == "published" %}
+                <button type="button" class="button full" data-progress-toggle="{{ activity.pk }}" aria-pressed="false" hidden>Segna completata +</button>
+                {% interest_button activity %}
+                <p class="small-note" data-sync-status role="status"></p>
+                {% endif %}
+                <dl class="facts">
+                    {% if private %}<div><dt>Icona nella mappa</dt><dd>{{ activity.get_icon_display }}</dd></div>{% endif %}
+                    {% if activity.program %}<div><dt>Programma</dt><dd>{{ activity.get_program_display }}</dd></div>{% endif %}
+                    <div>
+                        <dt>Livello suggerito</dt>
+                        <dd>
+                            {{ activity.get_level_display }}
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>Dove</dt>
+                        <dd>
+                            {{ activity.location|default:"Consulta l’ente" }}
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>Quando</dt>
+                        <dd>
+                            {% if activity.starts_at %}{{ activity.starts_at|date:"d F Y · H:i" }}{% else %}Consulta la fonte ufficiale{% endif %}
+                        </dd>
+                    </div>
+                </dl>
+                {% if activity.source_url %}
+                    <a class="button full"
+                       href="{{ activity.source_url }}"
+                       target="_blank"
+                       rel="noopener noreferrer">Vai alla fonte ufficiale ↗</a>
+                {% endif %}
+                <p class="small-note">Date e iscrizioni sul sito dell’ente. Livello suggerito da PoliSkilled.</p>
+                {% if private %}
+                    <hr>
+                    <span class="status status-{{ activity.status }}">
+                    {{ activity.get_status_display }}</span>
+                    <p class="small-note">Versione {{ activity.revision }}</p>
+                {% endif %}
+                {% if can_edit %}
+                    <a class="button outline full"
+                       href="{% url 'edit_proposal' activity.pk %}">Modifica proposta</a>
+                {% endif %}
+            </aside>
+        </div>
+        {% if private %}
+            <section class="discussion" id="discussion">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Riservato a enti e moderatori</p>
+                        <h2>Revisione e commenti</h2>
+                    </div>
+                    <span class="status">{{ activity.get_status_display }}</span>
+                </div>
+                {% if can_review and activity.status == "pending" %}
+                    <form class="panel review-form"
+                          method="post"
+                          action="{% url 'decide' activity.pk %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="revision" value="{{ activity.revision }}">
+                        <h3>Esamina questa proposta</h3>
+                        <label for="reason">
+                            Motivazione <span class="muted">(obbligatoria per richiedere modifiche)</span>
+                        </label>
+                        <textarea id="reason" name="reason" rows="3" maxlength="3000">
+</textarea>
+                        <div class="form-actions">
+                            <button class="button"
+                                    name="decision"
+                                    value="approve">Approva e pubblica ✓</button>
+                            <button class="button outline"
+                                    name="decision"
+                                    value="changes">Richiedi modifiche</button>
+                        </div>
+                    </form>
+                {% endif %}
+                <div class="timeline">
+                    {% for entry in entries %}
+                        <article class="timeline-entry">
+                            <span class="timeline-dot"></span>
+                            <header>
+                                <b>
+                                {{ entry.author.username }}</b>
+                                <span>{{ entry.action }} · v{{ entry.revision }}</span>
+                                <time datetime="{{ entry.created_at|date:'c' }}">
+                                {{ entry.created_at|date:"d M, H:i" }}</time>
+                            </header>
+                            {% if entry.body %}
+                                <div class="prose">{{ entry.body|linebreaks }}</div>
+                            {% endif %}
+                            {% if entry.snapshot %}
+                                <details>
+                                    <summary>Vedi la proposta di questa versione</summary>
+                                    <h4>{{ entry.snapshot.title }}</h4>
+                                    <p>{{ entry.snapshot.description|linebreaksbr }}</p>
+                                    <p>
+                                        {{ entry.snapshot.kind }} · {{ entry.snapshot.level }} · {{ entry.snapshot.organizations|join:", " }}
+                                    </p>
+                                    {% if entry.snapshot.location %}
+                                        <p>{{ entry.snapshot.location }}</p>
+                                    {% endif %}
+                                    {% if entry.snapshot.tracks %}<p>Percorsi: {{ entry.snapshot.tracks|join:", " }}</p>{% endif %}
+                                    {% if entry.snapshot.predecessors %}<p>Tappe precedenti: {{ entry.snapshot.predecessors|join:", " }}</p>{% endif %}
+                                    {% if entry.snapshot.icon %}<p>Icona: {{ entry.snapshot.icon }}</p>{% endif %}
+                                    {% if entry.snapshot.program %}<p>Programma: {{ entry.snapshot.program }}</p>{% endif %}
+                                    {% if entry.snapshot.source_url %}
+                                        <p>{{ entry.snapshot.source_url }}</p>
+                                    {% endif %}
+                                </details>
+                            {% endif %}
+                        </article>
+                    {% empty %}
+                        <p class="muted">Revisione e commenti inizia con il primo invio.</p>
+                    {% endfor %}
+                </div>
+                <form class="panel comment-form"
+                      method="post"
+                      action="{% url 'comment' activity.pk %}">
+                    {% csrf_token %}{{ comment_form.as_p }}<button class="button"
+                                                                   type="submit">Aggiungi commento →</button>
+                </form>
+            </section>
+        {% endif %}
+    </div>
+{% endblock %}

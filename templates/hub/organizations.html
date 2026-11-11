@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Gli enti — PoliSkilled{% endblock %}
+{% block content %}
+    <div class="page-width workspace-page">
+        <h1 class="page-title">Enti</h1>
+        <div class="org-grid">
+            {% for org in organizations %}
+                <article class="panel org-card">
+                    {% if org.logo %}<img class="org-logo" src="{% url 'org_logo' org.pk %}" width="64" height="64" alt="">{% endif %}
+                    <h2>{{ org.name }}</h2>
+                    <p>{{ org.description }}</p>
+                    {% if org.website %}
+                        <a class="inline-link"
+                           href="{{ org.website }}"
+                           target="_blank"
+                           rel="noopener noreferrer">Sito ufficiale ↗</a>
+                    {% endif %}
+                    <a class="text-button"
+                       href="{% url 'home' %}?q={{ org.name|urlencode }}#catalogo">Vedi attività →</a>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

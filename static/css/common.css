@@ -1,0 +1,122 @@
+.page-title {
+  font-size: 28px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: -0.045em;
+  margin-bottom: 20px;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.section-heading h1,
+.section-heading h2 {
+  margin: 0;
+}
+.intro {
+  color: var(--muted);
+  max-width: 60ch;
+  margin-bottom: 24px;
+}
+.eyebrow {
+  font-family: var(--mono);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 8px;
+  letter-spacing: 0.08em;
+}
+.muted,
+.small-note,
+.sample-note {
+  color: var(--muted);
+}
+.small-note,
+.sample-note {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.sample-note {
+  margin-top: 20px;
+}
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+  min-width: 0;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+.back-link:hover {
+  color: var(--accent);
+}
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+}
+.empty-state h2,
+.empty-state h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.empty-state p {
+  color: var(--muted);
+}
+.notice,
+.message {
+  padding: 12px 16px;
+  border-radius: 4px;
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: 14px;
+}
+.messages {
+  padding-top: 16px;
+}
+.message.error,
+.errorlist {
+  color: #ff9c9c;
+}
+.message.error {
+  background: #372326;
+}
+.errorlist {
+  padding-left: 20px;
+  font-size: 13px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 20px 0;
+}
+details summary {
+  min-height: 44px;
+  padding-block: 10px;
+}
+.prose {
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 32px;
+  }
+  .panel {
+    padding: 24px;
+  }
+}
