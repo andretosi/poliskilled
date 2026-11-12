@@ -9,7 +9,7 @@ devono essere distinti dai requisiti ufficiali delle fonti.
 - [x] Ricerca su catalogo Passion in Action, tutte le associazioni nell’albo e team competitivi.
 - [x] Importazione idempotente delle schede reali con fonti/date, archiviazione dei demo.
 - [x] Collegamenti editoriali motivati, senza attività inventate.
-- [ ] Test funzionali, browser mobile/desktop, review, pubblicazione e preview.
+- [x] Test funzionali, browser mobile/desktop, review, pubblicazione e preview.
 
 Workspace isolato: codex/objective-catalog, base b3013be. Nessun WIP preesistente.
 Esecuzione nativa; tre ricerche indipendenti scrivono soltanto in .local/research.
@@ -36,5 +36,16 @@ storico del database, senza nuove iscrizioni o pagine pubbliche dedicate.
   preservata. Stato disponibilità riunito nella stessa property per le tre viste.
 - Review indipendente ce-code-review: correzioni per UTC, aggiornamenti del grafo,
   identità stabile/privilegi degli enti, metadati editabili, referenti e paginazione.
-  Ricevuta privata in docs/reviews/objective-catalog-20261112; pubblicazione dopo
-  il gate finale, secondo docs/deployment.md.
+  Ricevuta privata in docs/reviews/objective-catalog-20261112: completa, nessun
+  finding aperto, verdetto Ready to merge.
+- 179 test Django e 20 test JavaScript superati, Ruff e controlli di produzione
+  superati. [CI della release](https://github.com/andretosi/poliskilled/actions/runs/43239229167)
+  completata con successo sul commit 6a645cc.
+- Release integrata in main e applicata all’anteprima Tailscale il 12 novembre 2026.
+  Backup consistente precedente; migrazioni hub 0009–0011; 107 schede create,
+  9 demo archiviati. Seconda simulazione senza modifiche. Confrontati progressi,
+  preferenze, membri, ruoli e profili degli enti: invariati.
+- Verificati via HTTPS home, enti, ARGO con 7 nodi, obiettivo senza preparazioni,
+  iscrizioni chiuse, redirect dei vecchi percorsi, accessi anonimi negati alle bozze
+  e dashboard. Browser sulla release: 390/320 px senza overflow, dialog da tastiera,
+  desktop e nessun errore JavaScript. Servizio e timer di pulizia attivi.

@@ -59,5 +59,5 @@ Decisioni e dettagli in [objective-work.md](objective-work.md).
 - [x] Import idempotente, fonti/date, archiviazione demo senza spostare i progressi.
 - [x] Identità stabile degli enti, collegamento referenti auditato e approvazione separata.
 - [x] Prove browser: mobile/desktop, completamento anonimo e sync, nuova proposta e approvazione.
-- [ ] Chiudere review, aggiornare screenshot, integrare e pubblicare la release.
-- [ ] Applicare e verificare la release sull’anteprima Tailscale.
+- [x] Chiudere review, aggiornare screenshot, integrare e pubblicare la release.
+- [x] Applicare e verificare la release sull’anteprima Tailscale.
