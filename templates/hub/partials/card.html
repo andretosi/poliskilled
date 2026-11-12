@@ -11,5 +11,6 @@
         <span>{% if activity.show_availability %}{{ activity.availability_label }}{% elif activity.starts_at %}{{ activity.starts_at|date:"d M Y" }}{% elif activity.level %}{{ activity.get_level_display }}{% endif %}</span>
         {% if activity.technology %}<span>Tecnologia</span>{% endif %}{% if activity.community %}<span>Persone</span>{% endif %}
     </div>
+    {% if activity.reopening_pending %}<p class="reopening-note">Riapertura da verificare</p>{% endif %}
     <p class="card-goal">Scopri il tuo percorso <span aria-hidden="true">↗</span></p>
 </article>

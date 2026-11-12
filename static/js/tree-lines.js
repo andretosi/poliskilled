@@ -22,6 +22,8 @@ window.drawPoliSkilledConnections = function (map, hasCompleted) {
       .getBoundingClientRect();
     return {
       id: node.dataset.node,
+      rowTop: half(node.closest("[data-stage]").getBoundingClientRect().top - bounds.top),
+      unconfirmed: node.dataset.reopening === "true" && !hasCompleted(node.dataset.node),
       level: Number(node.closest("[data-stage]").dataset.stage),
       parents: node.dataset.parents.split(",").filter(Boolean),
       top: {
@@ -43,6 +45,9 @@ window.drawPoliSkilledConnections = function (map, hasCompleted) {
   for (const edge of window.skillEdges(nodes, bounds.width, origin)) {
     const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
     path.setAttribute("d", edge.route);
+    if (edge.from) path.dataset.from = edge.from;
+    if (edge.to) path.dataset.to = edge.to;
+    if (edge.unconfirmed) path.classList.add("is-unconfirmed");
     if (!edge.from || (hasCompleted(edge.from) && hasCompleted(edge.to)))
       path.classList.add("is-active");
     fragment.appendChild(path);

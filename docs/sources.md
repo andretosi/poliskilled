@@ -4,7 +4,7 @@ Verifica del **12 novembre 2026**, fuso Europe/Rome. PoliSkilled è indipendente
 la presenza di un ente nel catalogo non significa che abbia un account, approvi
 il progetto o abbia autorizzato l’uso del proprio logo.
 
-Il [dataset](../data/catalog/current.json) contiene 107 attività e 49 enti.
+Il [dataset](../data/catalog/current.json) contiene 112 attività e 49 enti.
 Ogni attività conserva una fonte primaria, il periodo noto, lo stato delle
 iscrizioni e i requisiti indicati dall’organizzatore. Nessun orario è inventato
 quando la fonte indica solo il giorno. I testi sono brevi sintesi originali.
@@ -37,13 +37,14 @@ altre attività preparatorie: il sistema risale i collegamenti, elimina i doppio
 e dispone livelli e rami automaticamente. I cicli sono rifiutati. Le proposte
 private non compaiono nell’albero pubblico.
 
-Per 47 obiettivi abbiamo proposto collegamenti utili fra attività reali. Le motivazioni
+Per 50 obiettivi abbiamo proposto collegamenti utili fra attività reali. Le motivazioni
 sono in `preparation_notes` e nella pagina dell’attività; tutti gli archi di questo
 catalogo sono **preparazioni consigliate da PoliSkilled**, autorizzate nel brief.
 I requisiti della fonte sono invece in `official_requirements`.
 
-Esempio: materiali Python e Git → ARGO Training → ARGO; Arduino → PCB → ARGO è
-un ramo per l’elettronica. ARGO e il training sono documentati nella call AEA
+Esempio: Python PiA e Git → ARGO Training → ARGO; Arduino → PCB → ARGO è
+un ramo per l’elettronica. Robotics Academy è una preparazione alternativa.
+ARGO e il training sono documentati nella call AEA
 2026/27. La presenza dei materiali POuL nell’albero è una scelta editoriale,
 non un requisito di AEA né una collaborazione dichiarata fra i due enti.
 
@@ -53,6 +54,10 @@ per partecipare. I corsi a calendario hanno selezioni e scadenze proprie: l’al
 descrive competenze utili, non garantisce di poter frequentare l’edizione mostrata.
 
 ## Aggiornamento del catalogo
+
+Sono inclusi anche corsi conclusi, ricorrenti e già partiti con iscrizioni chiuse.
+L’avviso «Riapertura da verificare» e i rami tratteggiati segnalano che una nuova
+edizione va confermata. [Edizioni e fonti verificate](catalog/recurring-courses.md).
 
 ```bash
 python manage.py import_catalog --dry-run

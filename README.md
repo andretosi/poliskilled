@@ -27,12 +27,12 @@ percorso e incontrare gli enti della community. Progetto indipendente, non affil
   I report mostrano conteggi aggregati, senza liste di nomi o email dei partecipanti.
 
 Politecnico di Milano è un ente. *Passion in Action* è un programma di corsi, che possono
-essere proposti dal Poli insieme ad altri enti. Il catalogo contiene **107 attività reali**
-e **49 enti**, verificati il **12 novembre 2026**: 35 Passion in Action, iniziative delle
+essere proposti dal Poli insieme ad altri enti. Il catalogo contiene **112 attività reali**
+e **49 enti**, verificati il **12 novembre 2026**: 38 Passion in Action, iniziative delle
 associazioni e progetti competitivi. Le fonti e i limiti della ricerca sono in
 [Fonti](docs/sources.md).
 
-**47 obiettivi hanno preparazioni consigliate da PoliSkilled.** Sono collegamenti
+**50 obiettivi hanno preparazioni consigliate da PoliSkilled.** Sono collegamenti
 editoriali fra attività reali, distinti dai requisiti ufficiali. Non certificano
 competenze e non impongono di completare tutti i rami. Un corso con iscrizioni chiuse
 rimane riconoscibile; il grafo non è un calendario di iscrizioni garantite.

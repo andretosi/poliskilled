@@ -188,6 +188,13 @@ class Activity(models.Model):
     def get_absolute_url(self):
         return reverse("activity", args=[self.pk])
 
+    @property
+    def reopening_pending(self):
+        return self.kind == self.Kind.COURSE and self.availability_label in {
+            "Iscrizioni chiuse",
+            "Attività conclusa",
+        }
+
 
 class ReviewEntry(models.Model):
     activity = models.ForeignKey(Activity, on_delete=models.CASCADE, related_name="entries")

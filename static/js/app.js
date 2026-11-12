@@ -29,7 +29,8 @@ if (map) {
         .querySelector("a")
         .setAttribute(
           "aria-label",
-          node.dataset.title + (done ? ", completata" : ", da esplorare"),
+          node.dataset.title + (done ? ", completata" : ", da esplorare") +
+            (!done && node.dataset.reopening === "true" ? ", riapertura da verificare" : ""),
         );
     }
     map.querySelector("[data-progress-number]").firstChild.textContent =

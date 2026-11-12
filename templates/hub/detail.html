@@ -67,6 +67,7 @@
                     {% if activity.enrollment_deadline %}<div><dt>Iscrizioni entro</dt><dd>{{ activity.enrollment_deadline|date:"d F Y · H:i" }}</dd></div>{% endif %}
                 </dl>
                 {% if activity.show_availability %}<p class="small-note">{{ activity.availability_label }}{% if activity.source_checked_on %} · Fonte verificata il {{ activity.source_checked_on|date:"d/m/Y" }}{% endif %}.</p>{% endif %}
+                {% if activity.reopening_pending %}<p class="reopening-note">Riapertura da verificare · La prossima edizione non è confermata.</p>{% endif %}
                 {% if activity.source_url %}
                     <a class="button full"
                        href="{{ activity.source_url }}"

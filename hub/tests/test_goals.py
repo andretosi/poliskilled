@@ -1,6 +1,7 @@
-from datetime import date
+from datetime import date, timedelta
 
 from django.urls import reverse
+from django.utils import timezone
 
 from hub.models import Activity
 from hub.skill_graph import build_goal
@@ -8,6 +9,37 @@ from hub.tests.base import HubTestCase
 
 
 class GoalTests(HubTestCase):
+    def test_closed_recurring_courses_stay_in_the_tree_with_a_reopening_notice(self):
+        course = self.node("Recurring course", kind="course", availability="closed")
+        target = self.node("Future project", [course])
+        response = self.client.get(target.get_absolute_url())
+        self.assertContains(response, 'data-reopening="true"')
+        self.assertContains(
+            response,
+            '<span class="node-availability node-reopening">Riapertura da verificare</span>',
+            count=1,
+            html=True,
+        )
+        self.assertContains(response, "Iscrizioni chiuse")
+        self.assertContains(self.client.get(reverse("home")), "Riapertura da verificare")
+        self.assertContains(self.client.get(course.get_absolute_url()), "Riapertura da verificare")
+
+    def test_confirmed_open_edition_is_not_marked_pending_until_its_deadline(self):
+        course = self.node("Open edition", kind="course", availability="open")
+        self.assertFalse(course.reopening_pending)
+        course.enrollment_deadline = timezone.now() - timedelta(minutes=1)
+        self.assertTrue(course.reopening_pending)
+        course.enrollment_deadline = None
+        course.ends_on = date(2000, 1, 1)
+        self.assertTrue(course.reopening_pending)
+
+    def test_unknown_courses_and_continuous_materials_do_not_imply_reopening(self):
+        for availability in ("unknown", "ongoing"):
+            course = self.node(availability, kind="course", availability=availability)
+            self.assertFalse(course.reopening_pending)
+        event = self.node("Closed event", kind="event", availability="closed")
+        self.assertFalse(event.reopening_pending)
+
     def test_dates_show_closed_status_even_without_catalog_stamp_or_explicit_availability(self):
         target = self.node("Finished event", kind="event", ends_on=date(2000, 1, 1))
         self.assertContains(self.client.get(target.get_absolute_url()), "Attività conclusa")

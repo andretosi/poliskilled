@@ -426,9 +426,10 @@
       "community": false,
       "predecessor_keys": [
         "argo-training",
-        "poul-pcb"
+        "poul-pcb",
+        "aea-academy"
       ],
-      "preparation_notes": "Il training introduce il progetto; il ramo Arduino e PCB prepara al lavoro sull’elettronica. Scegli il ramo coerente con il ruolo che ti interessa: non devi completarli tutti per candidarti."
+      "preparation_notes": "ARGO Training è l’ingresso formativo al progetto. Robotics Academy prepara a ROS 2 e navigazione; Arduino e PCB al ramo elettronico. Scegli le tappe coerenti con il ruolo: non devi completarle tutte. Per i corsi chiusi va verificata una nuova edizione."
     },
     {
       "key": "argo-training",
@@ -451,10 +452,10 @@
       "technology": true,
       "community": false,
       "predecessor_keys": [
-        "poul-python",
+        "pia-python-ai-2026",
         "poul-git"
       ],
-      "preparation_notes": "Python e Git sono una preparazione utile al lavoro sul software di un robot. ARGO Training è pensato anche per principianti: puoi iniziare il training senza aver completato queste tappe."
+      "preparation_notes": "Python e Git preparano al software di un robot. Il PiA Python è già partito e Git è concluso: verifica le prossime edizioni, oppure usa i materiali disponibili. Il training accoglie anche principianti: queste tappe non sono obbligatorie."
     },
     {
       "key": "sapiens",
@@ -716,24 +717,25 @@
     },
     {
       "key": "poul-linux",
-      "title": "Linux Base – materiali POuL",
+      "title": "Linux Base – POuL",
       "kind": "course",
       "organization_keys": [
         "poul"
       ],
-      "description": "Installazione, terminale e software su Linux. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "description": "Installazione, terminale e software su Linux. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL. Edizione conclusa; una prossima edizione non è confermata. I materiali restano utilizzabili in autonomia.",
       "source_url": "https://poul.org/courses/linux/",
       "program": "",
-      "starts_at": null,
-      "ends_on": null,
+      "starts_at": "2026-03-25T17:15:00+01:00",
+      "ends_on": "2026-04-01",
       "enrollment_deadline": null,
-      "period": "Archivio formativo 2026; nessuna nuova data di lezione confermata",
-      "location": "Online",
+      "period": "Edizione 2026: 25 e 31 marzo, 1 aprile",
+      "location": "Politecnico di Milano · materiali online",
       "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
-      "availability": "ongoing",
+      "availability": "closed",
       "icon": "code",
       "supporting_source_urls": [
-        "https://poul.org/courses/"
+        "https://poul.org/courses/",
+        "https://poul.org/courses/linux/past/"
       ],
       "technology": true,
       "community": false,
@@ -742,24 +744,27 @@
     },
     {
       "key": "poul-git",
-      "title": "Git – materiali POuL",
+      "title": "Git – POuL",
       "kind": "course",
       "organization_keys": [
+        "polimi",
         "poul"
       ],
-      "description": "Controllo di versione per lavorare sui progetti. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "description": "Controllo di versione per lavorare sui progetti. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL. Edizione conclusa; una prossima edizione non è confermata. I materiali restano utilizzabili in autonomia.",
       "source_url": "https://poul.org/courses/git/",
-      "program": "",
-      "starts_at": null,
-      "ends_on": null,
-      "enrollment_deadline": null,
-      "period": "Archivio formativo 2026; nessuna nuova data di lezione confermata",
-      "location": "Online",
-      "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
-      "availability": "ongoing",
+      "program": "passion",
+      "starts_at": "2026-03-10T17:15:00+01:00",
+      "ends_on": "2026-03-24",
+      "enrollment_deadline": "2026-03-03T12:00:00+01:00",
+      "period": "Edizione 2026: 10, 17 e 24 marzo",
+      "location": "Politecnico di Milano · materiali online",
+      "official_requirements": "Nessuna conoscenza pregressa di Git. Per il riconoscimento PiA: iscrizione e frequenza in presenza; priorità a Ingegneria del Software e relativa Prova Finale.",
+      "availability": "closed",
       "icon": "code",
       "supporting_source_urls": [
-        "https://poul.org/courses/"
+        "https://poul.org/courses/",
+        "https://poul.org/courses/git/past/",
+        "https://www.polimi.it/formazione/passion-in-action/dettaglio/version-control-con-git-2"
       ],
       "technology": true,
       "community": false,
@@ -770,24 +775,25 @@
     },
     {
       "key": "poul-arduino",
-      "title": "Arduino – materiali POuL",
+      "title": "Arduino – POuL",
       "kind": "course",
       "organization_keys": [
         "poul"
       ],
-      "description": "Laboratori di prototipazione con schede Arduino. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "description": "Laboratori di prototipazione con schede Arduino. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL. Edizione conclusa; una prossima edizione non è confermata. I materiali restano utilizzabili in autonomia.",
       "source_url": "https://poul.org/courses/arduino/",
       "program": "",
-      "starts_at": null,
-      "ends_on": null,
+      "starts_at": "2025-05-05T17:15:00+02:00",
+      "ends_on": "2025-05-12",
       "enrollment_deadline": null,
-      "period": "Archivio formativo 2025; nessuna nuova data di lezione confermata",
-      "location": "Online",
-      "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
-      "availability": "ongoing",
+      "period": "Edizione 2025: 5, 8 e 12 maggio",
+      "location": "Politecnico di Milano · materiali online",
+      "official_requirements": "Iscrizione necessaria per il laboratorio in presenza, con board limitate. Installare Arduino IDE prima delle lezioni. I materiali delle edizioni passate restano consultabili.",
+      "availability": "closed",
       "icon": "circuit",
       "supporting_source_urls": [
-        "https://poul.org/courses/"
+        "https://poul.org/courses/",
+        "https://poul.org/courses/arduino/past/"
       ],
       "technology": true,
       "community": false,
@@ -796,24 +802,25 @@
     },
     {
       "key": "poul-pcb",
-      "title": "PCB Design – materiali POuL",
+      "title": "PCB Design – POuL",
       "kind": "course",
       "organization_keys": [
         "poul"
       ],
-      "description": "Introduzione ai circuiti stampati e progettazione con KiCad. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "description": "Introduzione ai circuiti stampati e progettazione con KiCad. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL. Edizione conclusa; una prossima edizione non è confermata. I materiali restano utilizzabili in autonomia.",
       "source_url": "https://poul.org/courses/pcb/",
       "program": "",
-      "starts_at": null,
-      "ends_on": null,
+      "starts_at": "2025-11-13T17:15:00+01:00",
+      "ends_on": "2025-11-20",
       "enrollment_deadline": null,
-      "period": "Archivio formativo 2025; nessuna nuova data di lezione confermata",
-      "location": "Online",
+      "period": "Edizione 2025: 13, 19 e 20 novembre",
+      "location": "Politecnico di Milano · materiali online",
       "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
-      "availability": "ongoing",
+      "availability": "closed",
       "icon": "circuit",
       "supporting_source_urls": [
-        "https://poul.org/courses/"
+        "https://poul.org/courses/",
+        "https://poul.org/courses/pcb/past/"
       ],
       "technology": true,
       "community": false,
@@ -824,24 +831,25 @@
     },
     {
       "key": "poul-python",
-      "title": "Python – materiali POuL",
+      "title": "Python – POuL",
       "kind": "course",
       "organization_keys": [
         "poul"
       ],
-      "description": "Basi di Python, visione artificiale con OpenCV e rappresentazioni numeriche. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "description": "Basi di Python, visione artificiale con OpenCV e rappresentazioni numeriche. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL. Edizione conclusa; una prossima edizione non è confermata. I materiali restano utilizzabili in autonomia.",
       "source_url": "https://poul.org/courses/python/",
       "program": "",
-      "starts_at": null,
-      "ends_on": null,
+      "starts_at": "2024-03-20T17:15:00+01:00",
+      "ends_on": "2024-03-27",
       "enrollment_deadline": null,
-      "period": "Archivio formativo 2024; nessuna nuova data di lezione confermata",
-      "location": "Online",
+      "period": "Edizione 2024: 20, 21, 25 e 27 marzo",
+      "location": "Politecnico di Milano · materiali online",
       "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
-      "availability": "ongoing",
+      "availability": "closed",
       "icon": "code",
       "supporting_source_urls": [
-        "https://poul.org/courses/"
+        "https://poul.org/courses/",
+        "https://poul.org/courses/python/past/"
       ],
       "technology": true,
       "community": false,
@@ -2570,7 +2578,10 @@
       "technology": true,
       "community": false,
       "predecessor_keys": [],
-      "preparation_notes": ""
+      "preparation_notes": "",
+      "supporting_source_urls": [
+        "https://www.polimi.it/formazione/passion-in-action/dettaglio/python-from-fundamentals-to-ml-neural-networks-and-secure-federated-learning"
+      ]
     },
     {
       "key": "pia-fpga101-2026",
@@ -3118,6 +3129,141 @@
       "community": true,
       "predecessor_keys": [],
       "preparation_notes": ""
+    },
+    {
+      "key": "aea-academy",
+      "title": "Robotics Academy – AEA",
+      "kind": "course",
+      "organization_keys": [
+        "polimi",
+        "aea"
+      ],
+      "description": "Laboratorio su ROS 2, simulazione, controllo, localizzazione, SLAM e navigazione di robot mobili. Edizione 2026 conclusa; calendario e apertura di una nuova edizione da verificare.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/robotics-academy-un-corso-sui-robot-mobili-autonomi",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": "2026-05-04",
+      "enrollment_deadline": "2026-03-20T12:00:00+01:00",
+      "period": "Edizione 2026: 23 marzo – 4 maggio",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Conoscenza di Python e C++; familiarità con Linux e riga di comando consigliata. Selezione tramite CV e lettera motivazionale.",
+      "availability": "closed",
+      "icon": "robot",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "pia-python-ai-2026",
+        "poul-linux"
+      ],
+      "preparation_notes": "Python e terminale Linux preparano agli strumenti del laboratorio. La fonte richiede anche C++, non coperto da queste tappe. Sono suggerimenti di preparazione, non una sostituzione della selezione.",
+      "supporting_source_urls": [
+        "https://www.ingindinf.polimi.it/fileadmin/user_upload/upload/formazione/esperienza_studente/magistrale__inglese/Esperienza_Studente__Automazione_-_LM_English_-_clean.pdf"
+      ]
+    },
+    {
+      "key": "pia-industrial-automation",
+      "title": "Laboratorio di sistemi di automazione industriale",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Programmazione di PLC, interfacce HMI e controllo assi con Automation Studio e formatori B&R. L’edizione autunnale 2026 è terminata; la prossima apertura va verificata.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/laboratorio-di-sistemi-di-automazione-industriale-1",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": "2026-11-11",
+      "enrollment_deadline": "2026-10-02T12:00:00+02:00",
+      "period": "Edizione 2026: 7 ottobre – 11 novembre",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Dal secondo anno di Ingegneria industriale o dell’informazione, oppure una magistrale in Ingegneria. Basi di automatica e informatica; nozioni PLC utili. La scheda riporta criteri e numeri di posti non uniformi: verificare con il docente.",
+      "availability": "closed",
+      "icon": "robot",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-arduino"
+      ],
+      "preparation_notes": "Il laboratorio Arduino è un primo contatto pratico con sensori e attuatori. Non sostituisce le conoscenze di automatica e informatica né i vincoli di accesso indicati dal Poli."
+    },
+    {
+      "key": "poul-3dprint",
+      "title": "Stampa 3D – POuL",
+      "kind": "course",
+      "organization_keys": [
+        "poul"
+      ],
+      "description": "Dalle tecnologie di stampa al lavoro sullo slicer e alla finitura dei pezzi, con applicazioni industriali e laboratorio. Il corso ha più edizioni documentate; i materiali passati restano disponibili.",
+      "source_url": "https://poul.org/courses/3dprint/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": "2025-10-22",
+      "enrollment_deadline": null,
+      "period": "Ultima edizione pubblicata: 13–22 ottobre 2025",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Nessuna esperienza richiesta per la prima giornata; non serve possedere una stampante.",
+      "availability": "closed",
+      "icon": "design",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": "",
+      "supporting_source_urls": [
+        "https://poul.org/courses/3dprint/past/"
+      ]
+    },
+    {
+      "key": "poul-linux-advanced",
+      "title": "Linux avanzato e HomeLab – POuL",
+      "kind": "course",
+      "organization_keys": [
+        "poul"
+      ],
+      "description": "Configurazione di un HomeLab, primi container Docker e passaggio dal servizio personale alla produzione. Edizione conclusa; materiali online e prossima edizione da verificare.",
+      "source_url": "https://poul.org/courses/linux-advanced/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": "2025-04-01",
+      "enrollment_deadline": null,
+      "period": "Ultima edizione pubblicata: 26 marzo – 1 aprile 2025",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Consulta la fonte per requisiti e modalità di accesso.",
+      "availability": "closed",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-linux"
+      ],
+      "preparation_notes": "Terminale e gestione del sistema sono una base utile prima di configurare servizi e container. Preparazione consigliata da PoliSkilled.",
+      "supporting_source_urls": [
+        "https://poul.org/courses/linux-advanced/past/"
+      ]
+    },
+    {
+      "key": "poul-latex",
+      "title": "LaTeX – POuL",
+      "kind": "course",
+      "organization_keys": [
+        "poul"
+      ],
+      "description": "Introduzione alla composizione di documenti tecnici con LaTeX. Il corso compare nell’archivio delle iniziative POuL; la nuova edizione non è confermata.",
+      "source_url": "https://poul.org/courses/latex/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": "2023-04-28",
+      "enrollment_deadline": null,
+      "period": "Ultima edizione pubblicata: 27–28 aprile 2023",
+      "location": "Politecnico di Milano",
+      "official_requirements": "L’edizione pubblicata richiedeva registrazione. Consultare POuL per eventuali nuovi incontri; i materiali storici sono disponibili.",
+      "availability": "closed",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": "",
+      "supporting_source_urls": [
+        "https://poul.org/courses/latex/past/"
+      ]
     }
   ]
 }

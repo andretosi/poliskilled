@@ -61,3 +61,11 @@ Decisioni e dettagli in [objective-work.md](objective-work.md).
 - [x] Prove browser: mobile/desktop, completamento anonimo e sync, nuova proposta e approvazione.
 - [x] Chiudere review, aggiornare screenshot, integrare e pubblicare la release.
 - [x] Applicare e verificare la release sull’anteprima Tailscale.
+
+## Corsi ricorrenti — 12 novembre 2026
+
+- [x] Verificare edizioni storiche, PiA Python, POuL, AEA Academy e ARGO Training.
+- [x] Conservare corsi chiusi negli alberi; avviso e rami tratteggiati automatici.
+- [x] Correggere i salti di livello: corsie sul lato della tappa, caso BCI e speculare.
+- [x] Verificare import, progressi, browser mobile/desktop e revisione.
+- [ ] Pubblicare e aggiornare l’anteprima Tailscale.

@@ -134,7 +134,7 @@ progress::-webkit-progress-value {
   min-width: 100%;
   position: relative;
   padding: 22px 28px 0;
-  padding-right: var(--route-gutter, 28px);
+  padding-inline: var(--route-gutter, 28px);
   overflow: hidden;
 }
 .tree-connections {
@@ -154,6 +154,15 @@ progress::-webkit-progress-value {
   stroke: var(--track);
   stroke-width: 3;
 }
+.tree-connections path.is-unconfirmed {
+  stroke: #ff927d;
+  stroke-width: 2;
+  stroke-dasharray: 5 5;
+}
+.reopening-note { color: #ff927d; font-size: 12px; }
+.map-legend .reopening-legend { display: none; }
+.skill-map:has([data-reopening="true"]) .reopening-legend { display: flex; }
+.reopening-legend::before { content: ""; width: 24px; border-top: 2px dashed #ff927d; }
 .tree-stage {
   position: relative;
   padding-bottom: 28px;
@@ -252,14 +261,15 @@ progress::-webkit-progress-value {
     max-width: none;
     margin: auto;
     padding: 28px 80px 0;
-    padding-right: max(80px, var(--route-gutter, 28px));
+    /* Keep level numbers inside a separate strip beyond the routing lanes. */
+    padding-inline: max(80px, calc(var(--route-gutter, 28px) + 32px));
   }
   .tree-stage {
     padding-bottom: 38px;
   }
   .stage-label {
     position: absolute;
-    left: -56px;
+    left: -24px;
     top: 20px;
     flex-direction: column;
     gap: 6px;

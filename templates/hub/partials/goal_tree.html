@@ -22,18 +22,20 @@
                     <h3 class="stage-label"><span class="sr-only">Livello </span>{{ stage.number|stringformat:"02d" }}</h3>
                     <div class="stage-nodes">
                     {% for step in stage.steps %}
-                        <article class="skill-node {% if step.goal %}goal-node{% endif %}" data-node="{{ step.activity.pk }}" data-legacy-step="" data-parents="{{ step.parents|join:',' }}" data-title="{{ step.activity.title }}">
-                            <a class="skill-trigger" href="{{ step.activity.get_absolute_url }}" aria-label="{{ step.activity.title }}">
+                        <article class="skill-node {% if step.goal %}goal-node{% endif %}" data-node="{{ step.activity.pk }}" data-reopening="{{ step.activity.reopening_pending|yesno:'true,false' }}" data-legacy-step="" data-parents="{{ step.parents|join:',' }}" data-title="{{ step.activity.title }}">
+                            <a class="skill-trigger" href="{{ step.activity.get_absolute_url }}" aria-label="{{ step.activity.title }}{% if step.activity.reopening_pending %}, riapertura da verificare{% endif %}">
                                 <span class="node-emblem" aria-hidden="true">{% include "hub/partials/skill_icon.html" with icon=step.activity.icon_name %}<span class="node-check">✓</span></span>
                                 <span class="node-rank sr-only" aria-hidden="true">0 / 1</span>
                                 {% if step.goal %}<span class="goal-label">Il tuo obiettivo</span>{% endif %}
                                 <span class="node-title">{{ step.activity.title }}</span>
                                 {% if step.activity.show_availability %}<span class="node-availability">{{ step.activity.availability_label }}</span>{% endif %}
+                                {% if step.activity.reopening_pending %}<span class="node-availability node-reopening">Riapertura da verificare</span>{% endif %}
                             </a>
                             <template class="node-detail">
                                 <p class="eyebrow">{{ step.activity.get_kind_display }}{% if step.goal %} · Obiettivo{% endif %}</p>
                                 <h2 id="node-detail-title">{{ step.activity.title }}</h2>
                                 <div class="prose">{{ step.activity.description|linebreaks }}</div>
+                                {% if step.activity.reopening_pending %}<p class="reopening-note">Riapertura da verificare · La prossima edizione non è confermata.</p>{% endif %}
                                 {% if step.activity.preparation_notes %}<p class="preparation-note">{{ step.activity.preparation_notes }}</p>{% endif %}
                                 <a class="button outline full" href="{{ step.activity.get_absolute_url }}">Apri attività e albero ↗</a>
                                 {% interest_button step.activity %}
@@ -47,7 +49,7 @@
             <div class="tree-origin" aria-hidden="true"><span>↑</span></div>
         </div>
     </div>
-    <div class="map-legend"><span data-sync-status role="status">Salvato su questo browser</span></div>
+    <div class="map-legend"><span class="reopening-legend">Riapertura da verificare</span><span data-sync-status role="status">Salvato su questo browser</span></div>
 </section>
 {% if stages|length == 1 %}<p class="sample-note">Nessuna preparazione collegata: puoi partire da questo obiettivo.</p>{% endif %}
 <p class="sample-note">Preparazione consigliata da PoliSkilled · Non sono requisiti di ammissione.</p>

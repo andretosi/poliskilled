@@ -12,6 +12,9 @@ PRODUCT = {
     "accounts": "Consultazione libera; progressi locali o sincronizzati con account personale",
     "graph": "Icona e predecessori; livelli, successori, ordine e colore automatici",
     "skill_tree": "Nodi interattivi e rami accesi; riferimenti in docs/design-references.md",
+    "closed_courses": (
+        "Corsi chiusi/conclusi negli alberi; riapertura da verificare e rami tratteggiati"
+    ),
     "remote": "Anteprima HTTPS privata con Tailscale Serve; DEBUG e accessi demo disattivati",
     "entry": "Dashboard pubblica subito visibile, ricerca e filtri rapidi, testi essenziali",
     "samples": (
