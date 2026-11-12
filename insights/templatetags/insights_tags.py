@@ -1,9 +1,9 @@
 from django import template
 from django.urls import reverse
 
-from hub.models import Activity, Track
+from hub.models import Activity
 from insights.audience import public_activities
-from insights.models import ActivityInterest, TrackFollow
+from insights.models import ActivityInterest
 
 register = template.Library()
 
@@ -25,37 +25,20 @@ def interest_button(context, activity):
         "kind": "interests",
         "pk": activity.pk,
         "url": reverse("insights:interest", args=[activity.pk]),
-        "label": "Mi interessa",
-        "selected_label": "Ti interessa ✓",
+        "label": "Salva obiettivo",
+        "selected_label": "Obiettivo salvato ✓",
         "active": activity.pk in request._intent_ids["interested"],
         "visible": activity.pk in request._intent_ids["public"],
-    }
-
-
-@register.inclusion_tag("insights/partials/intent_button.html", takes_context=True)
-def follow_button(context, track):
-    user = context["request"].user
-    return {
-        "kind": "follows",
-        "pk": track.pk,
-        "url": reverse("insights:follow", args=[track.pk]),
-        "label": "Segui percorso",
-        "selected_label": "Segui già ✓",
-        "active": user.is_authenticated
-        and TrackFollow.objects.filter(user=user, track=track).exists(),
-        "visible": True,
     }
 
 
 @register.inclusion_tag("insights/partials/saved_intents.html", takes_context=True)
 def saved_intents(context):
     user = context["request"].user
-    interests, follows = Activity.objects.none(), Track.objects.none()
+    interests = Activity.objects.none()
     if user.is_authenticated:
         interests = public_activities().filter(activityinterest__user=user).order_by("title")
-        follows = Track.objects.filter(trackfollow__user=user).distinct()
     return {
         "interested_activities": interests,
-        "followed_tracks": follows,
         "request": context["request"],
     }

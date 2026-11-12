@@ -1,7 +1,12 @@
 .detail-grid {
   display: grid;
   gap: 24px;
+  margin-top: 40px;
 }
+.goal-heading { max-width: 1000px; margin-block: 20px 32px; }
+.goal-heading .page-title { font-size: clamp(28px, 5vw, 54px); overflow-wrap: anywhere; }
+.goal-label { font: 700 10px var(--mono); text-transform: uppercase; color: var(--track); letter-spacing: .08em; }
+.preparation-note { border-left: 3px solid var(--accent); padding-left: 12px; font-size: 14px; }
 .detail-eyebrow {
   margin-bottom: 10px;
 }

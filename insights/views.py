@@ -21,10 +21,10 @@ from .models import AnalyticsState, DailyMetric, MonthlyMetric
 from .reports import (
     activity_report,
     chart_points,
+    goal_report,
     month_offset,
     permitted_scope,
     selected_month,
-    track_report,
 )
 
 logger = logging.getLogger(__name__)
@@ -56,7 +56,9 @@ def dashboard(request):
         global_report=reviewer,
         site_visitors=site.visitors if site else 0,
         activation=AnalyticsState.objects.filter(key="audience").first(),
-        track_rows=track_report(activities, reviewer and organization is None),
+        goal_rows=Paginator(
+            goal_report(activities, reviewer and organization is None), 12
+        ).get_page(request.GET.get("obiettivi")),
     )
     if reviewer and organization is None:
         site_daily = DailyMetric.objects.filter(

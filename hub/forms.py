@@ -30,22 +30,32 @@ class ActivityForm(forms.ModelForm):
             "community",
             "level",
             "program",
-            "tracks",
             "icon",
             "predecessors",
+            "preparation_notes",
             "image",
             "source_url",
             "starts_at",
+            "period",
+            "ends_on",
+            "enrollment_deadline",
+            "availability",
+            "official_requirements",
             "location",
         ]
         widgets = {
             "image": PrivateImageInput,
             "description": forms.Textarea(attrs={"rows": 5}),
+            "preparation_notes": forms.Textarea(attrs={"rows": 2}),
+            "official_requirements": forms.Textarea(attrs={"rows": 2}),
             "organizations": forms.CheckboxSelectMultiple,
-            "tracks": forms.CheckboxSelectMultiple,
             "predecessors": forms.CheckboxSelectMultiple,
             "icon": forms.RadioSelect,
             "starts_at": forms.DateTimeInput(
+                attrs={"type": "datetime-local"}, format="%Y-%m-%dT%H:%M"
+            ),
+            "ends_on": forms.DateInput(attrs={"type": "date"}, format="%Y-%m-%d"),
+            "enrollment_deadline": forms.DateTimeInput(
                 attrs={"type": "datetime-local"}, format="%Y-%m-%dT%H:%M"
             ),
         }
@@ -54,8 +64,7 @@ class ActivityForm(forms.ModelForm):
             "kind": "Tipo",
             "description": "Descrizione",
             "organizations": "Enti organizzatori",
-            "tracks": "Percorsi",
-            "predecessors": "Tappe precedenti",
+            "predecessors": "Preparazione consigliata",
         }
         help_texts = {
             "organizations": (
@@ -64,6 +73,10 @@ class ActivityForm(forms.ModelForm):
             "image": "JPG, PNG o WebP, massimo 3 MB.",
             "source_url": "Facoltativo. Pagina ufficiale o iscrizioni (https).",
             "level": "Un orientamento, non un requisito di ammissione.",
+            "period": (
+                "Se compilato, viene mostrato al posto della data e ora. "
+                "Aggiornalo quando cambia il calendario."
+            ),
         }
 
     def __init__(self, *args, user, **kwargs):
@@ -85,6 +98,8 @@ class ActivityForm(forms.ModelForm):
         self.fields["organizations"].queryset = Organization.objects.filter(verified=True)
         self.fields["revision"].initial = self.instance.revision
         self.fields["starts_at"].input_formats = ["%Y-%m-%dT%H:%M"]
+        self.fields["enrollment_deadline"].input_formats = ["%Y-%m-%dT%H:%M"]
+        self.fields["availability"].required = False
         if not self.instance.pk:
             self.initial["organizations"] = user.organizations.filter(verified=True)
 
@@ -102,6 +117,9 @@ class ActivityForm(forms.ModelForm):
         predecessors = self.cleaned_data["predecessors"]
         validate_predecessors(self.instance.pk, list(predecessors.values_list("pk", flat=True)))
         return predecessors
+
+    def clean_availability(self):
+        return self.cleaned_data["availability"] or self.instance.availability
 
     def clean_organizations(self):
         organizations = self.cleaned_data["organizations"]
@@ -155,7 +173,8 @@ class RegisterForm(EmailRegistrationForm):
         name = self.cleaned_data["organization"].strip()
         if Organization.objects.filter(normalized_name=normalize("NFKC", name).casefold()).exists():
             raise forms.ValidationError(
-                "Questo ente esiste già. Chiedi l'accesso al suo referente."
+                "Questo ente esiste già. Crea un account personale (o usa quello che hai), "
+                "poi chiedi a un gestore di collegarti come referente."
             )
         return name
 

@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Cattolici Popolari",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/cattolici-popolari",
+    "outcome": "Scheda d’albo verificata. Nessun calendario o annuncio corrente reperibile nelle fonti pubbliche consultate; rinvio ufficiale alla Polimi App.",
+    "events_checked_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/cattolici-popolari"
+  },
+  {
+    "name": "CRES",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/cres",
+    "outcome": "Verificati albo e pagina LinkedIn. Gli annunci con date leggibili (aprile e maggio 2026) sono trascorsi; nessun evento futuro verificato.",
+    "events_checked_url": "https://www.linkedin.com/company/cres-polimi"
+  },
+  {
+    "name": "GBU Milano Politecnico",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/gbu-milano-politecnico",
+    "outcome": "La scheda ufficiale documenta incontri settimanali aperti a tutti. Inserita l’attività ricorrente, senza inventare giorno, aula o prossima data.",
+    "events_checked_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/gbu-milano-politecnico"
+  },
+  {
+    "name": "PassionLab",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/passionlab",
+    "outcome": "Sito con 22 club e archivio di eventi, senza prossimo appuntamento datato. Inseriti Debate e Photography come club, con adesione da confermare; i link ai gruppi risultano in aggiornamento.",
+    "events_checked_url": "https://www.passionlabpolimi.it/events"
+  },
+  {
+    "name": "Polifonia",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/polifonia",
+    "outcome": "Verificati tutti i cinque gruppi e il calendario, senza date di concerti leggibili. Inseriti coro, orchestra, band, big band e musical; collaborazione con Teatro delle Biglie attestata.",
+    "events_checked_url": "https://www.polifoniapolimi.it/eventi"
+  },
+  {
+    "name": "POLI.MOVIES",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/polimovies",
+    "outcome": "Albo e sito verificati. La sezione prossime proiezioni è vuota; non inseriti cineforum senza data o film inventati.",
+    "events_checked_url": "https://polimovies.webflow.io/"
+  },
+  {
+    "name": "POLI.RADIO",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/poliradio",
+    "outcome": "Verificati sito, contatti, notizie e talk del 18 novembre 2026. Inserite produzione radiofonica e iniziativa Milano Music Week; partner Radio Bicocca citato nel testo.",
+    "events_checked_url": "https://www.poliradio.it/news/1181/la-milano-music-week-va-in-doppia-cifra"
+  },
+  {
+    "name": "Teatro delle Biglie",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/teatro-delle-biglie",
+    "outcome": "Albo conferma laboratori gratuiti semestrali; sito proprio non restituisce testo leggibile. Inserita offerta ricorrente con calendario da confermare, oltre alla collaborazione musical documentata da Polifonia.",
+    "events_checked_url": "https://teatrodellebiglie.it/"
+  },
+  {
+    "name": "TOP - Techno Optimist Polimi",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/techno-optimist-polimi",
+    "outcome": "Scheda d’albo e pagina LinkedIn verificate. Annuncio leggibile datato ottobre 2025 e resoconti di iniziative precedenti; nessun nuovo evento futuro verificato.",
+    "events_checked_url": "https://www.linkedin.com/company/techno-optimists-polimi"
+  },
+  {
+    "name": "Enactus Polimi",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/enactus-polimi",
+    "outcome": "Pagina corrente: ReLoad e Shea Matters attivi. Oyster2Life compare solo nello storico 2020, quindi escluso. Reclutamento successivo indicato nel semestre estivo 2026/27.",
+    "events_checked_url": "https://www.enactuspolimi.org/projects"
+  },
+  {
+    "name": "Poliedro",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/poliedro",
+    "outcome": "Albo e sito proprio verificati. Sito con articoli 2021–2022 e rinvio ai canali social; nessun appuntamento futuro verificato.",
+    "events_checked_url": "https://poliedro-polimi.it/en/"
+  },
+  {
+    "name": "Resilient G.A.P.",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/resilient-gap",
+    "outcome": "Sito e archivio conferenze verificati. Ultimo annuncio leggibile riguarda il 22 ottobre 2026, già trascorso; non trasformato in prossimo evento.",
+    "events_checked_url": "https://resilientgap.org/2026/10/12/non-ci-sono-piu-le-mezze-azioni/"
+  },
+  {
+    "name": "SITPolimi",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/sitpolimi",
+    "outcome": "Verificati albo e sito della rete SIT. Calendario con eventi passati, incluso maggio 2026; nessun appuntamento futuro attribuibile a SITPolimi verificato.",
+    "events_checked_url": "https://socialinnovationteams.org/i-nostri-eventi/"
+  },
+  {
+    "name": "E.S.N. - Erasmus Student Network",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/erasmus-student-network",
+    "outcome": "Verificati calendario, scheda Vanzago 15 novembre e Tandem Project. Inseriti entrambi. Esclusi eventi precedenti al 12 novembre. Orario Vanzago da riconfermare: testo 09:10, metadato 09:15, treno 09:30.",
+    "events_checked_url": "https://milanopolitecnico.esn.it/events"
+  },
+  {
+    "name": "POLIRAN",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/poliran",
+    "outcome": "Albo e profilo LinkedIn ufficiale consultati. Presentazione della comunità presente, ma nessun calendario pubblico corrente verificato.",
+    "events_checked_url": "https://www.linkedin.com/company/poliran"
+  },
+  {
+    "name": "Alpine Polimi",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/alpine-polimi",
+    "outcome": "Calendario: quattro appuntamenti dal 14 al 29 novembre 2026. Mancano orari e condizioni di adesione; disponibilità lasciata da verificare.",
+    "events_checked_url": "https://www.alpinepolimi.it/"
+  },
+  {
+    "name": "Scacchi Polimi",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/scacchi-polimi",
+    "outcome": "Verificati albo e gruppo Lichess del corso. Mancano date che confermino una nuova edizione; non presentato come corso aperto.",
+    "events_checked_url": "https://lichess.org/team/torneo-corso-scacchi-polimi"
+  }
+]

@@ -49,16 +49,16 @@ class ReviewEntryAdmin(admin.ModelAdmin):
 
 @admin.register(Track)
 class TrackAdmin(admin.ModelAdmin):
-    prepopulated_fields = {"slug": ["title"]}
+    readonly_fields = [field.name for field in Track._meta.fields]
 
     def has_add_permission(self, request):
-        return is_reviewer(request.user) and super().has_add_permission(request)
+        return False
 
     def has_change_permission(self, request, obj=None):
         return is_reviewer(request.user) and super().has_change_permission(request, obj)
 
     def has_delete_permission(self, request, obj=None):
-        return is_reviewer(request.user) and super().has_delete_permission(request, obj)
+        return False
 
 
 class ServerOwnerOnly:

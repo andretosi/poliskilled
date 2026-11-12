@@ -29,6 +29,14 @@
                     {% endif %}
                 {% endfor %}
             </details>
+            <details class="optional-details" {% if form.errors %}open{% endif %}>
+                <summary>Calendario, iscrizioni e requisiti <span class="muted">· facoltativi</span></summary>
+                {% for field in form.visible_fields %}
+                    {% if field.name == "period" or field.name == "ends_on" or field.name == "enrollment_deadline" or field.name == "availability" or field.name == "official_requirements" %}
+                        {% include "hub/partials/form_field.html" %}
+                    {% endif %}
+                {% endfor %}
+            </details>
             {% include "hub/partials/graph_fields.html" %}
             <div class="form-actions">
                 <button class="button" name="intent" value="submit">Invia in revisione</button>

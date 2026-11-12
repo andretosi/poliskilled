@@ -7,7 +7,6 @@ from . import views_organizations as organizations
 from . import views_progress as progress
 from . import views_proposals as proposals
 from . import views_review as review
-from . import views_tracks as tracks
 
 urlpatterns = [
     path("", catalog.home, name="home"),
@@ -19,8 +18,9 @@ urlpatterns = [
     path("enti/<int:pk>/logo/", organizations.logo, name="org_logo"),
     path("gestione/", management.overview, name="management"),
     path("gestione/persone/<int:pk>/ruolo/", management.role, name="manage_role"),
-    path("gestione/percorsi/nuovo/", tracks.edit_track, name="new_track"),
-    path("gestione/percorsi/<int:pk>/", tracks.edit_track, name="edit_track"),
+    path(
+        "gestione/enti/<int:pk>/referente/", management.organization_member, name="link_org_member"
+    ),
     path("percorsi/", catalog.tracks, name="tracks"),
     path("percorsi/<slug:slug>/", catalog.tracks, name="track"),
     path("registrati/", accounts.register, name="register"),

@@ -4,22 +4,23 @@
 {% block content %}
     <div class="page-width detail-page">
         <a class="back-link" href="{% url 'home' %}#catalogo">← Attività</a>
+        <header class="goal-heading">
+            <p class="eyebrow">{{ activity.get_kind_display }}{% if activity.program %} · {{ activity.get_program_display }}{% endif %}</p>
+            <h1 class="page-title">{{ activity.title }}</h1>
+        </header>
+        {% if activity.status == "published" %}{% include "hub/partials/goal_tree.html" %}{% endif %}
         <div class="detail-grid">
             <article>
-                <p class="eyebrow detail-eyebrow">
-                    {{ activity.get_kind_display }} · {% if activity.technology %}TECNOLOGIA{% endif %}
-                    {% if activity.community %}· PERSONE{% endif %}
-                </p>
-                <h1 class="page-title">{{ activity.title }}</h1>
+                <h2>L’attività</h2>
                 {% if activity.is_sample %}
                     <p class="notice">Esempio dimostrativo, non un’attività programmata.</p>
                 {% endif %}
                 <div class="prose">{{ activity.description|linebreaks }}</div>
-                {% if activity.tracks.exists or previous or following %}
+                {% if activity.official_requirements %}<section class="activity-paths"><h3>Requisiti indicati dalla fonte</h3><p>{{ activity.official_requirements }}</p></section>{% endif %}
+                {% if activity.preparation_notes %}<section class="activity-paths"><h3>Perché queste tappe</h3><p>{{ activity.preparation_notes }}</p><p class="small-note">Collegamenti editoriali di PoliSkilled.</p></section>{% endif %}
+                {% if following %}
                     <section class="activity-paths">
                         <h2>Collegamenti suggeriti</h2>
-                        {% for track in activity.tracks.all %}<p><a class="inline-link" href="{% url 'track' track.slug %}">{{ track.title }} ↗</a></p>{% endfor %}
-                        {% if previous %}<h3>Tappe precedenti</h3><ul>{% for item in previous %}<li><a class="inline-link" href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>{% endfor %}</ul>{% endif %}
                         {% if following %}<h3>Prosegui con</h3><ul>{% for item in following %}<li><a class="inline-link" href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>{% endfor %}</ul>{% endif %}
                         {% if activity.status != "published" %}<p class="small-note">La mappa si aggiornerà dopo l’approvazione.</p>{% endif %}
                     </section>
@@ -33,24 +34,23 @@
                         <span>
                             <b>
                             {{ org.name }}</b>
-                            <small>{% if org.verified %}Ente verificato{% else %}Ente in verifica{% endif %}</small>
+                            <small>{% if org.catalog_source_url %}Profilo da fonti pubbliche{% elif org.verified %}Ente verificato{% else %}Ente in verifica{% endif %}</small>
                         </span>
                     </div>
                 {% endfor %}
                 {% if activity.status == "published" %}
                 <button type="button" class="button full" data-progress-toggle="{{ activity.pk }}" aria-pressed="false" hidden>Segna completata +</button>
-                {% interest_button activity %}
                 <p class="small-note" data-sync-status role="status"></p>
                 {% endif %}
                 <dl class="facts">
                     {% if private %}<div><dt>Icona nella mappa</dt><dd>{{ activity.get_icon_display }}</dd></div>{% endif %}
                     {% if activity.program %}<div><dt>Programma</dt><dd>{{ activity.get_program_display }}</dd></div>{% endif %}
-                    <div>
+                    {% if activity.level %}<div>
                         <dt>Livello suggerito</dt>
                         <dd>
                             {{ activity.get_level_display }}
                         </dd>
-                    </div>
+                    </div>{% endif %}
                     <div>
                         <dt>Dove</dt>
                         <dd>
@@ -60,17 +60,20 @@
                     <div>
                         <dt>Quando</dt>
                         <dd>
-                            {% if activity.starts_at %}{{ activity.starts_at|date:"d F Y · H:i" }}{% else %}Consulta la fonte ufficiale{% endif %}
+                            {% if activity.period %}{{ activity.period }}{% elif activity.starts_at %}{{ activity.starts_at|date:"d F Y · H:i" }}{% else %}Consulta la fonte ufficiale{% endif %}
                         </dd>
                     </div>
+                    {% if activity.ends_on %}<div><dt>Fine attività</dt><dd>{{ activity.ends_on|date:"d F Y" }}</dd></div>{% endif %}
+                    {% if activity.enrollment_deadline %}<div><dt>Iscrizioni entro</dt><dd>{{ activity.enrollment_deadline|date:"d F Y · H:i" }}</dd></div>{% endif %}
                 </dl>
+                {% if activity.show_availability %}<p class="small-note">{{ activity.availability_label }}{% if activity.source_checked_on %} · Fonte verificata il {{ activity.source_checked_on|date:"d/m/Y" }}{% endif %}.</p>{% endif %}
                 {% if activity.source_url %}
                     <a class="button full"
                        href="{{ activity.source_url }}"
                        target="_blank"
                        rel="noopener noreferrer">Vai alla fonte ufficiale ↗</a>
                 {% endif %}
-                <p class="small-note">Date e iscrizioni sul sito dell’ente. Livello suggerito da PoliSkilled.</p>
+                <p class="small-note">Date, selezioni e iscrizioni fanno riferimento al sito ufficiale.</p>
                 {% if private %}
                     <hr>
                     <span class="status status-{{ activity.status }}">
@@ -143,6 +146,12 @@
                                     {% if entry.snapshot.predecessors %}<p>Tappe precedenti: {{ entry.snapshot.predecessors|join:", " }}</p>{% endif %}
                                     {% if entry.snapshot.icon %}<p>Icona: {{ entry.snapshot.icon }}</p>{% endif %}
                                     {% if entry.snapshot.program %}<p>Programma: {{ entry.snapshot.program }}</p>{% endif %}
+                                    {% if entry.snapshot.period %}<p>Periodo: {{ entry.snapshot.period }}</p>{% endif %}
+                                    {% if entry.snapshot.starts_at %}<p>Inizio: {{ entry.snapshot.starts_at }}</p>{% endif %}
+                                    {% if entry.snapshot.ends_on %}<p>Fine: {{ entry.snapshot.ends_on }}</p>{% endif %}
+                                    {% if entry.snapshot.enrollment_deadline %}<p>Scadenza: {{ entry.snapshot.enrollment_deadline }}</p>{% endif %}
+                                    {% if entry.snapshot.official_requirements %}<p>Requisiti: {{ entry.snapshot.official_requirements }}</p>{% endif %}
+                                    {% if entry.snapshot.preparation_notes %}<p>Preparazione: {{ entry.snapshot.preparation_notes }}</p>{% endif %}
                                     {% if entry.snapshot.source_url %}
                                         <p>{{ entry.snapshot.source_url }}</p>
                                     {% endif %}

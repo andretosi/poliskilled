@@ -3,7 +3,7 @@ from django.core.exceptions import PermissionDenied, ValidationError
 from django.db import transaction
 from django.db.models import Q
 
-from .models import ManagementEntry
+from .models import ManagementEntry, Organization
 from .permissions import is_reviewer
 
 
@@ -48,4 +48,29 @@ def set_manager(actor, target_id, enabled, expected):
         actor=fresh_actor,
         subject=target,
         action="Gestore aggiunto" if enabled else "Gestore rimosso",
+    )
+
+
+@transaction.atomic
+def link_organization_member(actor, organization_id, username, revision):
+    organization = Organization.objects.select_for_update().get(pk=organization_id)
+    fresh_actor = User.objects.get(pk=actor.pk)
+    if not is_reviewer(fresh_actor):
+        raise PermissionDenied
+    if str(organization.revision) != revision:
+        raise ValidationError("L’ente è cambiato. Ricarica la pagina.")
+    if not username or len(username) > 150:
+        raise ValidationError("Inserisci un nome utente valido.")
+    target = User.objects.filter(username=username, is_active=True).first()
+    if target is None:
+        raise ValidationError("Non trovo un account attivo con questo nome utente.")
+    if target.pk == actor.pk:
+        raise ValidationError("Per collegare il tuo account deve intervenire un altro gestore.")
+    if organization.members.filter(pk=target.pk).exists():
+        return
+    organization.members.add(target)
+    organization.revision += 1
+    organization.save(update_fields=["revision"])
+    ManagementEntry.objects.create(
+        actor=fresh_actor, subject=target, organization=organization, action="Referente collegato"
     )

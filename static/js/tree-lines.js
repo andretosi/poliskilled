@@ -3,10 +3,19 @@
 window.drawPoliSkilledConnections = function (map, hasCompleted) {
   const canvas = map.querySelector(".tree-canvas");
   const svg = map.querySelector(".tree-connections");
+  const elements = [...canvas.querySelectorAll("[data-node]")];
+  const levels = new Map(elements.map((node) => [
+    node.dataset.node, Number(node.closest("[data-stage]").dataset.stage),
+  ]));
+  const longTargets = elements.filter((node) => node.dataset.parents
+    .split(",").some((id) => levels.get(node.dataset.node) > levels.get(id) + 1));
+  canvas.style.setProperty(
+    "--route-gutter", `${Math.max(28, 16 + longTargets.length * 8)}px`,
+  );
   const bounds = canvas.getBoundingClientRect();
   const half = (value) => Math.round(value * 2) / 2;
   // Measure first, then replace the SVG in one write.
-  const nodes = [...canvas.querySelectorAll("[data-node]")].map((node) => {
+  const nodes = elements.map((node) => {
     const emblem = node.querySelector(".node-emblem").getBoundingClientRect();
     const trigger = node
       .querySelector(".skill-trigger")

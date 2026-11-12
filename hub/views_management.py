@@ -7,7 +7,7 @@ from django.db.models import Q
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_GET, require_POST
 
-from .management_service import managers, set_manager
+from .management_service import link_organization_member, managers, set_manager
 from .models import Activity, ManagementEntry, Organization
 from .permissions import is_reviewer
 
@@ -43,10 +43,11 @@ def overview(request):
             "people": people,
             "query": query,
             "pending_count": Activity.objects.filter(status="pending").count(),
-            "organizations": Organization.objects.filter(
-                verified=False, review_reason=""
-            ).prefetch_related("members"),
-            "all_organizations": Organization.objects.all(),
+            "organizations": Organization.objects.filter(verified=False, review_reason="")
+            .filter(Q(catalog_source_url="") | Q(members__isnull=False))
+            .distinct()
+            .prefetch_related("members"),
+            "all_organizations": Organization.objects.prefetch_related("members"),
             "recent_actions": ManagementEntry.objects.select_related(
                 "actor", "subject", "organization"
             )[:12],
@@ -71,6 +72,25 @@ def role(request, pk):
         messages.error(request, error.messages[0])
     else:
         messages.success(request, "Ruolo aggiornato.")
+    return redirect("management")
+
+
+@login_required
+@permission_required("hub.review_activity", raise_exception=True)
+@require_POST
+def organization_member(request, pk):
+    get_object_or_404(Organization, pk=pk)
+    try:
+        link_organization_member(
+            request.user,
+            pk,
+            request.POST.get("username", "").strip(),
+            request.POST.get("revision", ""),
+        )
+    except ValidationError as error:
+        messages.error(request, error.messages[0])
+    else:
+        messages.success(request, "Referente collegato. La verifica dell’ente resta separata.")
     return redirect("management")
 
 

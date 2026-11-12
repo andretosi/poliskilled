@@ -1,0 +1,667 @@
+[
+  {
+    "name": "Catalogo attivo italiano",
+    "url": "https://www.polimi.it/formazione/passion-in-action",
+    "outcome": "20 schede dettaglio lette. 17 attività uniche attuali incluse, 2 concluse escluse, 1 duplicato Smart Campus raggruppato."
+  },
+  {
+    "name": "Archivio ufficiale completo",
+    "url": "https://dynamicpoli.polimi.it/formazione/passion-in-action?tx_didatticainnovativa_innovativeteaching%5Baction%5D=list&tx_didatticainnovativa_innovativeteaching%5Barchived%5D=S&tx_didatticainnovativa_innovativeteaching%5Bcontroller%5D=InnovativeTeaching&tx_didatticainnovativa_innovativeteaching%5Bscroll%5D=true&cHash=a894005c150624e15c2d7d275833391c",
+    "outcome": "868 schede enumerate in una risposta senza paginazione. Individuate e lette le 110 schede con almeno una data di iscrizione nel 2026. 18 ulteriori attività attuali incluse; le altre risultano concluse o duplicate. I dettagli anteriori al 2026 non sono tutti stati riesaminati."
+  },
+  {
+    "name": "Mirror ufficiale",
+    "url": "https://dynamicpoli.polimi.it/formazione/passion-in-action",
+    "outcome": "Consultato per confronto e accesso all’archivio. Alcuni risultati indicizzati conservano vecchi badge o scadenze: prevalgono contenuto live e date esplicite."
+  },
+  {
+    "name": "LUOGHI EDUCATIVI ACCOGLIENTI COME APPROCCIO PEDAGOGICO DI SOSTEGNO ALLE FAMIGLIE.",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/luoghi-educativi-accoglienti-come-approccio-pedagogico-di-sostegno-alle-famiglie",
+    "outcome": "Esclusa: workshop di aprile–maggio 2025 ancora presente nell’indice attivo."
+  },
+  {
+    "name": "GESTIONE DELLO STRESS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/gestione-dello-stress-17",
+    "outcome": "Esclusa: edizione conclusa il 26 febbraio 2026, ancora presente nell’indice attivo."
+  },
+  {
+    "name": "CORTALP_CONCORSO E FESTIVAL DEL CORTOMETRAGGIO DI MONTAGNA MILANO \"MANLIO ARMELLINI\" 5A EDIZIONE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/cortalp-concorso-e-festival-del-cortometraggio-di-montagna-milano-34manlio-armellini34-5a-edizione",
+    "outcome": "Inclusa come pia-cortalp-2026; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "CREATIVITÀ E INNOVAZIONE: POSSIAMO IMPARARE AD ESSERE CREATIVI?",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/creativita-e-innovazione-possiamo-imparare-ad-essere-creativi-12",
+    "outcome": "Inclusa come pia-creativita-2026; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "EMPLOYABILITY",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/employability-7",
+    "outcome": "Inclusa come pia-employability-2026; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "TECNOLOGIE PER IL SUONO E L'AUDIO IN AMBITO AUTOMOTIVE: DALLA RICERCA ALL'APPLICAZIONE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/tecnologie-per-il-suono-e-l39audio-in-ambito-automotive-dalla-ricerca-all39applicazione",
+    "outcome": "Inclusa come pia-audio-automotive-2026; iscrizioni chiuse alla verifica."
+  },
+  {
+    "name": "BE3I – SVILUPPO PERSONALE E CONSAPEVOLEZZA PER IL PERCORSO UNIVERSITARIO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/be3i-sviluppo-personale-e-consapevolezza-per-il-percorso-universitario",
+    "outcome": "Inclusa come pia-be3i-2026; iscrizioni chiuse alla verifica."
+  },
+  {
+    "name": "MI PIACE QUESTO MESTIERE ... CORSO DI ORIENTAMENTO AL LAVORO DI ARCHITETTO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/mi-piace-questo-mestiere-corso-di-orientamento-al-lavoro-di-architetto",
+    "outcome": "Inclusa come pia-mestiere-architetto-2027; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "IDENTIKIT DEL CONSULENTE: RISOLVI IL CASO TECNICO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/identikit-del-consulente-risolvi-il-caso-tecnico-13",
+    "outcome": "Inclusa come pia-identikit-consulente-2026; iscrizioni chiuse alla verifica."
+  },
+  {
+    "name": "THINK, CODE, DRIVE: THE ELECTRIC VEHICLE EFFICIENCY CHALLENGE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/think-code-drive-the-electric-vehicle-efficiency-challenge-1",
+    "outcome": "Inclusa come pia-think-code-drive-2027; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "CORSO DI FINANZA PERSONALE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/corso-di-finanza-personale-1",
+    "outcome": "Inclusa come pia-finanza-personale-2027; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "STARTUP 101-DALL'IDEA ALL'AZIONE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/startup-101-dallidea-allazione-16",
+    "outcome": "Inclusa come pia-startup101-gen-2027; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "IDEARE, INVENTARE, INNOVARE: DALLE IDEE AI PROTOTIPI: PASSI VERSO UN CAMPUS PIÙ CONNESSO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/ideare-inventare-innovare-dalle-idee-ai-prototipi-passi-verso-un-campus-piu-connesso",
+    "outcome": "Inclusa come pia-smart-campus-2026; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "IDEARE, INVENTARE, INNOVARE: DALLE IDEE AI PROTOTIPI: PASSI VERSO UN CAMPUS PIÙ CONNESSO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/ideare-inventare-innovare-dalle-idee-ai-prototipi-passi-verso-un-campus-piu-connesso-1",
+    "outcome": "Raggruppata con pia-smart-campus-2026; non creata una falsa fase sequenziale."
+  },
+  {
+    "name": "INTRODUZIONE AL DESIGN FPGA CON AMD",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduzione-al-design-fpga-con-amd",
+    "outcome": "Inclusa come pia-fpga-amd-2026; iscrizioni chiuse alla verifica."
+  },
+  {
+    "name": "SAFE PROGRAMMING WITH RUST",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/safe-programming-with-rust",
+    "outcome": "Inclusa come pia-rust-2026; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "PAGANI SIGNATURE INTERFACES. DESIGNING TANGIBLE HUMAN–MACHINE EXPERIENCES",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/pagani-signature-interfaces-designing-tangible-human-machine-experiences",
+    "outcome": "Inclusa come pia-pagani-interfaces-2026; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "STARTUP 101-DALL'IDEA ALL'AZIONE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/startup-101-dallidea-allazione-17",
+    "outcome": "Inclusa come pia-startup101-giu-2027; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "DESIGN EXPLORER_2026/2027",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design-explorer-20262027",
+    "outcome": "Inclusa come pia-design-explorer-2026; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "POLIMI PRIDE // CALL FOR CONCEPTS. NUOVI SISTEMI DI IDENTITÀ VISIVA.",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/polimi-pride-call-for-concepts-nuovi-sistemi-di-identita-visiva",
+    "outcome": "Inclusa come pia-polimi-pride-2027; iscrizioni aperte alla verifica."
+  },
+  {
+    "name": "ELEMENTI DI PROGETTAZIONE PER IL DIMENSIONAMENTO DEGLI AEROPORTI",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/elementi-di-progettazione-per-il-dimensionamento-degli-aeroporti",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Aprile 2026."
+  },
+  {
+    "name": "CORSO DI FINANZA PERSONALE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/corso-di-finanza-personale",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Gennaio 2025 a Febbraio 2026."
+  },
+  {
+    "name": "STARTUP 101-DALL'IDEA ALL'AZIONE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/startup-101-dallidea-allazione-14",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Gennaio 2026 a Gennaio 2026."
+  },
+  {
+    "name": "ELEMENTI D'IMPRESA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/elementi-dimpresa-9",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Aprile 2026."
+  },
+  {
+    "name": "CIRCLER: CIRCULAR ECONOMY TRANSITION MANAGER",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/circler-circular-economy-transition-manager",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Dicembre 2025 a Aprile 2026."
+  },
+  {
+    "name": "OLIMPIADI INVERNALI DI MILANO-CORTINA 2026: SPORT DESIGN AND MANAGEMENT",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/olimpiadi-invernali-di-milano-cortina-2026-sport-design-and-management",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Gennaio 2026 a Febbraio 2026."
+  },
+  {
+    "name": "GESTIONE DELLO STRESS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/gestione-dello-stress-16",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "STARTUP 101-DALL'IDEA ALL'AZIONE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/startup-101-dallidea-allazione-15",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Giugno 2026 a Giugno 2026."
+  },
+  {
+    "name": "PITCH&TALK - IMPARARE A COSTRUIRE PRESENTAZIONI EFFICACI PER RAGGIUNGERE I PROPRI OBIETTIVI",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/pitchtalk-imparare-a-costruire-presentazioni-efficaci-per-raggiungere-i-propri-obiettivi-17",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Aprile 2026."
+  },
+  {
+    "name": "CREATIVITÀ E INNOVAZIONE: POSSIAMO IMPARARE AD ESSERE CREATIVI?",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/creativita-e-innovazione-possiamo-imparare-ad-essere-creativi-11",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "EMPLOYABILITY",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/employability-6",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "FIABA 4.0",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/fiaba-40",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Febbraio 2026 a Maggio 2026."
+  },
+  {
+    "name": "PERCHÉ UTILIZZARE UN GIS? LA CONSAPEVOLEZZA DEL \"DOVE\"",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/perche-utilizzare-un-gis-la-consapevolezza-del-dove-2",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Febbraio 2026 a Marzo 2026."
+  },
+  {
+    "name": "THINK, CODE, DRIVE: THE ELECTRIC VEHICLE EFFICIENCY CHALLENGE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/think-code-drive-the-electric-vehicle-efficiency-challenge",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Maggio 2026."
+  },
+  {
+    "name": "BIODESIGN 2.0 – PROGETTARE CON E PER L’ECOSISTEMA MARINO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/biodesign-20-progettare-con-e-per-lecosistema-marino",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Febbraio 2026 a Giugno 2026."
+  },
+  {
+    "name": "NEW URBAN AI.NVIRONMENTS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/new-urban-ainvironments-1",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Giugno 2026."
+  },
+  {
+    "name": "IL TRIANGOLO DELLA SOSTENIBILITÀ: INTERAZIONI TRA POLITICHE PUBBLICHE, SOCIETÀ CIVILE E INNOVAZIONE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/il-triangolo-della-sostenibilita-interazioni-tra-politiche-pubbliche-societa-civile-e-innovazione",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Aprile 2026."
+  },
+  {
+    "name": "I MAESTRI. LEZIONI DI DESIGN.",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/i-maestri-lezioni-di-design",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Maggio 2026."
+  },
+  {
+    "name": "INTRODUZIONE ALLA STABILITÀ FLUIDODINAMICA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduzione-alla-stabilita-fluidodinamica",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Marzo 2026."
+  },
+  {
+    "name": "TAARP: DIDATTICA PARTECIPATIVA SU PRINCIPI DI SMONTAGGIO/RIMONTAGGIO E PROGETTO MODULARE - CIRCOLARE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/taarp-didattica-partecipativa-su-principi-di-smontaggiorimontaggio-e-progetto-modulare-circolare",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Maggio 2026."
+  },
+  {
+    "name": "VERSION CONTROL CON GIT",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/version-control-con-git-2",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Aprile 2026."
+  },
+  {
+    "name": "IDENTIKIT DEL CONSULENTE: RISOLVI IL CASO TECNICO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/identikit-del-consulente-risolvi-il-caso-tecnico-10",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Marzo 2026."
+  },
+  {
+    "name": "SAMSUNG INNOVATION CAMPUS 2026",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/samsung-innovation-campus-2026",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Giugno 2026."
+  },
+  {
+    "name": "WS PER LA REALIZZAZIONE DEI COSTUMI PER L'EVENTO POLIDRAG.",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/ws-per-la-realizzazione-dei-costumi-per-l39evento-polidrag-1",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Maggio 2026."
+  },
+  {
+    "name": "WEAR THE CITY: URBAN MATERIALS FOR CONTEMPORARY FASHION DESIGN",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/wear-the-city-urban-materials-for-contemporary-fashion-design",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Febbraio 2026 a Marzo 2026."
+  },
+  {
+    "name": "STORIE DA TOCCARE DARE VITA A LIBRI INCLUSIVI TRA NARRAZIONE, GRAFICA E MULTISENSORIALITÀ",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/storie-da-toccare-dare-vita-a-libri-inclusivi-tra-narrazione-grafica-e-multisensorialita",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Maggio 2026."
+  },
+  {
+    "name": "CORSO PRATICO DI DIVULGAZIONE SCIENTIFICA: PARLARE DI SCIENZA ATTRAVERSO I VIDEO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/corso-pratico-di-divulgazione-scientifica-parlare-di-scienza-attraverso-i-video",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Maggio 2026."
+  },
+  {
+    "name": "PASSODUE: CAPIRE IL PROPRIO CARATTERE UNICO ATTRAVERSO L'ENNEAGRAMMA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/passodue-capire-il-proprio-carattere-unico-attraverso-l39enneagramma-2",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Marzo 2026."
+  },
+  {
+    "name": "DESIGN+FILOSOFIA M. GANCITANO A. COLAMEDICI DI TLON: TALENTO E VOCAZIONE NELL'ERA DELL'IPNCRAZIA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design43filosofia-m-gancitano-a-colamedici-di-tlon-talento-e-vocazione-nell39era-dell39ipncrazia",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Marzo 2026."
+  },
+  {
+    "name": "PITCH&MATCH",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/pitchampmatch",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Luglio 2026."
+  },
+  {
+    "name": "INTERACTIVE WORKSHOP: EVALUATING & IMPROVING VR LEARNING SCENARIOS FOR THE WEF NEXUS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/interactive-workshop-evaluating-amp-improving-vr-learning-scenarios-for-the-wef-nexus",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Marzo 2026."
+  },
+  {
+    "name": "ELEMENTI DI RETI NEURALI PER MICROCONTROLLORI E EDGE AI",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/elementi-di-reti-neurali-per-microcontrollori-e-edge-ai",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Marzo 2026."
+  },
+  {
+    "name": "3D FOR ROBOTICS: CORSO DI FUSION 360 PER PRINCIPIANTI",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/3d-for-robotics-corso-di-fusion-360-per-principianti",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Marzo 2026."
+  },
+  {
+    "name": "PROGETTAZIONE DI STRUTTURE SOTTOPOSTE A CARICHI DINAMICI TRAMITE METODI DI DEEP LEARNING",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/progettazione-di-strutture-sottoposte-a-carichi-dinamici-tramite-metodi-di-deep-learning",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Giugno 2026."
+  },
+  {
+    "name": "MIDEA DESIGN WORKSHOP: DESIGN DEVELOPMENT - ELETTRODOMESTICI PER IL MERCATO GLOBALE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/midea-design-workshop-design-development-elettrodomestici-per-il-mercato-globale",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Maggio 2026."
+  },
+  {
+    "name": "ENABLE: SHAPING SPACES THAT HEAL",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/enable-shaping-spaces-that-heal",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Marzo 2026."
+  },
+  {
+    "name": "PROGETTAZIONE RIGENERATIVA, SISTEMI E COMPLESSITA'",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/progettazione-rigenerativa-sistemi-e-complessita-2",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Maggio 2026."
+  },
+  {
+    "name": "SUMMER SCHOOL - PROGETTAZIONE E REALIZZAZIONE DI RILIEVI PER IL CONTROLLO DEL TERRITORIO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/summer-school-progettazione-e-realizzazione-di-rilievi-per-il-controllo-del-territorio-6",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Luglio 2026 a Luglio 2026."
+  },
+  {
+    "name": "AI-BASE FORECASTING OF COMPLEX TIMESERIES: A TUTORIAL WITH HANDS-ON ARTIFICIAL AND REAL-WORLD DATA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/ai-base-forecasting-of-complex-timeseries-a-tutorial-with-hands-on-artificial-and-real-world-data",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Aprile 2026."
+  },
+  {
+    "name": "INTERNI – FUORI SALONE REELS 2026",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/interni-fuori-salone-reels-2026",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Aprile 2026."
+  },
+  {
+    "name": "E.REPORTER FUORISALONE.IT",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/ereporter-fuorisaloneit",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Maggio 2026."
+  },
+  {
+    "name": "FPGA101: FROM RECONFIGURABLE TO DOMAIN-SPECIFIC SYSTEMS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/fpga101-from-reconfigurable-to-domain-specific-systems-2",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Maggio 2026."
+  },
+  {
+    "name": "BIOMEDICAL COMPUTER VISION COURSE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/biomedical-computer-vision-course-5",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Aprile 2026."
+  },
+  {
+    "name": "IDEARE, INVENTARE, INNOVARE: DALLE IDEE AI PROTOTIPI",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/ideare-inventare-innovare-dalle-idee-ai-prototipi-2",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Giugno 2026."
+  },
+  {
+    "name": "GRAPH MACHINE LEARNING COURSE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/graph-machine-learning-course-1",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "DESIGNING INTERNAL CULTURES WHERE SUSTAINABILITY BECOMES POWER",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/designing-internal-cultures-where-sustainability-becomes-power",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Marzo 2026."
+  },
+  {
+    "name": "DESIGN AND DEVELOPMENT OF PASSIVE ACOUSTIC DEVICES IN ROOM ACOUSTICS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design-and-development-of-passive-acoustic-devices-in-room-acoustics",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Giugno 2026."
+  },
+  {
+    "name": "ROBOTICS ACADEMY: UN CORSO SUI ROBOT MOBILI AUTONOMI",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/robotics-academy-un-corso-sui-robot-mobili-autonomi",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2026 a Aprile 2026."
+  },
+  {
+    "name": "WEARABLE COMPUTING: THE ENHANCE HACKATON",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/wearable-computing-the-enhance-hackaton",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Maggio 2026."
+  },
+  {
+    "name": "DESIGN + MAGIA: FERDINANDO BUSCEMA ALLA SCOPERTA DELLA \"MERAVIGLIA\" INCROCIO TRA ARTE E SCIENZA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design-43-magia-ferdinando-buscema-alla-scoperta-della-34meraviglia34-incrocio-tra-arte-e-scienza-1",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Aprile 2026."
+  },
+  {
+    "name": "SALONE NEXT GENERATION. STORIE DI LAVORO RACCONTATE DA CHI LO FA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/salone-next-generation-storie-di-lavoro-raccontate-da-chi-lo-fa",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Aprile 2026."
+  },
+  {
+    "name": "MAPPARE I CONFLITTI URBANI: APPROCCIO PARTECIPATIVO DI VISUALIZZAZIONE E AZIONE SUI FOOD SYSTEM",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/mappare-i-conflitti-urbani-approccio-partecipativo-di-visualizzazione-e-azione-sui-food-system",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "YOUR 2030. A SHARED ENGAGEMENT FOR A COMMON FUTURE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/your-2030-a-shared-engagement-for-a-common-future-2",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Marzo 2025 a Maggio 2026."
+  },
+  {
+    "name": "TO PRINT OR NOT TO PRINT: A COMPREHENSIVE 3D PRINTING COURSE FOR ENGINEERING APPLICATIONS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/to-print-or-not-to-print-a-comprehensive-3d-printing-course-for-engineering-applications",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Maggio 2026."
+  },
+  {
+    "name": "LA SCIENZA CREATIVA DIETRO UN CHATBOT NUTRIZIONALE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/la-scienza-creativa-dietro-un-chatbot-nutrizionale",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Maggio 2026."
+  },
+  {
+    "name": "DESIGN IN AN AGE OF ACCELERATION. INTERNI MATERIAE WITH AUDI TALK",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design-in-an-age-of-acceleration-interni-materiae-with-audi-talk",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Aprile 2026."
+  },
+  {
+    "name": "UNLOCKING SYSTEMS - CONNECTING ESTABLISHED AND EVOLVING ECONOMIES",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/unlocking-systems-connecting-established-and-evolving-economies",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Giugno 2026."
+  },
+  {
+    "name": "INTRODUZIONE ALLA LUNAR ECONOMY",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduzione-alla-lunar-economy",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Maggio 2026."
+  },
+  {
+    "name": "CITTÀ BENE COMUNE 2026. LEGGERE, DISCUTERE, RACCONTARE LA CITTÀ",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/citta-bene-comune-2026-leggere-discutere-raccontare-la-citta",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "IDENTIKIT DEL CONSULENTE: RISOLVI IL CASO TECNICO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/identikit-del-consulente-risolvi-il-caso-tecnico-11",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "PEER LEADERSHIP & COMMUNICATION",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/peer-leadership-amp-communication",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Aprile 2026."
+  },
+  {
+    "name": "CONTRASTARE E RICONOSCERE LA VIOLENZA DIGITALE DI GENERE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/contrastare-e-riconoscere-la-violenza-digitale-di-genere",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Giugno 2026."
+  },
+  {
+    "name": "PYTHON: FROM FUNDAMENTALS TO ML, NEURAL NETWORKS, AND SECURE FEDERATED LEARNING",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/python-from-fundamentals-to-ml-neural-networks-and-secure-federated-learning",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Giugno 2026."
+  },
+  {
+    "name": "PLASTIC FOR PLANTS. DAI RIFIUTI PLASTICI ALLA SENSIBILIZZAZIONE ECOLOGICA ATTRAVERSO IL DESIGN",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/plastic-for-plants-dai-rifiuti-plastici-alla-sensibilizzazione-ecologica-attraverso-il-design",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Luglio 2026."
+  },
+  {
+    "name": "DESIGN+LETTERATURA – MATTEO B. BIANCHI: LA SCRITTURA AUTOBIOGRAFICA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design43letteratura-matteo-b-bianchi-la-scrittura-autobiografica",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Aprile 2026."
+  },
+  {
+    "name": "DESIGN+INTELLIGENZA VEGETALE – MONICA GAGLIANO: INTERDIPENDENZA: PENSARE E AGIRE RELAZIONALMENTE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design43intelligenza-vegetale-monica-gagliano-interdipendenza-pensare-e-agire-relazionalmente",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Aprile 2026 a Aprile 2026."
+  },
+  {
+    "name": "LEARNING LAB DATA CENTER",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/learning-lab-data-center",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Luglio 2026 a Luglio 2026."
+  },
+  {
+    "name": "RILIEVO DIGITALE PER BORGHI STORICI IN EPIRO (GRECIA)",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/rilievo-digitale-per-borghi-storici-in-epiro-grecia",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Luglio 2026 a Luglio 2026."
+  },
+  {
+    "name": "INTEGRAZIONE DI MODELLI BASATI SU EQUAZIONI DIFFERENZIALI E RETI NEURALI",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/integrazione-di-modelli-basati-su-equazioni-differenziali-e-reti-neurali",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Giugno 2026 a Luglio 2026."
+  },
+  {
+    "name": "SIGNAL AND POWER INTEGRITY OF HIGH-SPEED PRINTED CIRCUIT BOARDS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/signal-and-power-integrity-of-high-speed-printed-circuit-boards-7",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "DESIGN + TEATRO CON CLAUDIO MARCONI: PUBLIC SPEAKING",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design-43-teatro-con-claudio-marconi-public-speaking-2",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "DESIGN+CINEMA:THOMAS TORELLI: PROIEZIONE DEL DOCUMENTARIO E INCONTRO CON IL REGISTRA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design43cinemathomas-torelli-proiezione-del-documentario-e-incontro-con-il-registra",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "COMMUNITREE. A LIVING NETWORK OF RELATIONSHIPS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/communitree-a-living-network-of-relationships",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Giugno 2026 a Giugno 2026."
+  },
+  {
+    "name": "CITY BOOTCAMP MILAN - RETHINKING CITIES BEYOND THE HUMAN",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/city-bootcamp-milan-rethinking-cities-beyond-the-human",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Luglio 2026 a Luglio 2026."
+  },
+  {
+    "name": "D&E DIALOGUES: STEERING COMMITTEE CONVERSATIONS FOR FUTURE DESIGNERS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/dampe-dialogues-steering-committee-conversations-for-future-designers",
+    "outcome": "Raggruppata con pia-design-engineering-dialogues-2026: stessa iniziativa, preferita scheda con calendario autunnale esplicito."
+  },
+  {
+    "name": "TUTELARE L’INNOVAZIONE SOSTENIBILE PER IL MADE IN ITALY",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/tutelare-linnovazione-sostenibile-per-il-made-in-italy",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Maggio 2026 a Maggio 2026."
+  },
+  {
+    "name": "DESIGNING INTELLIGENT EXPERIENCES: DIALOGO TRA RICERCA E INDUSTRIA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/designing-intelligent-experiences-dialogo-tra-ricerca-e-industria",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Giugno 2026 a Giugno 2026."
+  },
+  {
+    "name": "XI'AN JIAOTONG UNIVERSITY INTERNATIONAL SUMMER SCHOOL",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/xian-jiaotong-university-international-summer-school-1",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Agosto 2026 a Settembre 2026."
+  },
+  {
+    "name": "SPOSTARSI FRA TERRITORIO E CITTÀ. UNA NUOVA RELAZIONE.",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/spostarsi-fra-territorio-e-citta-una-nuova-relazione",
+    "outcome": "Inclusa come pia-commuting-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "DESIGNMIND 2026 – NON SI PUÒ! UNA SCINTILLA NEL BUIO.",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/designmind-2026-non-si-puo-una-scintilla-nel-buio",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Luglio 2026 a Luglio 2026."
+  },
+  {
+    "name": "BODIES IN PUBLIC",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/bodies-in-public",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Settembre 2026 a Settembre 2026."
+  },
+  {
+    "name": "DESIGN EXPLORER",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design-explorer-2",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Novembre 2025 a Dicembre 2025."
+  },
+  {
+    "name": "IDENTIKIT DEL CONSULENTE: RISOLVI IL CASO TECNICO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/identikit-del-consulente-risolvi-il-caso-tecnico-12",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Settembre 2026 a Ottobre 2026."
+  },
+  {
+    "name": "0 > 1 LAB",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/0-gt-1-lab",
+    "outcome": "Inclusa come pia-zero-one-lab-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "MOTRIDAL DESIGN CHALLENGE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/motridal-design-challenge-1",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Ottobre 2026 a Ottobre 2026."
+  },
+  {
+    "name": "L’INGEGNERIA GEOINFORMATICA È IL PERCORSO GIUSTO PER I TUOI INTERESSI E LE TUE CAPACITÀ?",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/lingegneria-geoinformatica-e-il-percorso-giusto-per-i-tuoi-interessi-e-le-tue-capacita",
+    "outcome": "Inclusa come pia-geoinformatica-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "COOPERAZIONE PER LO SVILUPPO NELL’ERA DELL’AGENDA 2030: DALLA TEORIA ALLA PRATICA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/cooperazione-per-lo-sviluppo-nellera-dellagenda-2030-dalla-teoria-alla-pratica",
+    "outcome": "Inclusa come pia-cooperazione-2030-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "INTRODUZIONE ALLA RELATIVITÀ RISTRETTA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduzione-alla-relativita-ristretta-1",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Settembre 2026 a Ottobre 2026."
+  },
+  {
+    "name": "MECCANICA QUANTISTICA: UNA BREVE INTRODUZIONE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/meccanica-quantistica-una-breve-introduzione",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Settembre 2026 a Ottobre 2026."
+  },
+  {
+    "name": "GABRIELLA GREISON - FISICA PER INQUIETI",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/gabriella-greison-fisica-per-inquieti",
+    "outcome": "Inclusa come pia-fisica-inquieti-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "THE AI–NETWORK LOOP: INFRASTRUCTURE, TECHNOLOGY, STRATEGY, AND ECONOMY",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/the-ai-network-loop-infrastructure-technology-strategy-and-economy",
+    "outcome": "Inclusa come pia-ai-network-loop-2026; iscrizioni chiuse, conclusione non verificabile."
+  },
+  {
+    "name": "GESTIONE DELLO STRESS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/gestione-dello-stress-18",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Settembre 2026 a Ottobre 2026."
+  },
+  {
+    "name": "ELEMENTI D'IMPRESA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/elementi-dimpresa-10",
+    "outcome": "Esclusa: ultima lezione pubblicata il 4 novembre 2026."
+  },
+  {
+    "name": "INTRODUCTION TO THE COMPUTATION OF ELECTROMAGNETIC FIELDS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduction-to-the-computation-of-electromagnetic-fields-1",
+    "outcome": "Inclusa come pia-campi-elettromagnetici-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "LABORATORIO DI SISTEMI DI AUTOMAZIONE INDUSTRIALE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/laboratorio-di-sistemi-di-automazione-industriale-1",
+    "outcome": "Esclusa: ultima lezione pubblicata l’11 novembre 2026."
+  },
+  {
+    "name": "FPGA101: FROM RECONFIGURABLE TO DOMAIN-SPECIFIC SYSTEMS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/fpga101-from-reconfigurable-to-domain-specific-systems-3",
+    "outcome": "Inclusa come pia-fpga101-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "WORKSHOP \"STUDENTI IN CANTIERE\"",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/workshop-34studenti-in-cantiere34",
+    "outcome": "Inclusa come pia-studenti-cantiere-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "GESTIONE DELLO STRESS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/gestione-dello-stress-19",
+    "outcome": "Inclusa come pia-stress-nov-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "CONCORSO PROGETTARE FUTURI POSSIBILI - FONDAZIONE FRANCO ALBINI",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/concorso-progettare-futuri-possibili-fondazione-franco-albini",
+    "outcome": "Esclusa dal catalogo corrente: consegna del progetto il 3 novembre. Le fasi successive sono riservate ai tre selezionati; non è inventato un nuovo bando."
+  },
+  {
+    "name": "LA CITTÀ-LAGO. PROSSIMITÀ E TRANSIZIONE ECOLOGICA IN UN TERRITORIO DELL'ITALIA DI MEZZO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/la-citta-lago-prossimita-e-transizione-ecologica-in-un-territorio-dell39italia-di-mezzo",
+    "outcome": "Esclusa dal catalogo attuale: periodo pubblicato Settembre 2026 a Ottobre 2026."
+  },
+  {
+    "name": "DIVENTARE DESIGNER (ED. 3)",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/diventare-designer-ed-3",
+    "outcome": "Inclusa come pia-diventare-designer-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "DESIGN&ENGINEERING DIALOGUES: STEERING COMMITTEE CONVERSATIONS FOR FUTURE DESIGNERS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/designampengineering-dialogues-steering-committee-conversations-for-future-designers",
+    "outcome": "Inclusa come pia-design-engineering-dialogues-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "PITCH&MATCH",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/pitchampmatch-1",
+    "outcome": "Inclusa come pia-pitch-match-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "CIRCULAR BY DESIGN WORKSHOP BY ARC'TERYX",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/circular-by-design-workshop-by-arc39teryx",
+    "outcome": "Inclusa come pia-arcteryx-circular-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "FORM FOLLOWS FEMINISM",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/form-follows-feminism",
+    "outcome": "Inclusa come pia-form-follows-feminism-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "VISTI O INVISIBILI? STUDENTI E DUE RUOTE",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/visti-o-invisibili-studenti-e-due-ruote",
+    "outcome": "Esclusa: presenza a EICMA conclusa l’8 novembre 2026. Il futuro workshop è solo annunciato, non creato come attività autonoma."
+  },
+  {
+    "name": "INTRODUCTION TO MATLAB FOR SECOND YEAR STUDENTS",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduction-to-matlab-for-second-year-students-1",
+    "outcome": "Inclusa come pia-matlab-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "DESTINAZIONE IMPRESA",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/destinazione-impresa-6",
+    "outcome": "Esclusa: ultima sessione conclusa il 12 novembre 2026 alle 14:00, prima della verifica."
+  },
+  {
+    "name": "PYTHON: FROM FUNDAMENTALS TO ML, NEURAL NETWORKS, AND SECURE FEDERATED LEARNING",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/python-from-fundamentals-to-ml-neural-networks-and-secure-federated-learning-1",
+    "outcome": "Inclusa come pia-python-ai-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  },
+  {
+    "name": "MOBILITY FUTURES. OGGETTI, SERVIZI E SCENARI OLTRE I MEZZI DI TRASPORTO",
+    "url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/mobility-futures-oggetti-servizi-e-scenari-oltre-i-mezzi-di-trasporto",
+    "outcome": "Inclusa come pia-mobility-futures-2026; iscrizioni chiuse, corso in corso o di prossimo avvio."
+  }
+]

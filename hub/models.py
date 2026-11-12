@@ -7,6 +7,7 @@ from django.core.validators import URLValidator
 from django.db import models
 from django.db.models.functions import Lower
 from django.urls import reverse
+from django.utils import timezone
 
 https_url = URLValidator(schemes=["https"])
 
@@ -20,12 +21,16 @@ def logo_path(instance, filename):
 
 
 class Organization(models.Model):
+    catalog_key = models.CharField(max_length=40, unique=True, null=True, editable=False)
     name = models.CharField("nome", max_length=120, unique=True)
     normalized_name = models.CharField(max_length=360, unique=True, editable=False)
     short_name = models.CharField("sigla", max_length=24, blank=True)
     description = models.TextField("descrizione", blank=True)
     website = models.URLField("sito ufficiale", blank=True, validators=[https_url])
     verified = models.BooleanField("verificato", default=False)
+    catalog_source_url = models.URLField(
+        "fonte del profilo pubblico", blank=True, max_length=1000, validators=[https_url]
+    )
     logo = models.ImageField("logo", upload_to=logo_path, blank=True)
     review_reason = models.TextField("motivazione", blank=True, max_length=1500)
     revision = models.PositiveIntegerField("versione", default=0)
@@ -79,8 +84,13 @@ class Activity(models.Model):
     )
     level = models.PositiveSmallIntegerField(
         "livello",
-        default=1,
-        choices=[(1, "Esplora"), (2, "Approfondisci"), (3, "Mettiti alla prova")],
+        default=0,
+        choices=[
+            (0, "Non indicato"),
+            (1, "Esplora"),
+            (2, "Approfondisci"),
+            (3, "Mettiti alla prova"),
+        ],
     )
     tracks = models.ManyToManyField(
         "Track", through="TrackStep", related_name="activities", blank=True, verbose_name="percorsi"
@@ -112,8 +122,29 @@ class Activity(models.Model):
     organizations = models.ManyToManyField(Organization, related_name="activities")
     creator = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
     image = models.ImageField("immagine", upload_to=cover_path, blank=True)
-    source_url = models.URLField("link di riferimento", blank=True, validators=[https_url])
+    source_url = models.URLField(
+        "link di riferimento", blank=True, max_length=1000, validators=[https_url]
+    )
     starts_at = models.DateTimeField("data e ora", null=True, blank=True)
+    ends_on = models.DateField("fine attività", null=True, blank=True)
+    enrollment_deadline = models.DateTimeField("scadenza iscrizioni", null=True, blank=True)
+    period = models.CharField("periodo", max_length=250, blank=True)
+    availability = models.CharField(
+        "disponibilità",
+        max_length=12,
+        default="unknown",
+        choices=[
+            ("open", "Iscrizioni aperte"),
+            ("closed", "Iscrizioni chiuse"),
+            ("ongoing", "Attività continuativa"),
+            ("unknown", "Consulta la fonte"),
+        ],
+    )
+    source_checked_on = models.DateField("fonte verificata il", null=True, blank=True)
+    official_requirements = models.TextField("requisiti della fonte", blank=True, max_length=2000)
+    preparation_notes = models.TextField(
+        "motivazione delle tappe consigliate", blank=True, max_length=1500
+    )
     location = models.CharField("dove", max_length=120, blank=True)
     is_sample = models.BooleanField("esempio dimostrativo", default=False)
     status = models.CharField(max_length=12, choices=Status, default=Status.DRAFT)
@@ -132,6 +163,27 @@ class Activity(models.Model):
     @property
     def icon_name(self):
         return self.icon or {"project": "flag", "event": "people", "course": "circuit"}[self.kind]
+
+    @property
+    def color_index(self):
+        return (self.pk - 1) % 6
+
+    @property
+    def availability_label(self):
+        if self.ends_on and self.ends_on < timezone.localdate():
+            return "Attività conclusa"
+        if self.enrollment_deadline and self.enrollment_deadline <= timezone.now():
+            return "Iscrizioni chiuse"
+        return self.get_availability_display()
+
+    @property
+    def show_availability(self):
+        return bool(
+            self.source_checked_on
+            or self.ends_on
+            or self.enrollment_deadline
+            or self.availability != "unknown"
+        )
 
     def get_absolute_url(self):
         return reverse("activity", args=[self.pk])

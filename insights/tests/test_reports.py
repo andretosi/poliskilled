@@ -3,21 +3,31 @@ from django.template import Context, Template
 from django.test import RequestFactory
 from django.utils import timezone
 
-from hub.models import Activity, ActivityProgress, Organization, Track, TrackStep
+from hub.models import Activity, ActivityProgress, Organization
 from hub.tests.base import HubTestCase
-from insights.models import ActivityInterest, DailyMetric, MonthlyMetric, TrackFollow
-from insights.reports import month_offset, track_report
+from insights.models import ActivityInterest, DailyMetric, MonthlyMetric
+from insights.reports import goal_report, month_offset
 from insights.templatetags.insights_tags import interest_button
 
 
 class ReportTests(HubTestCase):
-    def test_track_report_queries_do_not_grow_with_track_count(self):
+    def test_activity_and_goal_pagers_preserve_each_others_position(self):
+        for index in range(35):
+            Activity.objects.create(title=f"Goal {index}", creator=self.owner, status="published")
+        self.client.force_login(self.reviewer)
+        response = self.client.get(self.url, {"page": 2, "obiettivi": 2})
+        self.assertContains(response, "page=1&amp;obiettivi=2")
+        self.assertContains(response, "obiettivi=3&amp;page=2")
+
+    def test_goal_report_queries_do_not_grow_with_goal_count(self):
         for index in range(20):
-            track = Track.objects.create(title=f"Path {index}", slug=f"path-{index}")
-            TrackStep.objects.create(track=track, activity=self.activity)
-        with self.assertNumQueries(8):
-            rows = track_report(Activity.objects.all(), reviewer=True)
-        self.assertEqual(len(rows), 20)
+            item = Activity.objects.create(
+                title=f"Goal {index}", status="published", creator=self.owner
+            )
+            item.predecessors.add(self.activity)
+        with self.assertNumQueries(5):
+            rows = goal_report(Activity.objects.all(), reviewer=True)
+        self.assertEqual(len(rows), 21)
 
     def test_interest_buttons_share_request_local_queries(self):
         request = RequestFactory().get("/percorsi/")
@@ -138,21 +148,24 @@ class ReportTests(HubTestCase):
         self.foreign.status = "published"
         self.foreign.save()
         self.foreign.predecessors.add(self.activity)
-        track = Track.objects.create(title="Shared path", slug="shared")
-        TrackStep.objects.create(track=track, activity=self.foreign)
         ActivityInterest.objects.create(user=self.student, activity=self.activity)
         ActivityProgress.objects.create(user=self.student, activity=self.activity)
         ActivityInterest.objects.create(user=self.other, activity=self.foreign)
-        TrackFollow.objects.create(user=self.owner, track=track)
+        ActivityInterest.objects.create(user=self.owner, activity=self.foreign)
         self.client.force_login(self.owner)
         response = self.client.get(self.url)
-        row = response.context["track_rows"][0]
+        row = next(row for row in response.context["goal_rows"] if row["goal"] == self.foreign)
         self.assertEqual(row["activities"], 1)
-        self.assertEqual(row["followers"], 1)
+        self.assertEqual(row["followers"], 2)
         self.assertEqual(row["engaged"], 1)
         self.client.force_login(self.reviewer)
         response = self.client.get(self.url)
-        self.assertEqual(response.context["track_rows"][0]["engaged"], 3)
+        self.assertEqual(
+            next(row for row in response.context["goal_rows"] if row["goal"] == self.foreign)[
+                "engaged"
+            ],
+            3,
+        )
 
     def test_month_filter_rejects_invalid_or_out_of_retention_bounds(self):
         self.client.force_login(self.owner)

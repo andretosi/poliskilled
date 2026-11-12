@@ -20,11 +20,10 @@ class CatalogTests(HubTestCase):
         track = Track.objects.create(slug="test", title="Test path")
         TrackStep.objects.create(track=track, activity=self.activity)
         response = self.client.get("/percorsi/test/")
-        self.assertContains(response, "Test path")
-        self.assertNotContains(response, "Test robotics")
+        self.assertRedirects(response, "/")
 
     def test_pages_render(self):
-        for path in ["/", "/enti/", "/percorsi/", "/accedi/", "/registrati/"]:
+        for path in ["/", "/enti/", "/accedi/", "/registrati/"]:
             self.assertEqual(self.client.get(path).status_code, 200, path)
         self.client.force_login(self.owner)
         for path in ["/dashboard/", "/proposte/nuova/", self.activity.get_absolute_url()]:

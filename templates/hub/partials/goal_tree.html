@@ -1,0 +1,60 @@
+{% load insights_tags %}
+<section class="skill-map tone-{{ activity.color_index }}" data-track="activity-{{ activity.pk }}" aria-label="Il tuo percorso verso {{ activity.title }}">
+    <div class="skill-map-header">
+        <div><p class="eyebrow">Obiettivo / {{ activity.get_kind_display }}</p><h2>Il tuo percorso</h2></div>
+        <div class="track-progress">
+            <b data-progress-number>00 <span>/ 00</span></b>
+            <span class="sr-only" data-progress-count>0 tappe completate</span>
+            <label class="sr-only" for="goal-progress">Tappe completate</label>
+            <progress id="goal-progress" value="0" max="100"></progress>
+        </div>
+    </div>
+    <div class="map-toolbar">
+        {% interest_button activity %}
+        <button type="button" class="reset-progress">Azzera progressi</button>
+    </div>
+    <div class="tree-scroll" tabindex="0" role="region" aria-label="Albero delle attività, scorrimento orizzontale">
+        <div class="tree-canvas">
+            <svg class="tree-connections" aria-hidden="true"></svg>
+            <div class="tree-stages">
+                {% for stage in stages reversed %}
+                <section class="tree-stage" data-stage="{{ stage.number }}">
+                    <h3 class="stage-label"><span class="sr-only">Livello </span>{{ stage.number|stringformat:"02d" }}</h3>
+                    <div class="stage-nodes">
+                    {% for step in stage.steps %}
+                        <article class="skill-node {% if step.goal %}goal-node{% endif %}" data-node="{{ step.activity.pk }}" data-legacy-step="" data-parents="{{ step.parents|join:',' }}" data-title="{{ step.activity.title }}">
+                            <a class="skill-trigger" href="{{ step.activity.get_absolute_url }}" aria-label="{{ step.activity.title }}">
+                                <span class="node-emblem" aria-hidden="true">{% include "hub/partials/skill_icon.html" with icon=step.activity.icon_name %}<span class="node-check">✓</span></span>
+                                <span class="node-rank sr-only" aria-hidden="true">0 / 1</span>
+                                {% if step.goal %}<span class="goal-label">Il tuo obiettivo</span>{% endif %}
+                                <span class="node-title">{{ step.activity.title }}</span>
+                                {% if step.activity.show_availability %}<span class="node-availability">{{ step.activity.availability_label }}</span>{% endif %}
+                            </a>
+                            <template class="node-detail">
+                                <p class="eyebrow">{{ step.activity.get_kind_display }}{% if step.goal %} · Obiettivo{% endif %}</p>
+                                <h2 id="node-detail-title">{{ step.activity.title }}</h2>
+                                <div class="prose">{{ step.activity.description|linebreaks }}</div>
+                                {% if step.activity.preparation_notes %}<p class="preparation-note">{{ step.activity.preparation_notes }}</p>{% endif %}
+                                <a class="button outline full" href="{{ step.activity.get_absolute_url }}">Apri attività e albero ↗</a>
+                                {% interest_button step.activity %}
+                            </template>
+                        </article>
+                    {% endfor %}
+                    </div>
+                </section>
+                {% empty %}<p class="empty-state">{% if graph_error %}Collegamenti in aggiornamento. Puoi consultare l’attività qui sotto.{% else %}Albero in aggiornamento.{% endif %}</p>{% endfor %}
+            </div>
+            <div class="tree-origin" aria-hidden="true"><span>↑</span></div>
+        </div>
+    </div>
+    <div class="map-legend"><span data-sync-status role="status">Salvato su questo browser</span></div>
+</section>
+{% if stages|length == 1 %}<p class="sample-note">Nessuna preparazione collegata: puoi partire da questo obiettivo.</p>{% endif %}
+<p class="sample-note">Preparazione consigliata da PoliSkilled · Non sono requisiti di ammissione.</p>
+<p class="sr-only" role="status" data-progress-message></p>
+<dialog class="skill-dialog tone-{{ activity.color_index }}" aria-labelledby="node-detail-title">
+    <form method="dialog"><button class="dialog-close" aria-label="Chiudi dettagli">×</button></form>
+    <div data-node-detail></div>
+    <button class="button full complete-node" type="button" aria-pressed="false">Segna completata</button>
+</dialog>
+<noscript><p class="notice">Puoi aprire tutte le attività. Attiva JavaScript per segnare i progressi.</p></noscript>

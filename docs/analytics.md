@@ -12,7 +12,7 @@ Non sono caricati servizi o script di analytics esterni.
    utente configurato.
 2. Aggiungere `insights.middleware.AudienceMiddleware` dopo autenticazione e
    `hub.middleware.SecurityHeadersMiddleware`. Il middleware conta solo risposte
-   HTML pubbliche 200 delle route `home`, `activity`, `tracks`, `track`.
+   HTML pubbliche 200 delle route `home` e `activity`; i vecchi URL dei percorsi reindirizzano al catalogo.
 3. Includere `path("", include("insights.urls"))` nella configurazione URL.
 4. In `base.html`, includere una volta
    `{% include "insights/partials/client.html" %}` nel body. Fornisce un token CSRF
@@ -21,7 +21,7 @@ Non sono caricati servizi o script di analytics esterni.
    Caricare il CSS `{% static 'insights/insights.css' %}` nel layout per stilare
    anche i pulsanti e le liste personali. La pagina risultati lo carica da sola.
 5. Nelle pagine desiderate usare `{% load insights_tags %}` e
-   `{% interest_button activity %}`, `{% follow_button track %}`,
+   `{% interest_button activity %}`,
    `{% saved_intents %}`. Quest’ultimo si integra in progressi/profilo e mostra
    soltanto le preferenze dell’utente corrente e attività ancora pubbliche.
    `interest_button` può essere incluso nel template del dialogo usando
@@ -54,14 +54,14 @@ Non sono caricati servizi o script di analytics esterni.
   almeno una attività completata; non sono iscrizioni ufficiali né misure di
   frequenza. La tabella conta gli account per singola attività. Le preferenze e i
   progressi cancellati non restano nel totale corrente.
-- **Follower:** account che seguono un percorso pubblico. Per gli enti le persone
+- **Obiettivo scelto:** account che hanno salvato una attività come obiettivo. Per gli enti le persone
   coinvolte nelle tappe sono contate solo sulle proprie attività, includendo gli
-  antenati pubblici secondo `build_track`; per la vista globale dei revisori il
-  totale comprende anche i follower, senza duplicare account presenti in più
+  antenati pubblici secondo `build_goal`; per la vista globale dei revisori il
+  totale comprende anche chi ha salvato l’obiettivo, senza duplicare account presenti in più
   categorie. Non vengono mostrati nomi, email o elenchi delle persone.
 
 Il filtro `mese=YYYY-MM` accetta il mese corrente e i 23 precedenti. Visualizzazioni
-e visitatori seguono questo filtro; preferenze, completamenti, follower e stato di
+e visitatori seguono questo filtro; preferenze, completamenti, obiettivi e stato di
 pubblicazione sono una fotografia attuale, esplicitata nell’interfaccia. Il filtro
 `ente` è limitato alle appartenenze verificate dell’utente; i revisori possono
 scegliere qualsiasi ente. Un’attività condivisa compare una volta sola. Le viste
@@ -95,11 +95,11 @@ non interrompe le pagine pubbliche; altri errori di codice non vengono mascherat
 
 ## Preferenze anonime e sincronizzazione
 
-“Mi interessa” e “Segui percorso” salvano localmente una chiave per preferenza
+“Salva obiettivo” salva localmente una chiave per preferenza
 quando non si è autenticati. Dopo l’accesso vengono importate in modo idempotente
 con POST e CSRF, massimo 200 per tipo a richiesta. Non aumentano i conteggi degli
 enti prima dell’accesso. Interessi relativi ad attività private, mancanti o senza
-ente verificato non sono importati e restano nel browser per un tentativo successivo.
+ente verificato o documentato dal catalogo non sono importati e restano nel browser per un tentativo successivo.
 Ogni scelta locale ha una versione; una risposta vecchia non cancella una scelta
 ricreata nel frattempo. Il server conserva per la durata dell’account una ricevuta
 hash della versione importata: un ritento tardivo non ripristina una preferenza
@@ -122,3 +122,12 @@ disponibilità delle pagine in caso di errore transitorio del contatore.
 `node --test tests-js/insights.test.cjs` verifica il salvataggio locale per chiave,
 la rimozione, gli import idempotenti, il rifiuto dello storage e i limiti del lotto.
 La versione integrata è stata verificata in browser su desktop, mobile e tastiera.
+
+## Passaggio agli obiettivi
+
+Ogni attività pubblica è la radice di un albero composto solo dai suoi predecessori
+pubblici transitivi. `ActivityInterest` rappresenta l’obiettivo salvato. I vecchi
+`TrackFollow` e completamenti dei demo rimangono conservati, senza attribuirli
+arbitrariamente a nuove attività. Il report obiettivi è paginato; carica grafo e
+preferenze una volta per richiesta. Gli enti vedono i conteggi delle proprie tappe
+nei relativi alberi e il totale di scelte dell’obiettivo, mai identità personali.

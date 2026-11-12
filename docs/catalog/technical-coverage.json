@@ -1,0 +1,206 @@
+[
+  {
+    "name": "ASAP – Associazione Studenti Architettura Polimi",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/associazione-studenti-architettura-polimi",
+    "outcome": "Profilo censito; non individuato un calendario pubblico ufficiale con attività future verificabili. Nessuna attività inventata.",
+    "events_checked_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/associazione-studenti-architettura-polimi"
+  },
+  {
+    "name": "Associazione degli Ingegneri Matematici",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/associazione-degli-ingegneri-matematici",
+    "outcome": "Importati i materiali originali del corso Python 2026; distinti dalle lezioni in presenza già svolte.",
+    "events_checked_url": "https://www.aim-mate.it/news-eventi/news"
+  },
+  {
+    "name": "Automation Engineering Association",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/automation-engineering-association",
+    "outcome": "Call 2026/27: ARGO e Training, SAPIENS, DRIFT; Leg-Aid co-organizzato con BEA con recruiting chiuso. Homepage intermittente/timeout; articolo ufficiale leggibile.",
+    "events_checked_url": "https://www.aeapolimi.it/article/28?articleID=31"
+  },
+  {
+    "name": "BEST Milano",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/board-of-european-students-of-technology",
+    "outcome": "Student Tech Clash del 14/11/2026 confermato da BEST e dal calendario partner MESA. MESA non attribuita come organizzatore.",
+    "events_checked_url": "https://bestmilan.it/"
+  },
+  {
+    "name": "Biomedical Engineering Association",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/biomedical-engineering-association",
+    "outcome": "Progetti reali importati. Corsi senza calendario marcati da confermare. Visite maggio 2026 escluse dagli eventi futuri.",
+    "events_checked_url": "https://www.beapolimi.it/activities"
+  },
+  {
+    "name": "DeLTA – Decentralized Leadership and Technologies Association",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/delta-decentralized-leadership-and-technologies-association",
+    "outcome": "Talk futuro 19/11, progetti Compute Atlas (candidature concluse) e Silicon Crowd. La pagina rende anche varianti di stato non attive: usata la data esplicita.",
+    "events_checked_url": "https://deltapolimi.org/events/"
+  },
+  {
+    "name": "Entrepreneurship Club Polimi",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/entrepreneurship-club-polimi",
+    "outcome": "Pagina eventi senza dettagli e USC 2026 'Coming Soon'; profilo presente, nessun evento fittizio.",
+    "events_checked_url": "https://www.eclubpolimi.it/usc-2026"
+  },
+  {
+    "name": "Fly-Mi EUROAVIA Milano",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/fly-mi",
+    "outcome": "Progetto competitivo permanente verificato; appuntamento 16/10/2026 ormai passato e quindi escluso.",
+    "events_checked_url": "https://milano.euroavia.eu/"
+  },
+  {
+    "name": "Milan Engineering Student Association",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/milan-engineering-student-association",
+    "outcome": "Importati due appuntamenti propri futuri; Student Tech Clash attribuito agli organizzatori dichiarati. Evento anniversario con termine 15/10 scaduto non importato; Skilling Me Softly senza nuova edizione.",
+    "events_checked_url": "https://www.eestecmi.it/events"
+  },
+  {
+    "name": "Nanoscience Innovation and Nanotechnology Engineering",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/nanoscience-innovation-and-nanotechnology-engineering",
+    "outcome": "Homepage stagione 2026/27 ma calendario mescolato ad annunci 2025 e archivio; nessuna nuova attività futura con data affidabile. Profilo importato.",
+    "events_checked_url": "https://www.nine-polimi.it/"
+  },
+  {
+    "name": "Polimi Data Scientists",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/polimi-data-scientists",
+    "outcome": "Cinque appuntamenti futuri e tre progetti correnti. Progetti InVox/BEA Band attribuiti congiuntamente dopo conferma. Orario Data Career 01:00 non affidabile, lasciato da verificare.",
+    "events_checked_url": "https://www.polimidatascientists.it/events"
+  },
+  {
+    "name": "Polispace",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/polispace",
+    "outcome": "RoverTech, 6S e Ground Station verificati. Consultato SpaceTech con progetti attivi e chiusi; non trasformati i talk scolastici in eventi aperti agli studenti.",
+    "events_checked_url": "https://polispace.it/spacetech/"
+  },
+  {
+    "name": "Politecnico Open Unix Labs",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/politecnico-open-unix-labs",
+    "outcome": "Materiali di cinque corsi verificati; anni originali conservati e nessuna passata lezione descritta come iscrizione aperta.",
+    "events_checked_url": "https://poul.org/courses/"
+  },
+  {
+    "name": "Skyward Experimental Rocketry",
+    "url": "https://www.polimi.it/studenti/associazioni-degli-studenti/skyward-experimental-rocketry",
+    "outcome": "Team permanente EuRoC confermato; progetti storici Orion/Lyra non presentati come nuove edizioni 2026.",
+    "events_checked_url": "https://skywarder.eu/"
+  },
+  {
+    "name": "1001Cup",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/1001-cup",
+    "outcome": "Sailing Team importato come progetto permanente; regata settembre già svolta.",
+    "events_checked_url": "https://www.polimisailingteam.it/eventi/"
+  },
+  {
+    "name": "SuMoth Challenge",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/dettaglio",
+    "outcome": "Progetto permanente importato. Recruiting pubblicato chiuso il 1/10/2026.",
+    "events_checked_url": "https://www.polimisailingteam.it/eventi/"
+  },
+  {
+    "name": "X-Culture",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/x-culture",
+    "outcome": "Scheda ufficiale letta. Progetto collegato a Invest in Foreign Market Lab con readiness test; non importato in questo lotto tecnico.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/x-culture"
+  },
+  {
+    "name": "Cybathlon",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/cybathlon",
+    "outcome": "Team Polimi FES Bike importato. Scheda inizialmente 404 poi verificata nell'indice ufficiale di ricerca e versione inglese.",
+    "events_checked_url": "https://www.polimi.it/en/campus-and-services/sport-and-leisure/international-competitions/cybathlon"
+  },
+  {
+    "name": "International Physicists' Tournament",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/ipt-international-physicists-tournament",
+    "outcome": "Progetto importato; requisiti di corso/anno e recruiting settembre esplicitati.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/ipt-international-physicists-tournament"
+  },
+  {
+    "name": "MotoStudent",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/ipt-international-physicists-tournament-1",
+    "outcome": "PMF verificato anche sul sito aggiornato 2026. Importato progetto permanente, non data gara ipotetica.",
+    "events_checked_url": "https://www.polimimotorcyclefactory.it/"
+  },
+  {
+    "name": "IREC – International Real Estate Challenge",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/irec-international-real-estate-challenge",
+    "outcome": "Scheda letta: REM o secondo anno Management of Built Environment. Non importato in questo lotto tecnico.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/irec-international-real-estate-challenge"
+  },
+  {
+    "name": "SCORE",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/score",
+    "outcome": "Progetto software importato con accesso collegato al corso; prossima edizione non verificata.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/score"
+  },
+  {
+    "name": "Formula Student",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/formula-student",
+    "outcome": "Dynamis verificato e importato; selezione scritta 1/10/2026 conclusa.",
+    "events_checked_url": "https://www.dynamisprc.polimi.it/unisciti-a-noi/"
+  },
+  {
+    "name": "CFA Institute Research Challenge",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/cfa-institute-research-challenge",
+    "outcome": "Scheda letta: squadra da Ingegneria Gestionale magistrale, analisi finanziaria. Non importato in questo lotto tecnico.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/cfa-institute-research-challenge"
+  },
+  {
+    "name": "EuRoC",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/euroc",
+    "outcome": "Skyward importato; fonte dichiara finestre di recruiting annuali, non apertura attuale.",
+    "events_checked_url": "https://skywarder.eu/"
+  },
+  {
+    "name": "Monaco Energy Boat Challenge",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/monaco-energy-boat-challenge",
+    "outcome": "Physis PEB verificato e importato; nessuna assunzione su iscrizioni attualmente aperte.",
+    "events_checked_url": "https://physispeb.it/"
+  },
+  {
+    "name": "SWERC",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/southwestern-europe-regional-contest",
+    "outcome": "Programmazione competitiva importata; selezione indicativamente ottobre/novembre, senza inventare la data 2026.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/southwestern-europe-regional-contest"
+  },
+  {
+    "name": "Shell Eco-Marathon",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/southwestern-europe-regional-contest-1",
+    "outcome": "Green Mecc verificato con sito del team; progetto importato.",
+    "events_checked_url": "https://sem.mecc.polimi.it/"
+  },
+  {
+    "name": "ACM RecSys Challenge",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/acm-recsys-challenge",
+    "outcome": "Progetto importato con selezione dal corso Recommender Systems.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/acm-recsys-challenge"
+  },
+  {
+    "name": "Air Cargo Challenge",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/air-cargo-challenge",
+    "outcome": "Fly-Mi importato; sito aggiornato con Heméra e Olivia. Nessuna data di iscrizione inventata.",
+    "events_checked_url": "https://milano.euroavia.eu/"
+  },
+  {
+    "name": "Field Robot Event",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/field-robot-event",
+    "outcome": "Grasslammer importato. Legame curriculare Robotics/Multidisciplinary Project conservato, non presentato come accesso libero.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/field-robot-event"
+  },
+  {
+    "name": "European Rover Challenge",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/european-rover-challenge",
+    "outcome": "RoverTech attribuito a Polispace e importato.",
+    "events_checked_url": "https://polispace.it/rovertech-project/"
+  },
+  {
+    "name": "Students Reinventing Cities",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/students-reinventing-city",
+    "outcome": "Scheda letta: rigenerazione urbana, risultati 2024. Nessuna nuova iscrizione verificata; non importato in questo lotto tecnico.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/students-reinventing-city"
+  },
+  {
+    "name": "Indy Autonomous Challenge",
+    "url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/indy-autonomous-challenge",
+    "outcome": "PoliMOVE importato con accesso tramite tesi nel gruppo mOve; non generico reclutamento per tutti.",
+    "events_checked_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/indy-autonomous-challenge"
+  }
+]

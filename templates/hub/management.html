@@ -28,7 +28,20 @@
     {% if person.role_editable %}<form method="post" action="{% url 'manage_role' person.pk %}">{% csrf_token %}<input type="hidden" name="expected" value="{{ person.site_manager|yesno:'1,0' }}"><button class="button outline small" name="enabled" value="{{ person.site_manager|yesno:'0,1' }}">{% if person.site_manager %}Rimuovi ruolo{% else %}Rendi gestore{% endif %}</button></form>{% endif %}
     </div>{% empty %}<p>Nessun account trovato.</p>{% endfor %}
   </div>
-  <details class="spaced"><summary>Enti · {{ all_organizations|length }}</summary><div class="proposal-list">{% for org in all_organizations %}<div class="panel management-person"><strong>{{ org.name }}</strong><span class="status">{% if org.verified %}Verificato{% elif org.review_reason %}Da rivedere{% else %}In attesa{% endif %}</span></div>{% endfor %}</div></details>
+  <details class="spaced"><summary>Enti e referenti · {{ all_organizations|length }}</summary>
+    <div class="proposal-list">{% for org in all_organizations %}<article class="panel">
+      <div class="management-person"><h3>{{ org.name }}</h3><span class="status">{% if org.verified %}Verificato{% elif org.review_reason %}Da rivedere{% elif org.catalog_source_url and not org.members.all %}Dal catalogo{% else %}In attesa{% endif %}</span></div>
+      <p class="small-note">Referenti: {% for member in org.members.all %}{{ member.username }}{% if not forloop.last %}, {% endif %}{% empty %}nessuno{% endfor %}</p>
+      <details><summary>Collega un referente</summary>
+        <p class="small-note">Prima verifica che la persona rappresenti l’ente attraverso i contatti ufficiali. Il collegamento non approva automaticamente l’ente.</p>
+        <form method="post" action="{% url 'link_org_member' org.pk %}" class="management-search">
+          {% csrf_token %}<input type="hidden" name="revision" value="{{ org.revision }}">
+          <label for="member-{{ org.pk }}">Nome utente dell’account personale</label>
+          <div><input id="member-{{ org.pk }}" name="username" maxlength="150" required autocomplete="off"><button class="button">Collega</button></div>
+        </form>
+      </details>
+    </article>{% endfor %}</div>
+  </details>
   <details class="spaced"><summary>Ultime operazioni</summary><ul class="management-log">{% for entry in recent_actions %}<li><time>{{ entry.created_at|date:'d/m H:i' }}</time> · {{ entry.actor.username }} · {{ entry.action }} · {% if entry.subject %}{{ entry.subject.username }}{% elif entry.organization %}{{ entry.organization.name }}{% endif %}{% if entry.reason %}<p>{{ entry.reason }}</p>{% endif %}</li>{% empty %}<li>Nessuna operazione.</li>{% endfor %}</ul></details>
 </div>
 {% endblock %}

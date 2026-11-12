@@ -7,12 +7,12 @@ from datetime import timedelta
 from django.conf import settings
 from django.core import signing
 from django.db import transaction
-from django.db.models import F
+from django.db.models import F, Q
 from django.utils import timezone
 from django.utils.cache import patch_cache_control, patch_vary_headers
 from django.utils.crypto import salted_hmac
 
-from hub.models import Activity
+from hub.models import Activity, Organization
 
 from .models import AnalyticsState, DailyAudience, DailyMetric, MonthlyAudience, MonthlyMetric
 
@@ -22,7 +22,8 @@ BOT = re.compile(r"bot|crawler|spider|slurp|headless|preview|facebookexternalhit
 
 
 def public_activities():
-    return Activity.objects.filter(status="published", organizations__verified=True).distinct()
+    organizations = Organization.objects.filter(Q(verified=True) | ~Q(catalog_source_url=""))
+    return Activity.objects.filter(status="published", organizations__in=organizations).distinct()
 
 
 def eligible_request(request):

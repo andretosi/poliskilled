@@ -10,6 +10,7 @@ Il servizio assume Linux, Python 3.12, Caddy e un utente dedicato `poliskilled`.
 4. Crea `/etc/poliskilled.env`, permessi 0600, con una chiave casuale lunga (almeno 50 caratteri)
    e le variabili seguenti. Il file non va mai committato.
 5. Carica quelle variabili nella shell amministrativa e avvia `manage.py migrate`,
+   `manage.py import_catalog`,
    `manage.py collectstatic --noinput`, `manage.py check --deploy`,
    `manage.py createsuperuser`. Inserisci le credenziali direttamente nel terminale.
    Per il primo gestore usa `manage.py grant_site_admin nomeutente` su un account
@@ -55,6 +56,29 @@ Per aggiornamento manuale: finestra di manutenzione, backup, arresto servizio,
 check --deploy, riavvio. Per SQLite usa un solo host e backup consistente del database,
 con servizio fermo o API backup SQLite, più la directory media. Non copiare un file
 SQLite durante scritture attive.
+
+Per questa release, dopo le migrazioni eseguire `manage.py import_catalog --dry-run`
+e `manage.py import_catalog --archive-demo`. Il catalogo è curato in
+`data/catalog/current.json`: nessuno scraping viene eseguito durante il deploy.
+La seconda esecuzione identica non modifica schede o revisioni. Le modifiche locali
+vengono conservate e conteggiate come `preserved`. I demo sono archiviati, non cancellati.
+Verificare l’albero ARGO, una scheda senza preparazioni e un corso con iscrizioni chiuse.
+
+Prima e dopo l’importazione, a servizio fermo, confrontare i progressi dei demo:
+
+```sql
+SELECT a.seed_key, a.status, COUNT(p.id) AS completions
+FROM hub_activity a
+LEFT JOIN hub_activityprogress p ON p.activity_id = a.id
+WHERE a.seed_key LIKE 'demo-activity-%'
+GROUP BY a.seed_key, a.status
+ORDER BY a.seed_key;
+```
+
+I conteggi devono restare uguali; nessun demo deve essere ancora `published` dopo
+`--archive-demo`. Nessun completamento va trasferito agli ID del nuovo catalogo.
+Per gli enti, la chiave esterna `catalog_key` conserva PK, membri e attribuzione
+anche se il nome locale cambia. Un cambio di identità revoca la verifica pubblica.
 
 La migrazione iniziale degli account normalizza gli indirizzi ed è irreversibile.
 Per tornare alla release precedente ripristinare il backup insieme al codice;

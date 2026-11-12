@@ -48,3 +48,16 @@ La destinazione di produzione e il remote Git saranno configurati quando scelti.
 - [x] Prove UI, tastiera, sicurezza, migrazioni e backup/ripristino su copia.
 - [x] Chiudere revisione visiva e integrare su main.
 - [x] Aggiornare e verificare l'anteprima HTTPS Tailscale.
+
+## Obiettivi e catalogo reale — 12 novembre 2026
+
+Decisioni e dettagli in [objective-work.md](objective-work.md).
+
+- [x] Ogni attività è un obiettivo con albero dei predecessori; niente percorsi separati.
+- [x] Ricerca su 31 associazioni, 20 schede di competizioni e Passion in Action.
+- [x] Catalogo di 107 attività reali e 49 enti, 47 preparazioni editoriali motivate.
+- [x] Import idempotente, fonti/date, archiviazione demo senza spostare i progressi.
+- [x] Identità stabile degli enti, collegamento referenti auditato e approvazione separata.
+- [x] Prove browser: mobile/desktop, completamento anonimo e sync, nuova proposta e approvazione.
+- [ ] Chiudere review, aggiornare screenshot, integrare e pubblicare la release.
+- [ ] Applicare e verificare la release sull’anteprima Tailscale.

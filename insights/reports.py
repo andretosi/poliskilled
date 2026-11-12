@@ -7,11 +7,11 @@ from django.db.models import Count, Sum
 from django.http import Http404
 from django.utils import timezone
 
-from hub.models import Activity, ActivityProgress, Organization, Track
+from hub.models import Activity, ActivityProgress, Organization
 from hub.permissions import is_reviewer
-from hub.skill_graph import build_track, load_public_graph
+from hub.skill_graph import build_goal, load_public_graph
 
-from .models import ActivityInterest, DailyMetric, MonthlyMetric, TrackFollow
+from .models import ActivityInterest, DailyMetric, MonthlyMetric
 
 
 def month_offset(month, offset):
@@ -125,43 +125,38 @@ def chart_points(month, by_day):
     return points
 
 
-def track_report(activities, reviewer):
+def goal_report(activities, reviewer):
+    """Only counts reach templates; each public activity is its own objective."""
     ids = set(activities.values_list("pk", flat=True))
-    rows = []
-    followers = defaultdict(set)
-    for track_id, user_id in TrackFollow.objects.values_list("track_id", "user_id"):
-        followers[track_id].add(user_id)
     graph = load_public_graph()
-    # Calculate identities solely inside the report; only cardinalities reach templates.
-    interested, completed = defaultdict(set), defaultdict(set)
-    for model, bucket in ((ActivityInterest, interested), (ActivityProgress, completed)):
-        for activity_id, user_id in model.objects.filter(activity_id__in=ids).values_list(
+    followers, completed = defaultdict(set), defaultdict(set)
+    for model, bucket in ((ActivityInterest, followers), (ActivityProgress, completed)):
+        for activity_id, user_id in model.objects.filter(activity_id__in=graph[0]).values_list(
             "activity_id", "user_id"
         ):
             bucket[activity_id].add(user_id)
-    for track in Track.objects.prefetch_related("steps"):
+    rows = []
+    for goal in graph[0].values():
         try:
             public_ids = {
-                step["activity"].pk
-                for stage in build_track(track, graph)
-                for step in stage["steps"]
+                step["activity"].pk for stage in build_goal(goal, graph) for step in stage["steps"]
             }
         except ValidationError:
-            public_ids = set()
+            continue
         own_ids = public_ids & ids
         if not reviewer and not own_ids:
             continue
         engaged = set()
         for pk in own_ids:
-            engaged.update(interested[pk], completed[pk])
+            engaged.update(followers[pk], completed[pk])
         if reviewer:
-            engaged.update(followers[track.pk])
+            engaged.update(followers[goal.pk])
         rows.append(
             {
-                "track": track,
-                "followers": len(followers[track.pk]),
+                "goal": goal,
+                "followers": len(followers[goal.pk]),
                 "engaged": len(engaged),
                 "activities": len(own_ids),
             }
         )
-    return rows
+    return sorted(rows, key=lambda row: (-row["followers"], row["goal"].title))

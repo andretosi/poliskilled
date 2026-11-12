@@ -8,7 +8,8 @@
     <p class="card-organizers">{% for org in activity.organizations.all %}{{ org.short_name|default:org.name }}{% if not forloop.last %} · {% endif %}{% endfor %}</p>
     {% if activity.program %}<p class="card-program">{{ activity.get_program_display }}</p>{% endif %}
     <div class="card-meta">
-        <span>{% if activity.starts_at %}{{ activity.starts_at|date:"d M Y" }}{% else %}Livello {{ activity.level }} · {{ activity.get_level_display }}{% endif %}</span>
+        <span>{% if activity.show_availability %}{{ activity.availability_label }}{% elif activity.starts_at %}{{ activity.starts_at|date:"d M Y" }}{% elif activity.level %}{{ activity.get_level_display }}{% endif %}</span>
         {% if activity.technology %}<span>Tecnologia</span>{% endif %}{% if activity.community %}<span>Persone</span>{% endif %}
     </div>
+    <p class="card-goal">Scopri il tuo percorso <span aria-hidden="true">↗</span></p>
 </article>

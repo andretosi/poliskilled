@@ -79,6 +79,17 @@ class ManagementTests(HubTestCase):
 
 
 class OrganizationManagementTests(HubTestCase):
+    def test_unclaimed_catalog_profiles_are_not_organization_requests(self):
+        org = Organization.objects.create(
+            name="Public profile", catalog_source_url="https://www.polimi.it/organization"
+        )
+        self.client.force_login(self.reviewer)
+        response = self.client.get(reverse("management"))
+        self.assertNotIn(org, response.context["organizations"])
+        self.assertIn(org, response.context["all_organizations"])
+        org.members.add(self.owner)
+        self.assertIn(org, self.client.get(reverse("management")).context["organizations"])
+
     def test_duplicate_unicode_identity_is_form_error(self):
         Organization.objects.create(name="Élite")
         self.client.force_login(self.owner)
@@ -114,6 +125,20 @@ class OrganizationManagementTests(HubTestCase):
         self.assertContains(response, "Ricarica")
         self.org.refresh_from_db()
         self.assertEqual(self.org.name, "New identity")
+
+    def test_catalog_source_does_not_publish_an_unreviewed_identity_change(self):
+        self.org.catalog_source_url = "https://www.polimi.it/known-organization"
+        self.org.save()
+        self.client.force_login(self.owner)
+        response = self.client.post(
+            reverse("edit_org", args=[self.org.pk]), self.payload_org(name="Different identity")
+        )
+        self.assertEqual(response.status_code, 302)
+        self.org.refresh_from_db()
+        self.assertFalse(self.org.verified)
+        self.assertEqual(self.org.catalog_source_url, "")
+        self.client.logout()
+        self.assertNotContains(self.client.get(reverse("organizations")), "Different identity")
 
     def test_reject_reason_resubmit_and_approve_audited(self):
         self.org.verified = False

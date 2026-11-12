@@ -6,7 +6,7 @@ from django.forms.models import construct_instance
 from django.shortcuts import get_object_or_404
 from django.utils.crypto import constant_time_compare
 
-from .models import Activity, Organization, ReviewEntry, Track
+from .models import Activity, Organization, ReviewEntry
 from .permissions import can_edit
 from .skill_graph import graph_baseline, validate_predecessors
 from .uploads import delete_cover
@@ -19,7 +19,6 @@ def save_proposal(form, user, intent, pk):
     # Keep the validated choices: a filtered queryset rerun could silently drop revoked rows.
     org_ids = [org.pk for org in form.cleaned_data["organizations"]]
     predecessor_ids = [item.pk for item in form.cleaned_data["predecessors"]]
-    track_ids = [track.pk for track in form.cleaned_data["tracks"]]
     try:
         with transaction.atomic():
             current = (
@@ -45,9 +44,6 @@ def save_proposal(form, user, intent, pk):
                     "organizations", "Gli enti o i tuoi permessi sono cambiati. Ricarica."
                 )
                 return None
-            if Track.objects.filter(pk__in=track_ids).count() != len(track_ids):
-                form.add_error("tracks", "Un percorso non è più disponibile. Ricarica la proposta.")
-                return None
             retained = (
                 list(current.predecessors.exclude(status="published").values_list("pk", flat=True))
                 if pk
@@ -66,6 +62,8 @@ def save_proposal(form, user, intent, pk):
             form.instance = construct_instance(form, current, form._meta.fields, form._meta.exclude)
             current = form.save(commit=False)
             current.revision += 1
+            # A newly edited proposal is no longer the facts checked by the importer.
+            current.source_checked_on = None
             current.status = (
                 Activity.Status.PENDING if intent == "submit" else Activity.Status.DRAFT
             )
@@ -83,7 +81,7 @@ def save_proposal(form, user, intent, pk):
                     "kind": current.get_kind_display(),
                     "program": current.get_program_display(),
                     "icon": current.get_icon_display(),
-                    "tracks": list(current.tracks.values_list("title", flat=True)),
+                    "preparation_notes": current.preparation_notes,
                     "predecessors": list(
                         current.predecessors.filter(status="published").values_list(
                             "title", flat=True
@@ -94,6 +92,13 @@ def save_proposal(form, user, intent, pk):
                     "source_url": current.source_url,
                     "location": current.location,
                     "starts_at": current.starts_at.isoformat() if current.starts_at else "",
+                    "period": current.period,
+                    "ends_on": current.ends_on.isoformat() if current.ends_on else "",
+                    "enrollment_deadline": current.enrollment_deadline.isoformat()
+                    if current.enrollment_deadline
+                    else "",
+                    "availability": current.availability,
+                    "official_requirements": current.official_requirements,
                     "technology": current.technology,
                     "community": current.community,
                 },

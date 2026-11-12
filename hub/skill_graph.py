@@ -41,7 +41,7 @@ def validate_predecessors(activity_id, predecessor_ids, retained=()):
 
 
 def load_public_graph():
-    """Load once per request when several tracks share the same graph."""
+    """Load once per request when several objectives share the same graph."""
     public = {
         activity.pk: activity
         for activity in Activity.objects.filter(status="published").order_by("title", "pk")
@@ -57,9 +57,19 @@ def load_public_graph():
 
 def build_track(track, graph=None):
     """Select public members + ancestors, then assign levels by longest dependency path."""
-    public, parents = graph if graph is not None else load_public_graph()
     steps = {step.activity_id: step for step in track.steps.all()}
-    included = set(steps) & public.keys()
+    return _build(set(steps), graph, legacy_steps=steps)
+
+
+def build_goal(activity, graph=None):
+    """An activity is the destination; include only its published ancestors."""
+    return _build({activity.pk}, graph, goal_id=activity.pk)
+
+
+def _build(selected, graph=None, goal_id=None, legacy_steps=None):
+    public, parents = graph if graph is not None else load_public_graph()
+    steps = legacy_steps or {}
+    included = selected & public.keys()
     pending = list(included)
     while pending:
         for parent in parents[pending.pop()]:
@@ -96,9 +106,23 @@ def build_track(track, graph=None):
                 "legacy_step": step.pk if step else "",
                 "note": step.note if step else "",
                 "parents": sorted(parents[pk]),
-                "goal": activity.kind == "project",
+                "goal": pk == goal_id if goal_id else activity.kind == "project",
             }
         )
+    # Order each row toward its already placed children to reduce crossings.
+    positions = {}
+    for number in sorted(levels, reverse=True):
+
+        def target_position(step):
+            destinations = [
+                positions[pk] for pk in children[step["activity"].pk] if pk in positions
+            ]
+            return sum(destinations) / len(destinations) if destinations else 0
+
+        levels[number].sort(key=target_position)
+        count = len(levels[number])
+        for index, step in enumerate(levels[number]):
+            positions[step["activity"].pk] = (index + 1) / (count + 1)
     return [
         {"number": number, "label": "Parti da qui" if number == 1 else "Prosegui", "steps": nodes}
         for number, nodes in sorted(levels.items())

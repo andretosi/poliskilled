@@ -3,7 +3,7 @@ from django.urls import reverse
 
 from hub.forms import ActivityForm
 from hub.models import Activity, Track
-from hub.skill_graph import build_track, validate_predecessors
+from hub.skill_graph import build_goal, build_track, validate_predecessors
 
 from .base import HubTestCase
 
@@ -47,7 +47,7 @@ class SkillGraphTests(HubTestCase):
         hidden = self.add("Secret course", status="pending")
         self.activity.predecessors.add(hidden)
         hidden.tracks.add(self.track)
-        response = self.client.get(reverse("track", args=[self.track.slug]))
+        response = self.client.get(self.activity.get_absolute_url())
         self.assertNotContains(response, hidden.title)
         self.assertNotContains(response, f'data-node="{hidden.pk}"')
         self.assertContains(response, self.activity.title)
@@ -87,15 +87,16 @@ class SkillGraphTests(HubTestCase):
         )
         self.assertEqual(response.status_code, 302)
         new = Activity.objects.get(title="New graph project")
-        self.assertNotContains(self.client.get(reverse("track", args=[self.track.slug])), new.title)
+        self.client.logout()
+        self.assertEqual(self.client.get(new.get_absolute_url()).status_code, 404)
         self.client.force_login(self.reviewer)
         self.client.post(
             reverse("decide", args=[new.pk]), {"decision": "approve", "revision": new.revision}
         )
-        response = self.client.get(reverse("track", args=[self.track.slug]))
+        response = self.client.get(new.get_absolute_url())
         self.assertContains(response, new.title)
         self.assertContains(response, f'data-node="{new.pk}"')
-        self.assertEqual(build_track(self.track)[1]["steps"][0]["activity"], new)
+        self.assertEqual(build_goal(new)[1]["steps"][0]["activity"], new)
 
     def test_unpublished_existing_predecessor_survives_an_edit_without_disclosing_its_title(self):
         hidden = self.add("Private revised title", status="pending")
@@ -124,24 +125,11 @@ class SkillGraphTests(HubTestCase):
         self.assertIsNone(save_proposal(form, self.owner, "submit", self.activity.pk))
         self.assertIn("predecessors", form.errors)
 
-    def test_only_moderators_can_create_paths_and_color_is_automatic(self):
-        self.client.force_login(self.owner)
-        self.assertEqual(
-            self.client.post(
-                "/gestione/percorsi/nuovo/", {"title": "New", "description": "A path"}
-            ).status_code,
-            403,
-        )
+    def test_manual_track_creation_is_retired(self):
         self.client.force_login(self.reviewer)
-        response = self.client.post(
-            "/gestione/percorsi/nuovo/", {"title": "New", "description": "A path"}
-        )
-        self.assertEqual(response.status_code, 302)
-        track = Track.objects.get(title="New")
-        self.assertIn(track.color_index, range(6))
-        self.assertContains(self.client.get(response.url), f"tone-{track.color_index}")
+        self.assertEqual(self.client.post("/gestione/percorsi/nuovo/", {}).status_code, 404)
 
-    def test_revoked_cohost_and_deleted_track_are_not_silently_dropped(self):
+    def test_revoked_cohost_is_not_silently_dropped(self):
         from hub.proposal_service import save_proposal
 
         form = ActivityForm(
@@ -154,13 +142,6 @@ class SkillGraphTests(HubTestCase):
         self.partner.save()
         self.assertIsNone(save_proposal(form, self.owner, "submit", self.activity.pk))
         self.assertIn("organizations", form.errors)
-        form = ActivityForm(
-            self.payload(tracks=[self.track.pk]), instance=self.activity, user=self.owner
-        )
-        self.assertTrue(form.is_valid(), form.errors)
-        self.track.delete()
-        self.assertIsNone(save_proposal(form, self.owner, "submit", self.activity.pk))
-        self.assertIn("tracks", form.errors)
 
     def test_hidden_predecessor_republished_after_validation_does_not_get_deleted(self):
         from hub.proposal_service import save_proposal

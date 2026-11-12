@@ -1,20 +1,30 @@
 from django.core.exceptions import ValidationError
 from django.core.paginator import Paginator
-from django.db.models import Q
+from django.db.models import Case, Q, Value, When
 from django.http import FileResponse, Http404
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_GET
 
 from .forms import CommentForm
-from .models import Activity, Organization, Track
+from .models import Activity, Organization
 from .permissions import can_edit, can_read, can_review, is_reviewer
-from .skill_graph import build_track
+from .skill_graph import build_goal
 
 
 @require_GET
 def home(request):
-    activities = Activity.objects.filter(status=Activity.Status.PUBLISHED).prefetch_related(
-        "organizations"
+    activities = (
+        Activity.objects.filter(status=Activity.Status.PUBLISHED)
+        .prefetch_related("organizations")
+        .order_by(
+            Case(
+                When(kind="project", then=Value(0)),
+                When(kind="course", then=Value(1)),
+                default=Value(2),
+            ),
+            "title",
+            "pk",
+        )
     )
     query = request.GET.get("q", "").strip()[:120]
     kind = request.GET.get("tipo", "")
@@ -44,7 +54,6 @@ def home(request):
             "kind": kind,
             "tag": tag,
             "count": page.paginator.count,
-            "tracks": Track.objects.all(),
         },
     )
 
@@ -55,6 +64,12 @@ def detail(request, pk):
     if not can_read(request.user, activity):
         raise Http404
     private = can_edit(request.user, activity) or is_reviewer(request.user)
+    stages, graph_error = [], False
+    if activity.status == "published":
+        try:
+            stages = build_goal(activity)
+        except ValidationError:
+            graph_error = True
     return render(
         request,
         "hub/detail.html",
@@ -63,9 +78,10 @@ def detail(request, pk):
             "can_edit": can_edit(request.user, activity),
             "can_review": can_review(request.user, activity),
             "private": private,
+            "stages": stages,
+            "graph_error": graph_error,
             "entries": activity.entries.select_related("author") if private else [],
             "comment_form": CommentForm(),
-            "previous": activity.predecessors.filter(status="published").order_by("title"),
             "following": activity.successors.filter(status="published").order_by("title"),
         },
     )
@@ -90,27 +106,14 @@ def organizations(request):
     return render(
         request,
         "hub/organizations.html",
-        {"organizations": Organization.objects.filter(verified=True)},
+        {
+            "organizations": Organization.objects.filter(
+                Q(verified=True) | ~Q(catalog_source_url="")
+            ).prefetch_related("members")
+        },
     )
 
 
 @require_GET
 def tracks(request, slug=None):
-    all_tracks = Track.objects.all()
-    track = get_object_or_404(Track, slug=slug) if slug else all_tracks.first()
-    stages, graph_error = [], False
-    if track:
-        try:
-            stages = build_track(track)
-        except ValidationError:
-            graph_error = True
-    return render(
-        request,
-        "hub/tracks.html",
-        {
-            "tracks": all_tracks,
-            "track": track,
-            "stages": stages,
-            "graph_error": graph_error,
-        },
-    )
+    return redirect("home")

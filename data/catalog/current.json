@@ -1,0 +1,3123 @@
+{
+  "reviewed_on": "2026-11-12",
+  "organizations": [
+    {
+      "key": "asap",
+      "name": "ASAP – Associazione Studenti Architettura Polimi",
+      "short_name": "ASAP",
+      "website": "https://www.polimi.it/studenti/associazioni-degli-studenti/associazione-studenti-architettura-polimi",
+      "description": "Associazione di architettura che promuove confronto culturale, workshop e itinerari.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/associazione-studenti-architettura-polimi"
+    },
+    {
+      "key": "aim",
+      "name": "Associazione degli Ingegneri Matematici",
+      "short_name": "AIM",
+      "website": "https://aim-mate.it/",
+      "description": "Comunità studentesca di ingegneria matematica, con incontri e corsi di programmazione.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/associazione-degli-ingegneri-matematici"
+    },
+    {
+      "key": "aea",
+      "name": "Automation Engineering Association",
+      "short_name": "AEA",
+      "website": "https://www.aeapolimi.it/",
+      "description": "Associazione studentesca dedicata ad automazione, robotica e progetti sperimentali.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/automation-engineering-association"
+    },
+    {
+      "key": "best",
+      "name": "BEST Milano",
+      "short_name": "BEST",
+      "website": "https://bestmilan.it/",
+      "description": "Gruppo milanese della rete europea BEST, con corsi, competizioni e scambi.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/board-of-european-students-of-technology"
+    },
+    {
+      "key": "bea",
+      "name": "Biomedical Engineering Association",
+      "short_name": "BEA",
+      "website": "https://www.beapolimi.it/",
+      "description": "Associazione di ingegneria biomedica, con progetti, laboratori e incontri con il settore.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/biomedical-engineering-association"
+    },
+    {
+      "key": "delta",
+      "name": "DeLTA – Decentralized Leadership and Technologies Association",
+      "short_name": "DeLTA",
+      "website": "https://deltapolimi.org/",
+      "description": "Associazione dedicata a tecnologie emergenti, intelligenza artificiale e blockchain.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/delta-decentralized-leadership-and-technologies-association"
+    },
+    {
+      "key": "eclub",
+      "name": "Entrepreneurship Club Polimi",
+      "short_name": "E-Club",
+      "website": "https://www.eclubpolimi.it/",
+      "description": "Comunità studentesca che esplora innovazione e imprenditorialità attraverso incontri e iniziative pratiche.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/entrepreneurship-club-polimi"
+    },
+    {
+      "key": "flymi",
+      "name": "Fly-Mi EUROAVIA Milano",
+      "short_name": "Fly-Mi",
+      "website": "https://milano.euroavia.eu/",
+      "description": "Team studentesco che progetta e costruisce droni ad ala fissa da competizione.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/fly-mi"
+    },
+    {
+      "key": "mesa",
+      "name": "Milan Engineering Student Association",
+      "short_name": "MESA",
+      "website": "https://www.eestecmi.it/",
+      "description": "Comitato locale EESTEC a Milano: formazione, incontri e scambi europei.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/milan-engineering-student-association"
+    },
+    {
+      "key": "nine",
+      "name": "Nanoscience Innovation and Nanotechnology Engineering",
+      "short_name": "NINE",
+      "website": "https://www.nine-polimi.it/",
+      "description": "Associazione studentesca dedicata alle nanotecnologie e alle loro applicazioni.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/nanoscience-innovation-and-nanotechnology-engineering"
+    },
+    {
+      "key": "pmds",
+      "name": "Polimi Data Scientists",
+      "short_name": "PMDS",
+      "website": "https://www.polimidatascientists.it/",
+      "description": "Associazione studentesca che realizza progetti e formazione in data science e intelligenza artificiale.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/polimi-data-scientists"
+    },
+    {
+      "key": "polispace",
+      "name": "Polispace",
+      "short_name": "Polispace",
+      "website": "https://polispace.it/",
+      "description": "Associazione spaziale del Politecnico con progetti satellitari, rover e sistemi per lo spazio.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/polispace"
+    },
+    {
+      "key": "poul",
+      "name": "Politecnico Open Unix Labs",
+      "short_name": "POuL",
+      "website": "https://poul.org/",
+      "description": "Comunità studentesca dedicata a software libero, Linux, programmazione ed elettronica.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/politecnico-open-unix-labs"
+    },
+    {
+      "key": "skyward",
+      "name": "Skyward Experimental Rocketry",
+      "short_name": "Skyward",
+      "website": "https://skywarder.eu/",
+      "description": "Associazione studentesca che progetta, costruisce e lancia razzi sperimentali.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/skyward-experimental-rocketry"
+    },
+    {
+      "key": "sailing",
+      "name": "Polimi Sailing Team",
+      "short_name": "Sailing Team",
+      "website": "https://www.polimisailingteam.it/",
+      "description": "Team studentesco che costruisce e porta in regata barche a vela sostenibili.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/dettaglio"
+    },
+    {
+      "key": "dynamis",
+      "name": "Dynamis PRC",
+      "short_name": "Dynamis PRC",
+      "website": "https://www.dynamisprc.polimi.it/",
+      "description": "Squadra Formula Student del Politecnico: monoposto elettriche e guida autonoma.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/formula-student"
+    },
+    {
+      "key": "physis",
+      "name": "Physis PEB",
+      "short_name": "Physis PEB",
+      "website": "https://physispeb.it/",
+      "description": "Team studentesco che sviluppa un catamarano con propulsione sostenibile.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/monaco-energy-boat-challenge"
+    },
+    {
+      "key": "pmf",
+      "name": "Polimi Motorcycle Factory",
+      "short_name": "PMF",
+      "website": "https://www.polimimotorcyclefactory.it/",
+      "description": "Squadra motociclistica studentesca impegnata nella progettazione e nelle competizioni.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/ipt-international-physicists-tournament-1"
+    },
+    {
+      "key": "greenmecc",
+      "name": "Team Green Mecc",
+      "short_name": "Green Mecc",
+      "website": "https://sem.mecc.polimi.it/",
+      "description": "Team del Politecnico che costruisce veicoli ad alta efficienza energetica.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/southwestern-europe-regional-contest-1"
+    },
+    {
+      "key": "grasslammer",
+      "name": "Grasslammer Team",
+      "short_name": "Grasslammer",
+      "website": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/field-robot-event",
+      "description": "Team di robotica agricola del Politecnico che partecipa al Field Robot Event.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/field-robot-event"
+    },
+    {
+      "key": "fesbike",
+      "name": "Polimi FES Bike Team",
+      "short_name": "FES Bike",
+      "website": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/cybathlon",
+      "description": "Team che sviluppa una bicicletta assistita dalla stimolazione elettrica funzionale per competizioni inclusive.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/cybathlon"
+    },
+    {
+      "key": "polimove",
+      "name": "PoliMOVE Autonomous Racing Team",
+      "short_name": "PoliMOVE",
+      "website": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/indy-autonomous-challenge",
+      "description": "Team di ricerca che sviluppa controllo e software per auto da corsa autonome.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/indy-autonomous-challenge"
+    },
+    {
+      "key": "polimi",
+      "name": "Politecnico di Milano",
+      "short_name": "Polimi",
+      "website": "https://www.polimi.it/",
+      "description": "Università pubblica di ingegneria, architettura e design; propone attività e progetti tramite docenti e strutture.",
+      "source_url": "https://www.polimi.it/"
+    },
+    {
+      "key": "cattolici-popolari",
+      "name": "Cattolici Popolari",
+      "short_name": "Cattolici Popolari",
+      "website": "https://www.polimi.it/studenti/associazioni-degli-studenti/cattolici-popolari",
+      "description": "Associazione culturale studentesca presente nell’albo del Politecnico di Milano dal 2018.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/cattolici-popolari"
+    },
+    {
+      "key": "cres",
+      "name": "CRES",
+      "short_name": "CRES",
+      "website": "https://www.linkedin.com/company/cres-polimi",
+      "description": "Nata nel campus di Cremona, riunisce studenti interessati a cultura, ricerca, consulenza e attività oltre le lezioni.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/cres"
+    },
+    {
+      "key": "gbu",
+      "name": "GBU Milano Politecnico",
+      "short_name": "GBU",
+      "website": "https://www.polimi.it/studenti/associazioni-degli-studenti/gbu-milano-politecnico",
+      "description": "Spazio studentesco di dialogo sulla fede cristiana, aperto a persone di ogni provenienza e convinzione.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/gbu-milano-politecnico"
+    },
+    {
+      "key": "passionlab",
+      "name": "PassionLab",
+      "short_name": "PassionLab",
+      "website": "https://www.passionlabpolimi.it/",
+      "description": "Community del Poli con club dedicati a sport, cultura, creatività e gioco.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/passionlab"
+    },
+    {
+      "key": "polifonia",
+      "name": "Polifonia",
+      "short_name": "Polifonia",
+      "website": "https://www.polifoniapolimi.it/",
+      "description": "Associazione musicale con coro, orchestra, band, musical e una formazione jazz e blues.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/polifonia"
+    },
+    {
+      "key": "polimovies",
+      "name": "POLI.MOVIES",
+      "short_name": "POLI.MOVIES",
+      "website": "https://polimovies.webflow.io/",
+      "description": "Community di cinema, produzione audiovisiva e fotografia per studenti del Poli.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/polimovies"
+    },
+    {
+      "key": "poliradio",
+      "name": "POLI.RADIO",
+      "short_name": "POLI.RADIO",
+      "website": "https://www.poliradio.it/",
+      "description": "La radio degli studenti del Poli: programmi, interviste, musica, redazione e produzione tecnica.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/poliradio"
+    },
+    {
+      "key": "teatro-biglie",
+      "name": "Teatro delle Biglie",
+      "short_name": "Teatro delle Biglie",
+      "website": "https://teatrodellebiglie.it/",
+      "description": "Associazione teatrale studentesca che propone laboratori gratuiti e occasioni per avvicinarsi al palcoscenico.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/teatro-delle-biglie"
+    },
+    {
+      "key": "top",
+      "name": "TOP - Techno Optimist Polimi",
+      "short_name": "TOP",
+      "website": "https://www.instagram.com/top.polimi/",
+      "description": "Associazione per discutere innovazione tecnologica e conseguenze sociali attraverso incontri e confronto critico.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/techno-optimist-polimi"
+    },
+    {
+      "key": "enactus",
+      "name": "Enactus Polimi",
+      "short_name": "Enactus",
+      "website": "https://www.enactuspolimi.org/",
+      "description": "Team interdisciplinare che sviluppa iniziative imprenditoriali con obiettivi sociali e ambientali.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/enactus-polimi"
+    },
+    {
+      "key": "poliedro",
+      "name": "Poliedro",
+      "short_name": "PoliEdro",
+      "website": "https://poliedro-polimi.it/",
+      "description": "Associazione LGBTI+ del Poli: inclusione, sostegno, confronto culturale e socialità.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/poliedro"
+    },
+    {
+      "key": "resilient-gap",
+      "name": "Resilient G.A.P.",
+      "short_name": "Resilient G.A.P.",
+      "website": "https://resilientgap.org/",
+      "description": "Gruppo studentesco impegnato su clima, sostenibilità ambientale e partecipazione attraverso incontri e iniziative sul territorio.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/resilient-gap"
+    },
+    {
+      "key": "sitpolimi",
+      "name": "SITPolimi",
+      "short_name": "SITPolimi",
+      "website": "https://socialinnovationteams.org/sit-universita/",
+      "description": "Rete studentesca dedicata a innovazione sociale, sostenibilità e condivisione di competenze.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/sitpolimi"
+    },
+    {
+      "key": "esn",
+      "name": "E.S.N. - Erasmus Student Network",
+      "short_name": "ESN Polimi",
+      "website": "https://milanopolitecnico.esn.it/",
+      "description": "Volontariato, scambi culturali e attività per accogliere gli studenti internazionali del Poli.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/erasmus-student-network"
+    },
+    {
+      "key": "poliran",
+      "name": "POLIRAN",
+      "short_name": "POLIRAN",
+      "website": "https://www.linkedin.com/company/poliran",
+      "description": "Associazione internazionale accreditata al Politecnico di Milano, legata alla comunità studentesca iraniana.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/poliran"
+    },
+    {
+      "key": "alpine",
+      "name": "Alpine Polimi",
+      "short_name": "Alpine Polimi",
+      "website": "https://www.alpinepolimi.it/",
+      "description": "Community universitaria per montagna, escursionismo, arrampicata e attività all’aperto.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/alpine-polimi"
+    },
+    {
+      "key": "scacchi",
+      "name": "Scacchi Polimi",
+      "short_name": "Scacchi Polimi",
+      "website": "https://www.polimi.it/studenti/associazioni-degli-studenti/scacchi-polimi",
+      "description": "Associazione scacchistica studentesca iscritta all’albo del Politecnico di Milano dal 2015.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/scacchi-polimi"
+    },
+    {
+      "key": "alpi-milano",
+      "name": "ALPI+MILANO APS",
+      "short_name": "ALPI+MILANO",
+      "website": "https://www.alpimilano.it/",
+      "description": "Associazione organizzatrice del festival CortAlp.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/cortalp-concorso-e-festival-del-cortometraggio-di-montagna-milano-34manlio-armellini34-5a-edizione",
+      "reviewed_on": "2026-11-12"
+    },
+    {
+      "key": "cai",
+      "name": "Club Alpino Italiano",
+      "short_name": "CAI",
+      "website": "https://www.cai.it/",
+      "description": "Associazione che collabora con Polimi e ALPI+MILANO al concorso CortAlp.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/cortalp-concorso-e-festival-del-cortometraggio-di-montagna-milano-34manlio-armellini34-5a-edizione",
+      "reviewed_on": "2026-11-12"
+    },
+    {
+      "key": "amd",
+      "name": "Advanced Micro Devices",
+      "short_name": "AMD",
+      "website": "https://www.amd.com/",
+      "description": "Partner del corso introduttivo alla progettazione FPGA.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduzione-al-design-fpga-con-amd",
+      "reviewed_on": "2026-11-12"
+    },
+    {
+      "key": "pagani",
+      "name": "Pagani Automobili",
+      "short_name": "Pagani",
+      "website": "https://www.pagani.com/",
+      "description": "Partner del workshop sulle interfacce fisiche per l’automobile.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/pagani-signature-interfaces-designing-tangible-human-machine-experiences",
+      "reviewed_on": "2026-11-12"
+    },
+    {
+      "key": "colomba",
+      "name": "CoLomba – Cooperazione Lombardia",
+      "short_name": "CoLomba",
+      "website": "",
+      "description": "Rete lombarda di organizzazioni di cooperazione, coinvolta nel coordinamento del programma su Agenda 2030.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/cooperazione-per-lo-sviluppo-nellera-dellagenda-2030-dalla-teoria-alla-pratica",
+      "reviewed_on": "2026-11-12"
+    },
+    {
+      "key": "fondazione-renzo-piano",
+      "name": "Fondazione Renzo Piano",
+      "short_name": "Fondazione Renzo Piano",
+      "website": "https://fondazionerenzopiano.org/",
+      "description": "Fondazione promotrice dell’iniziativa didattica Studenti in cantiere.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/workshop-34studenti-in-cantiere34",
+      "reviewed_on": "2026-11-12"
+    },
+    {
+      "key": "rpbw",
+      "name": "Renzo Piano Building Workshop",
+      "short_name": "RPBW",
+      "website": "https://www.rpbw.com/",
+      "description": "Studio di architettura che collabora alle visite e alle attività di Studenti in cantiere.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/workshop-34studenti-in-cantiere34",
+      "reviewed_on": "2026-11-12"
+    },
+    {
+      "key": "adi",
+      "name": "Associazione per il Disegno Industriale",
+      "short_name": "ADI",
+      "website": "https://www.adi-design.org/",
+      "description": "Associazione e partner del ciclo Diventare designer, anche attraverso il proprio museo.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/diventare-designer-ed-3",
+      "reviewed_on": "2026-11-12"
+    },
+    {
+      "key": "arcteryx",
+      "name": "Arc’teryx Equipment",
+      "short_name": "Arc’teryx",
+      "website": "https://arcteryx.com/",
+      "description": "Partner del laboratorio di progettazione circolare con materiali e componenti recuperati.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/circular-by-design-workshop-by-arc39teryx",
+      "reviewed_on": "2026-11-12"
+    }
+  ],
+  "activities": [
+    {
+      "key": "argo",
+      "title": "ARGO – Autonomous Robot for Ground Operations",
+      "kind": "project",
+      "organization_keys": [
+        "aea"
+      ],
+      "description": "Progetto di robotica autonoma terrestre; include una formazione iniziale e un team competitivo.",
+      "source_url": "https://www.aeapolimi.it/article/28?articleID=31&id=28&image=https%3A%2F%2Futfs.io%2Ff%2F29ARacB0SnqQIOU8Z4Ceh6UX02fAWOZtp5FxqMiYQdCKRBsm&title=AEA+%E2%80%93+Call+for+Recruitment&type=recruitment",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Recruiting AEA, primo semestre 2026/27",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Aree: elettronica di potenza, apprendimento automatico, localizzazione, simulazione, visione, ROS/Python, design e partnership. Ammessi anche principianti tramite ARGO Training.",
+      "availability": "open",
+      "icon": "robot",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "argo-training",
+        "poul-pcb"
+      ],
+      "preparation_notes": "Il training introduce il progetto; il ramo Arduino e PCB prepara al lavoro sull’elettronica. Scegli il ramo coerente con il ruolo che ti interessa: non devi completarli tutti per candidarti."
+    },
+    {
+      "key": "argo-training",
+      "title": "ARGO Training",
+      "kind": "course",
+      "organization_keys": [
+        "aea"
+      ],
+      "description": "Ingresso formativo nel progetto ARGO: imparare facendo prima del team competitivo. Calendario non pubblicato.",
+      "source_url": "https://www.aeapolimi.it/article/28?articleID=31&id=28&image=https%3A%2F%2Futfs.io%2Ff%2F29ARacB0SnqQIOU8Z4Ceh6UX02fAWOZtp5FxqMiYQdCKRBsm&title=AEA+%E2%80%93+Call+for+Recruitment&type=recruitment",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Formazione collegata al recruiting ARGO 2026/27",
+      "location": "Politecnico di Milano",
+      "official_requirements": "La call invita anche chi sta iniziando.",
+      "availability": "open",
+      "icon": "robot",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-python",
+        "poul-git"
+      ],
+      "preparation_notes": "Python e Git sono una preparazione utile al lavoro sul software di un robot. ARGO Training è pensato anche per principianti: puoi iniziare il training senza aver completato queste tappe."
+    },
+    {
+      "key": "sapiens",
+      "title": "SAPIENS – mano robotica",
+      "kind": "project",
+      "organization_keys": [
+        "aea"
+      ],
+      "description": "Sviluppo di una mano robotica che traduce segnali muscolari in movimenti delle dita.",
+      "source_url": "https://www.aeapolimi.it/article/28?articleID=31&id=28&image=https%3A%2F%2Futfs.io%2Ff%2F29ARacB0SnqQIOU8Z4Ceh6UX02fAWOZtp5FxqMiYQdCKRBsm&title=AEA+%E2%80%93+Call+for+Recruitment&type=recruitment",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Recruiting AEA, primo semestre 2026/27",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Meccanica, elettronica, segnali e software; richiesto un incontro settimanale.",
+      "availability": "open",
+      "icon": "circuit",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-3d-printing",
+        "poul-pcb",
+        "bea-python"
+      ],
+      "preparation_notes": "Prototipazione, elettronica e programmazione preparano a parti diverse della mano robotica. I rami rappresentano competenze complementari, non corsi obbligatori né un calendario di selezione."
+    },
+    {
+      "key": "drift",
+      "title": "DRIFT – banco di prova per UAV",
+      "kind": "project",
+      "organization_keys": [
+        "aea"
+      ],
+      "description": "Sistema attuato per studiare la risposta dei droni a disturbi in un ambiente controllato.",
+      "source_url": "https://www.aeapolimi.it/article/28?articleID=31&id=28&image=https%3A%2F%2Futfs.io%2Ff%2F29ARacB0SnqQIOU8Z4Ceh6UX02fAWOZtp5FxqMiYQdCKRBsm&title=AEA+%E2%80%93+Call+for+Recruitment&type=recruitment",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Non indicati nella fonte; verificare con l'organizzatore.",
+      "availability": "ongoing",
+      "icon": "robot",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-pcb",
+        "pia-matlab-2026"
+      ],
+      "preparation_notes": "Elettronica e strumenti numerici possono aiutare a lavorare su un banco di prova per droni. Il corso MATLAB ha una selezione propria: verifica la fonte, oppure parti da competenze equivalenti."
+    },
+    {
+      "key": "leg-aid",
+      "title": "Leg Aid Exoskeleton",
+      "kind": "project",
+      "organization_keys": [
+        "bea",
+        "aea"
+      ],
+      "description": "Esoscheletro per assistenza al movimento, inizialmente basato sulla piattaforma aperta OpenExo e sull'articolazione dell'anca.",
+      "source_url": "https://www.beapolimi.it/projects/leg-aid-exoskeleton",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto in sviluppo; recruiting attualmente chiuso secondo la call AEA 2026/27",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Call AEA: nuovi inserimenti non attivi; ulteriori opportunità previste nel semestre successivo.",
+      "availability": "closed",
+      "icon": "robot",
+      "supporting_source_urls": [
+        "https://www.aeapolimi.it/article/28?articleID=31&id=28&image=https%3A%2F%2Futfs.io%2Ff%2F29ARacB0SnqQIOU8Z4Ceh6UX02fAWOZtp5FxqMiYQdCKRBsm&title=AEA+%E2%80%93+Call+for+Recruitment&type=recruitment"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-3d-printing",
+        "poul-pcb"
+      ],
+      "preparation_notes": "Prototipazione ed elettronica costituiscono una preparazione possibile al lavoro su un esoscheletro. Il collegamento non riapre il recruiting già concluso."
+    },
+    {
+      "key": "bea-band",
+      "title": "BEA Band",
+      "kind": "project",
+      "organization_keys": [
+        "bea",
+        "pmds"
+      ],
+      "description": "Dispositivo indossabile che integra sensori fisiologici e analisi dei dati. Stato del prototipo da confermare con il team.",
+      "source_url": "https://www.beapolimi.it/projects/bea-band",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Non indicati nella fonte; verificare con l'organizzatore.",
+      "availability": "ongoing",
+      "icon": "circuit",
+      "supporting_source_urls": [
+        "https://www.polimidatascientists.it/projects",
+        "https://www.polimidatascientists.it/events"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-pcb",
+        "bea-python"
+      ],
+      "preparation_notes": "Circuiti e analisi con Python aiutano ad affrontare un progetto di dispositivo indossabile."
+    },
+    {
+      "key": "invox",
+      "title": "InVox",
+      "kind": "project",
+      "organization_keys": [
+        "bea",
+        "pmds"
+      ],
+      "description": "Interfaccia indossabile che esplora segnali e micromovimenti legati all'intenzione di parlare, con decodifica verso testo o comandi vocali.",
+      "source_url": "https://www.beapolimi.it/projects/invox",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Non indicati nella fonte; verificare con l'organizzatore.",
+      "availability": "ongoing",
+      "icon": "signal",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-3d-printing",
+        "bea-python"
+      ],
+      "preparation_notes": "Prototipazione e programmazione sono due preparazioni possibili per collaborare allo sviluppo del dispositivo."
+    },
+    {
+      "key": "microfluidica-tdm",
+      "title": "Microfluidica TDM",
+      "kind": "project",
+      "organization_keys": [
+        "bea"
+      ],
+      "description": "Studio di un dispositivo microfluidico per monitorare due antibiotici; comprende progetto del chip, simulazione e confronto tra metodi di rilevamento.",
+      "source_url": "https://www.beapolimi.it/projects/microfluidica-tdm",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Non indicati nella fonte; verificare con l'organizzatore.",
+      "availability": "ongoing",
+      "icon": "circuit",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "bea-3d-printing",
+      "title": "3D Printing Course 2.0",
+      "kind": "course",
+      "organization_keys": [
+        "bea"
+      ],
+      "description": "Corso pratico dalla modellazione alla stampa 3D. La scheda descrive il programma, ma le date dell'edizione corrente non sono confermate.",
+      "source_url": "https://www.beapolimi.it/projects/3d-printing-course",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Calendario e iscrizioni da confermare",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Non indicati nella fonte; verificare con l'organizzatore.",
+      "availability": "unknown",
+      "icon": "design",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "bea-python",
+      "title": "Python Course – BEA",
+      "kind": "course",
+      "organization_keys": [
+        "bea"
+      ],
+      "description": "Corso introduttivo presente nel catalogo BEA; programma dettagliato e calendario non ancora pubblicati.",
+      "source_url": "https://www.beapolimi.it/projects/python-course",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Calendario e iscrizioni da confermare",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Non indicati nella fonte; verificare con l'organizzatore.",
+      "availability": "unknown",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "bea-bci",
+      "title": "BCI Course",
+      "kind": "course",
+      "organization_keys": [
+        "bea"
+      ],
+      "description": "Introduzione pratica alle interfacce cervello-computer con acquisizione e analisi di segnali. Il piano pubblicato è preliminare.",
+      "source_url": "https://www.beapolimi.it/projects/bci-course",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Piano preliminare; calendario da confermare",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Il programma indica Python come base.",
+      "availability": "unknown",
+      "icon": "signal",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-python"
+      ],
+      "preparation_notes": "Una base di Python rende più accessibile il lavoro pratico sulle interfacce cervello-computer. Il corso Python è un modo per prepararla, non l’unico."
+    },
+    {
+      "key": "aim-python-2026",
+      "title": "Corso Python 2026 – materiali AIM",
+      "kind": "course",
+      "organization_keys": [
+        "aim"
+      ],
+      "description": "Notebook, lezioni ed esercizi dell'edizione 2026 disponibili nel repository dell'associazione, utilizzabili per studio autonomo.",
+      "source_url": "https://github.com/AIM-mate/corso-python-26",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Materiali online dell'edizione 2026; non un'iscrizione a lezioni future",
+      "location": "Online",
+      "official_requirements": "Le prime lezioni sono utilizzabili su Google Colab; successive istruzioni per ambiente Linux/WSL e GitHub.",
+      "availability": "ongoing",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "poul-linux",
+      "title": "Linux Base – materiali POuL",
+      "kind": "course",
+      "organization_keys": [
+        "poul"
+      ],
+      "description": "Installazione, terminale e software su Linux. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "source_url": "https://poul.org/courses/linux/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Archivio formativo 2026; nessuna nuova data di lezione confermata",
+      "location": "Online",
+      "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
+      "availability": "ongoing",
+      "icon": "code",
+      "supporting_source_urls": [
+        "https://poul.org/courses/"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "poul-git",
+      "title": "Git – materiali POuL",
+      "kind": "course",
+      "organization_keys": [
+        "poul"
+      ],
+      "description": "Controllo di versione per lavorare sui progetti. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "source_url": "https://poul.org/courses/git/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Archivio formativo 2026; nessuna nuova data di lezione confermata",
+      "location": "Online",
+      "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
+      "availability": "ongoing",
+      "icon": "code",
+      "supporting_source_urls": [
+        "https://poul.org/courses/"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-linux"
+      ],
+      "preparation_notes": "Prendere confidenza con terminale e file aiuta a usare Git. I materiali POuL sono consultabili online; non è obbligatorio aver seguito il corso Linux."
+    },
+    {
+      "key": "poul-arduino",
+      "title": "Arduino – materiali POuL",
+      "kind": "course",
+      "organization_keys": [
+        "poul"
+      ],
+      "description": "Laboratori di prototipazione con schede Arduino. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "source_url": "https://poul.org/courses/arduino/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Archivio formativo 2025; nessuna nuova data di lezione confermata",
+      "location": "Online",
+      "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
+      "availability": "ongoing",
+      "icon": "circuit",
+      "supporting_source_urls": [
+        "https://poul.org/courses/"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "poul-pcb",
+      "title": "PCB Design – materiali POuL",
+      "kind": "course",
+      "organization_keys": [
+        "poul"
+      ],
+      "description": "Introduzione ai circuiti stampati e progettazione con KiCad. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "source_url": "https://poul.org/courses/pcb/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Archivio formativo 2025; nessuna nuova data di lezione confermata",
+      "location": "Online",
+      "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
+      "availability": "ongoing",
+      "icon": "circuit",
+      "supporting_source_urls": [
+        "https://poul.org/courses/"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-arduino"
+      ],
+      "preparation_notes": "Dai primi circuiti e sensori alla progettazione di una scheda: una progressione pratica proposta da PoliSkilled usando i materiali online POuL."
+    },
+    {
+      "key": "poul-python",
+      "title": "Python – materiali POuL",
+      "kind": "course",
+      "organization_keys": [
+        "poul"
+      ],
+      "description": "Basi di Python, visione artificiale con OpenCV e rappresentazioni numeriche. Materiali e registrazioni delle edizioni passate sono raccolti dal POuL.",
+      "source_url": "https://poul.org/courses/python/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Archivio formativo 2024; nessuna nuova data di lezione confermata",
+      "location": "Online",
+      "official_requirements": "Materiali consultabili liberamente; eventuali nuove lezioni hanno iscrizioni separate.",
+      "availability": "ongoing",
+      "icon": "code",
+      "supporting_source_urls": [
+        "https://poul.org/courses/"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "quantum-error-2026",
+      "title": "Quantum Error Correction Course",
+      "kind": "course",
+      "organization_keys": [
+        "pmds"
+      ],
+      "description": "Quattro laboratori PMQC con Stim: correzione degli errori quantistici e sfida finale.",
+      "source_url": "https://www.polimidatascientists.it/events",
+      "program": "",
+      "starts_at": "2026-11-17T18:15:00+01:00",
+      "ends_on": "2026-12-10",
+      "enrollment_deadline": null,
+      "period": "17 e 26 novembre, 3 e 10 dicembre 2026, 18:15–20:15",
+      "location": "Campus Leonardo, edificio 11, aula Q.1",
+      "official_requirements": "Basi di Python e computer personale; nessuna conoscenza quantistica richiesta. In italiano.",
+      "availability": "open",
+      "icon": "circuit",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-python"
+      ],
+      "preparation_notes": "La fonte richiede basi di Python: i materiali POuL sono una possibilità per acquisirle prima del laboratorio."
+    },
+    {
+      "key": "ai-pricing-hackathon-2026",
+      "title": "AI Dynamic Pricing Hackathon",
+      "kind": "event",
+      "organization_keys": [
+        "pmds"
+      ],
+      "description": "Con AIRIC: agenti AI gestiscono prezzi, produzione e concorrenza in un mercato simulato.",
+      "source_url": "https://www.polimidatascientists.it/events",
+      "program": "",
+      "starts_at": "2026-11-18T14:00:00+01:00",
+      "ends_on": "2026-11-18",
+      "enrollment_deadline": null,
+      "period": "18 novembre 2026, 14:00–19:00",
+      "location": "Campus Leonardo, aula Emilio Gatti B20",
+      "official_requirements": "Iscrizione individuale o in squadra.",
+      "availability": "open",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "aim-python-2026"
+      ],
+      "preparation_notes": "I materiali Python e data science aiutano a preparare esperimenti per un hackathon sui modelli di pricing."
+    },
+    {
+      "key": "data-career-2026",
+      "title": "Data Career Competition",
+      "kind": "event",
+      "organization_keys": [
+        "pmds",
+        "polimi"
+      ],
+      "description": "Sfida sui dati con il Career Service e supporto di mentor.",
+      "source_url": "https://www.polimidatascientists.it/events",
+      "program": "",
+      "starts_at": null,
+      "ends_on": "2026-11-30",
+      "enrollment_deadline": null,
+      "period": "30 novembre 2026; orario da confermare",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Modalità di partecipazione da verificare.",
+      "availability": "unknown",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pquantum-2026",
+      "title": "pQuantum – laboratorio di quantum computing",
+      "kind": "event",
+      "organization_keys": [
+        "pmds",
+        "polimi"
+      ],
+      "description": "Visita inaugurale e brevi interventi sui progetti del laboratorio.",
+      "source_url": "https://www.polimidatascientists.it/events",
+      "program": "",
+      "starts_at": "2026-12-11T11:00:00+01:00",
+      "ends_on": "2026-12-11",
+      "enrollment_deadline": null,
+      "period": "11 dicembre 2026, dalle 11:00",
+      "location": "Politecnico di Milano; edificio da confermare",
+      "official_requirements": "Aperto a tutti i livelli di preparazione.",
+      "availability": "open",
+      "icon": "circuit",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "quantum-error-2026"
+      ],
+      "preparation_notes": "Il corso sugli errori quantistici è un approfondimento facoltativo prima del workshop. Il workshop è aperto anche a chi parte da zero."
+    },
+    {
+      "key": "quantum-day-2026",
+      "title": "Thematic Day Quantum",
+      "kind": "event",
+      "organization_keys": [
+        "pmds"
+      ],
+      "description": "Con Polimi Innovators: interventi, tre filoni tematici e incontri con startup quantistiche.",
+      "source_url": "https://www.polimidatascientists.it/events",
+      "program": "",
+      "starts_at": "2026-12-12T08:30:00+01:00",
+      "ends_on": "2026-12-12",
+      "enrollment_deadline": null,
+      "period": "12 dicembre 2026, 08:30–15:00",
+      "location": "Trifoglio, edificio 11, Campus Leonardo (come indicato dall'organizzatore)",
+      "official_requirements": "Gratuito, su registrazione fino a esaurimento posti.",
+      "availability": "open",
+      "icon": "circuit",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pmds-f1",
+      "title": "Machine learning for F1",
+      "kind": "project",
+      "organization_keys": [
+        "pmds"
+      ],
+      "description": "Reti neurali informate dalla fisica per modellare e ottimizzare l'aerodinamica di un'ala anteriore.",
+      "source_url": "https://www.polimidatascientists.it/projects",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Da ottobre 2026; candidature indicate aperte nella pagina",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Non indicati nella fonte; verificare con l'organizzatore.",
+      "availability": "open",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "aim-python-2026"
+      ],
+      "preparation_notes": "Le basi di Python e analisi dati aiutano a esplorare dati e modelli applicati alla Formula 1."
+    },
+    {
+      "key": "franco",
+      "title": "F.R.A.N.C.O.",
+      "kind": "project",
+      "organization_keys": [
+        "pmds",
+        "polimi"
+      ],
+      "description": "Robot autonomo per consegnare beni essenziali in aree allagate; collaborazione dichiarata con AIRLAB.",
+      "source_url": "https://www.polimidatascientists.it/projects",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Da ottobre 2026; progetto in sviluppo",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Non indicati nella fonte; verificare con l'organizzatore.",
+      "availability": "ongoing",
+      "icon": "robot",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "aim-python-2026",
+        "poul-git"
+      ],
+      "preparation_notes": "Python per elaborare dati e Git per collaborare sul codice: due basi utili per il progetto."
+    },
+    {
+      "key": "pmds-bea-bci",
+      "title": "BCI – PMDS × BEA",
+      "kind": "project",
+      "organization_keys": [
+        "pmds",
+        "bea"
+      ],
+      "description": "Esplorazione di applicazioni AI a partire dai segnali registrati da un dispositivo per l'attività cerebrale.",
+      "source_url": "https://www.polimidatascientists.it/projects",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Da ottobre 2026; progetto in sviluppo",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Non indicati nella fonte; verificare con l'organizzatore.",
+      "availability": "ongoing",
+      "icon": "signal",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-bci",
+        "aim-python-2026"
+      ],
+      "preparation_notes": "Il corso BCI e i materiali Python di AIM preparano rispettivamente al dominio e all’analisi dei dati. Calendari e selezione del progetto restano quelli dell’ente."
+    },
+    {
+      "key": "delta-betting-2026",
+      "title": "Betting on the truth?",
+      "kind": "event",
+      "organization_keys": [
+        "delta"
+      ],
+      "description": "Talk sui mercati predittivi: probabilità, calibrazione e limiti. Esempi interattivi con soli punti virtuali.",
+      "source_url": "https://deltapolimi.org/events/",
+      "program": "",
+      "starts_at": "2026-11-19T18:00:00+01:00",
+      "ends_on": "2026-11-19",
+      "enrollment_deadline": null,
+      "period": "19 novembre 2026, 18:00–19:00",
+      "location": "Politecnico di Milano, aula 3.1.3",
+      "official_requirements": "Aperto agli studenti Polimi; nessuna preparazione finanziaria o crypto richiesta. In inglese.",
+      "availability": "open",
+      "icon": "people",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "compute-atlas",
+      "title": "Compute Atlas",
+      "kind": "project",
+      "organization_keys": [
+        "delta"
+      ],
+      "description": "Mappa aperta delle infrastrutture di calcolo dell'AI: data center, GPU, regioni cloud e aziende, con fonti verificabili.",
+      "source_url": "https://deltapolimi.org/projects/compute-atlas/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto in sviluppo; candidature terminate l'8 novembre",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Aree di lavoro: database, ETL, API REST e web.",
+      "availability": "closed",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-python",
+        "poul-git"
+      ],
+      "preparation_notes": "Programmazione e collaborazione sul codice sono basi utili per il lavoro su dati, API e applicazioni. La selezione indicata nella fonte è già chiusa."
+    },
+    {
+      "key": "silicon-crowd",
+      "title": "Silicon Crowd",
+      "kind": "project",
+      "organization_keys": [
+        "delta"
+      ],
+      "description": "Agenti AI raccolgono informazioni e formulano previsioni, combinate da un modello che ne apprende l'affidabilità.",
+      "source_url": "https://deltapolimi.org/projects/silicon-crowd/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto in sviluppo nel gruppo principale",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Aree di lavoro: Python, machine learning, agenti LLM e forecasting.",
+      "availability": "ongoing",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "aim-python-2026"
+      ],
+      "preparation_notes": "Una preparazione Python e machine learning aiuta a sperimentare con modelli linguistici e previsioni."
+    },
+    {
+      "key": "best-techclash-2026",
+      "title": "Student Tech Clash: AI on Campus",
+      "kind": "event",
+      "organization_keys": [
+        "best",
+        "polimi"
+      ],
+      "description": "BEST e Reply, con il Career Service, propongono una sfida di idee AI per migliorare la vita nel campus.",
+      "source_url": "https://www.eestecmi.it/events/GL-yh019xe3",
+      "program": "",
+      "starts_at": "2026-11-14T09:00:00+01:00",
+      "ends_on": "2026-11-14",
+      "enrollment_deadline": null,
+      "period": "14 novembre 2026, 09:00–18:00",
+      "location": "Campus Leonardo, Trifoglio (edificio 13 secondo la pagina)",
+      "official_requirements": "Squadre di 2–4, anche iscrizione individuale; nessuna preparazione specifica richiesta.",
+      "availability": "open",
+      "icon": "code",
+      "supporting_source_urls": [
+        "https://bestmilan.it/"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "mesa-connected-2026",
+      "title": "SRT ConnectED Job Fair",
+      "kind": "event",
+      "organization_keys": [
+        "mesa"
+      ],
+      "description": "Incontro con università internazionali per esplorare master, requisiti e opportunità dopo la laurea.",
+      "source_url": "https://www.eestecmi.it/events/GL-ej6mrs1p",
+      "program": "",
+      "starts_at": "2026-11-17T16:00:00+01:00",
+      "ends_on": "2026-11-17",
+      "enrollment_deadline": null,
+      "period": "17 novembre 2026, dalle 16:00; orario finale da verificare",
+      "location": "The Westin Palace, Piazza della Repubblica 20, Milano",
+      "official_requirements": "Ingresso gratuito per studenti Polimi, previa registrazione per il pass.",
+      "availability": "open",
+      "icon": "people",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "mesa-international-2026",
+      "title": "GM – International Awareness",
+      "kind": "event",
+      "organization_keys": [
+        "mesa"
+      ],
+      "description": "Incontro aperto sulla dimensione internazionale di MESA con ospiti della rete europea.",
+      "source_url": "https://www.eestecmi.it/events/GI-1szdc441",
+      "program": "",
+      "starts_at": "2026-11-26T18:15:00+01:00",
+      "ends_on": "2026-11-26",
+      "enrollment_deadline": null,
+      "period": "26 novembre 2026, 18:15–19:15",
+      "location": "Politecnico di Milano, edificio 11, aula III A",
+      "official_requirements": "Modalità di partecipazione sulla pagina MESA.",
+      "availability": "open",
+      "icon": "people",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "physis-energy-boat",
+      "title": "Physis PEB – Energy Boat",
+      "kind": "project",
+      "organization_keys": [
+        "physis"
+      ],
+      "description": "Progettazione di un catamarano che combina idrogeno, pannelli solari e batterie per la Monaco Energy Boat Challenge.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/monaco-energy-boat-challenge",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Recruiting indicativamente a settembre/ottobre e marzo, tramite modulo del team.",
+      "availability": "ongoing",
+      "icon": "circuit",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-pcb",
+        "bea-3d-printing"
+      ],
+      "preparation_notes": "Elettronica e prototipazione preparano a due possibili aree di una barca elettrica. Non sono condizioni di ammissione al team e non coprono tutti i ruoli."
+    },
+    {
+      "key": "dynamis-formula",
+      "title": "Dynamis PRC – Formula Student",
+      "kind": "project",
+      "organization_keys": [
+        "dynamis"
+      ],
+      "description": "Sviluppo di monoposto elettriche e sistemi di guida autonoma, dalla progettazione alle prove in pista.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/formula-student",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Team attivo; selezione pubblicata di ottobre conclusa",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Prove e requisiti dipendono dal reparto. La selezione pubblicata prevedeva un test il 1 ottobre 2026; prossime finestre da verificare.",
+      "availability": "closed",
+      "icon": "flag",
+      "supporting_source_urls": [
+        "https://www.dynamisprc.polimi.it/unisciti-a-noi/"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-pcb",
+        "pia-think-code-drive-2027"
+      ],
+      "preparation_notes": "Due rami per elettronica e propulsione elettrica. Il corso del 2027 prepara a esperienze future: non è una sequenza da completare per la selezione di ottobre 2026, già chiusa."
+    },
+    {
+      "key": "pmf-motostudent",
+      "title": "Polimi Motorcycle Factory – MotoStudent",
+      "kind": "project",
+      "organization_keys": [
+        "pmf"
+      ],
+      "description": "Progettazione, costruzione e test di prototipi motociclistici per competizioni studentesche internazionali.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/ipt-international-physicists-tournament-1",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Requisiti e candidature da verificare con il team.",
+      "availability": "ongoing",
+      "icon": "flag",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-pcb",
+        "bea-3d-printing"
+      ],
+      "preparation_notes": "Circuiti e prototipi sono una preparazione introduttiva possibile per contribuire alla moto, da integrare con le competenze del proprio reparto."
+    },
+    {
+      "key": "greenmecc-eco",
+      "title": "Green Mecc – Shell Eco-marathon",
+      "kind": "project",
+      "organization_keys": [
+        "greenmecc"
+      ],
+      "description": "Sviluppo di veicoli elettrici ad alta efficienza, integrando struttura, trasmissione, elettronica e strategia di gara.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/southwestern-europe-regional-contest-1",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Aperto agli studenti Polimi; colloquio su motivazione e conoscenze. Recruiting normalmente a settembre e marzo.",
+      "availability": "ongoing",
+      "icon": "flag",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "pia-think-code-drive-2027"
+      ],
+      "preparation_notes": "La sfida sull’efficienza del veicolo elettrico è un approfondimento coerente con la mobilità a basso consumo. Calendario e accesso al team sono indipendenti."
+    },
+    {
+      "key": "sailing-sumoth",
+      "title": "Polimi Sailing Team – SuMoth",
+      "kind": "project",
+      "organization_keys": [
+        "sailing"
+      ],
+      "description": "Progetto e costruzione di barche a vela foilanti con attenzione a materiali e impatto ambientale.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/dettaglio",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Team attivo; candidature della finestra 2026 concluse",
+      "location": "Politecnico di Milano",
+      "official_requirements": "La finestra di recruiting pubblicata nel calendario del team si è conclusa il 1 ottobre 2026.",
+      "availability": "closed",
+      "icon": "flag",
+      "supporting_source_urls": [
+        "https://www.polimisailingteam.it/eventi/"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-3d-printing"
+      ],
+      "preparation_notes": "Lavorare su piccoli prototipi è una preparazione introduttiva al progetto. Non sostituisce le competenze navali richieste dai diversi reparti; il recruiting citato è chiuso."
+    },
+    {
+      "key": "sailing-1001",
+      "title": "Polimi Sailing Team – 1001Cup",
+      "kind": "project",
+      "organization_keys": [
+        "sailing"
+      ],
+      "description": "Progettazione, costruzione e miglioramento di imbarcazioni per regate universitarie.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/1001-cup",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Modalità e prossima finestra di accesso da verificare con il Sailing Team.",
+      "availability": "ongoing",
+      "icon": "flag",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-3d-printing"
+      ],
+      "preparation_notes": "La prototipazione può essere un primo passo per conoscere il lavoro progettuale, senza essere un requisito del team."
+    },
+    {
+      "key": "skyward-euroc",
+      "title": "Skyward – European Rocketry Challenge",
+      "kind": "project",
+      "organization_keys": [
+        "skyward"
+      ],
+      "description": "Progettazione e lancio di razzi sperimentali: aerodinamica, propulsione, controllo, elettronica, software e recupero.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/euroc",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Recruiting normalmente a settembre; eventuali ingressi a marzo dipendono dalle posizioni disponibili.",
+      "availability": "ongoing",
+      "icon": "robot",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-pcb",
+        "poul-git"
+      ],
+      "preparation_notes": "Un ramo per l’elettronica e uno per gli strumenti di collaborazione software: preparazioni possibili per alcuni reparti del team razzi."
+    },
+    {
+      "key": "flymi-aircargo",
+      "title": "Fly-Mi – Air Cargo Challenge",
+      "kind": "project",
+      "organization_keys": [
+        "flymi"
+      ],
+      "description": "Droni ad ala fissa progettati dagli studenti per trasportare carichi nelle competizioni aeronautiche.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/air-cargo-challenge",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Requisiti di ruolo e prossima finestra di candidatura sul sito Fly-Mi.",
+      "availability": "ongoing",
+      "icon": "design",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-3d-printing",
+        "poul-pcb"
+      ],
+      "preparation_notes": "Prototipazione ed elettronica introducono strumenti utili per la costruzione di un aeromodello. Il team comprende anche ruoli con preparazioni diverse."
+    },
+    {
+      "key": "rovertech",
+      "title": "[R]overTech – European Rover Challenge",
+      "kind": "project",
+      "organization_keys": [
+        "polispace"
+      ],
+      "description": "Rover planetario con sistemi meccanici, elettronici e software per affrontare missioni simulate.",
+      "source_url": "https://polispace.it/rovertech-project/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Finestre di recruiting normalmente a settembre/ottobre e marzo; verifica il bando corrente.",
+      "availability": "ongoing",
+      "icon": "robot",
+      "supporting_source_urls": [
+        "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/european-rover-challenge"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "argo-training",
+        "poul-pcb"
+      ],
+      "preparation_notes": "Robotica pratica ed elettronica possono preparare a lavorare su un rover. ARGO Training appartiene a un altro ente: è una proposta PoliSkilled, non un accordo fra i team."
+    },
+    {
+      "key": "polispace-6s",
+      "title": "6S CubeSat",
+      "kind": "project",
+      "organization_keys": [
+        "polispace"
+      ],
+      "description": "Costruzione di un CubeSat 1U con progettazione della missione e dei sottosistemi.",
+      "source_url": "https://polispace.it/6s-cubesat-project/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Requisiti e candidature da verificare con il team.",
+      "availability": "ongoing",
+      "icon": "circuit",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-pcb",
+        "poul-git"
+      ],
+      "preparation_notes": "Elettronica e collaborazione sul codice preparano a due aree del progetto CubeSat, senza esaurire le competenze richieste ai diversi reparti."
+    },
+    {
+      "key": "polispace-ground",
+      "title": "Ground Station",
+      "kind": "project",
+      "organization_keys": [
+        "polispace"
+      ],
+      "description": "Stazione a terra a Bovisa per comunicazioni satellitari, telemetria e analisi dei dati.",
+      "source_url": "https://polispace.it/ground-station/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Campus Bovisa",
+      "official_requirements": "Requisiti e candidature da verificare con il team.",
+      "availability": "ongoing",
+      "icon": "signal",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-linux",
+        "poul-python"
+      ],
+      "preparation_notes": "Linux e Python sono due basi utili per sperimentare con strumenti software di una stazione di terra."
+    },
+    {
+      "key": "grasslammer",
+      "title": "Grasslammer – Field Robot Event",
+      "kind": "project",
+      "organization_keys": [
+        "grasslammer"
+      ],
+      "description": "Robotica agricola: navigazione autonoma, visione e identificazione delle piante in scenari di gara.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/field-robot-event",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Accesso collegato al corso Robotics di Informatica/Automazione; tutor anche da Multidisciplinary Project della magistrale Informatica.",
+      "availability": "ongoing",
+      "icon": "robot",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-python",
+        "poul-git"
+      ],
+      "preparation_notes": "Questi materiali preparano al lavoro software. Non sostituiscono l’accesso tramite gli insegnamenti indicati nella scheda ufficiale."
+    },
+    {
+      "key": "fes-bike-cybathlon",
+      "title": "Polimi FES Bike – Cybathlon",
+      "kind": "project",
+      "organization_keys": [
+        "fesbike"
+      ],
+      "description": "Ottimizzazione di un triciclo con stimolazione elettrica funzionale, del controllo e dell'esperienza del pilota.",
+      "source_url": "https://www.polimi.it/en/campus-and-services/sport-and-leisure/international-competitions/cybathlon",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Recruiting annuale tramite modulo annunciato sui canali ufficiali.",
+      "availability": "ongoing",
+      "icon": "circuit",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-bci",
+        "poul-pcb"
+      ],
+      "preparation_notes": "Biosignali ed elettronica sono ambiti introduttivi utili alle tecnologie assistive; BCI e stimolazione elettrica sono tecniche diverse. La proposta non equivale alla formazione specialistica del team."
+    },
+    {
+      "key": "polimove-indy",
+      "title": "PoliMOVE – Indy Autonomous Challenge",
+      "kind": "project",
+      "organization_keys": [
+        "polimove"
+      ],
+      "description": "Software di guida autonoma da competizione: controllo del veicolo, localizzazione, sensori e decisioni di gara.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/indy-autonomous-challenge",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Accesso tramite candidatura per una tesi nel gruppo di ricerca mOve. Il team comprende dottorandi e assegnisti.",
+      "availability": "ongoing",
+      "icon": "robot",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "aim-python-2026",
+        "poul-git"
+      ],
+      "preparation_notes": "Programmazione, dati e collaborazione sul codice offrono una preparazione iniziale alla guida autonoma. L’accesso tramite tesi o ricerca va concordato con il gruppo."
+    },
+    {
+      "key": "polimi-ipt",
+      "title": "International Physicists' Tournament",
+      "kind": "project",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Problemi aperti di fisica sperimentale affrontati con strumenti accessibili e discussione scientifica tra squadre.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/ipt-international-physicists-tournament",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Il team coinvolge studenti di Ingegneria Fisica al terzo anno triennale o primo magistrale; selezione normalmente a settembre.",
+      "availability": "ongoing",
+      "icon": "signal",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "polimi-swerc",
+      "title": "SWERC – programmazione competitiva",
+      "kind": "project",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Squadre di tre studenti risolvono problemi algoritmici in una gara a tempo.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/southwestern-europe-regional-contest",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Selezione normalmente tra ottobre e novembre tramite gara; competenze di programmazione, algoritmi e collaborazione.",
+      "availability": "ongoing",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-python"
+      ],
+      "preparation_notes": "I materiali Python aiutano a iniziare a programmare. Per la gara servono ulteriore pratica con algoritmi e le selezioni ufficiali: questo ramo è solo un punto di partenza."
+    },
+    {
+      "key": "polimi-recsys",
+      "title": "ACM RecSys Challenge",
+      "kind": "project",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Progetto competitivo per sviluppare sistemi di raccomandazione su dati reali.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/acm-recsys-challenge",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Il gruppo viene selezionato tra gli studenti del corso Recommender Systems.",
+      "availability": "ongoing",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "aim-python-2026"
+      ],
+      "preparation_notes": "Python e analisi dati sono una base utile ai sistemi di raccomandazione. Rimane la selezione tramite l’insegnamento indicato dal Polimi."
+    },
+    {
+      "key": "polimi-score",
+      "title": "SCORE – Student Contest on Software Engineering",
+      "kind": "project",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Realizzazione di un sistema software in team universitari internazionali.",
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/score",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto continuativo; candidature da verificare sul sito",
+      "location": "Politecnico di Milano",
+      "official_requirements": "Partecipazione collegata al corso Distributed Software Development; prossima edizione da verificare.",
+      "availability": "unknown",
+      "icon": "code",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-git"
+      ],
+      "preparation_notes": "Git prepara al lavoro condiviso su un progetto software; non sostituisce l’iscrizione all’insegnamento e la selezione ufficiale."
+    },
+    {
+      "key": "polifonia-coro",
+      "title": "Coro di Polifonia",
+      "kind": "course",
+      "organization_keys": [
+        "polifonia"
+      ],
+      "description": "Lezioni collettive settimanali di canto con la guida di Giorgio Brenna. Si può iniziare anche senza esperienza musicale.",
+      "source_url": "https://www.polifoniapolimi.it/coro",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Attività continuativa; calendario da confermare con l’associazione.",
+      "location": "Aula Natta 6.0.1, campus Leonardo",
+      "official_requirements": "Iscrizione a Polifonia; non sono richieste competenze pregresse.",
+      "availability": "ongoing",
+      "icon": "signal",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "polifonia-orchestra",
+      "title": "Orchestra di Polifonia",
+      "kind": "project",
+      "organization_keys": [
+        "polifonia"
+      ],
+      "description": "Suonare insieme brani classici e colonne sonore sotto la direzione di Marco Pugliese. La formazione accoglie strumenti e livelli diversi.",
+      "source_url": "https://www.polifoniapolimi.it/ensemble",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Attività continuativa; calendario da confermare con l’associazione.",
+      "location": "Aula Natta 6.0.1, campus Leonardo",
+      "official_requirements": "Essere soci di Polifonia. La pagina accoglie tutti gli strumenti e livelli musicali.",
+      "availability": "ongoing",
+      "icon": "signal",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "polifonia-musical",
+      "title": "Laboratorio di musical",
+      "kind": "course",
+      "organization_keys": [
+        "polifonia",
+        "teatro-biglie"
+      ],
+      "description": "Un laboratorio condiviso da Polifonia e Teatro delle Biglie per lavorare su canto, recitazione ed espressione scenica.",
+      "source_url": "https://www.polifoniapolimi.it/sincroni",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Laboratorio ricorrente; la pagina rinvia ai prossimi aggiornamenti per il calendario.",
+      "location": "Aula IIIA, campus Leonardo",
+      "official_requirements": "Iscrizione a Polifonia e un minimo di esperienza nel canto oppure nella recitazione.",
+      "availability": "unknown",
+      "icon": "signal",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [
+        "polifonia-coro",
+        "biglie-laboratori"
+      ],
+      "preparation_notes": "Canto e teatro sono due modi diversi di prepararsi. La fonte richiede una minima esperienza in canto oppure recitazione: scegli il ramo che ti serve, non entrambi come obbligo."
+    },
+    {
+      "key": "polifonia-band",
+      "title": "Le band di Polifonia",
+      "kind": "project",
+      "organization_keys": [
+        "polifonia"
+      ],
+      "description": "Incontra altri musicisti e forma una band. I gruppi possono proporre brani per i concerti dell’associazione e organizzano autonomamente le prove.",
+      "source_url": "https://www.polifoniapolimi.it/copia-di-orchestra",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Attività continuativa; calendario da confermare con l’associazione.",
+      "location": "Sale prova concordate dai partecipanti",
+      "official_requirements": "Iscrizione a Polifonia; generi musicali liberi.",
+      "availability": "ongoing",
+      "icon": "signal",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "polifonia-big-band",
+      "title": "Big Band di Polifonia",
+      "kind": "project",
+      "organization_keys": [
+        "polifonia"
+      ],
+      "description": "Formazione blues e jazz che prepara accompagnamenti musicali per appuntamenti del Poli e iniziative esterne.",
+      "source_url": "https://www.polifoniapolimi.it/copia-di-band",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Prove settimanali; la pagina indica il venerdì 18–20, da riconfermare.",
+      "location": "Aula Natta 6.0.1, campus Leonardo",
+      "official_requirements": "Buona esperienza musicale e iscrizione a Polifonia. Disponibilità degli strumenti da verificare con il gruppo.",
+      "availability": "ongoing",
+      "icon": "signal",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [
+        "polifonia-orchestra"
+      ],
+      "preparation_notes": "Suonare in un gruppo è un modo per fare esperienza prima della Big Band. Il repertorio e il livello richiesto vanno concordati con Polifonia."
+    },
+    {
+      "key": "enactus-reload",
+      "title": "ReLoad",
+      "kind": "project",
+      "organization_keys": [
+        "enactus"
+      ],
+      "description": "Progetto di piattaforma per collegare le capacità inutilizzate dei piccoli trasportatori alle richieste di spedizione, riducendo viaggi a vuoto e inefficienze.",
+      "source_url": "https://www.enactuspolimi.org/projects",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto dichiarato attivo; ingresso nel team secondo i cicli di selezione.",
+      "location": "Milano",
+      "official_requirements": "Per candidarsi a Enactus: essere studenti Polimi; nessun corso di laurea obbligatorio. La pagina Join us indica il prossimo ciclo di selezione nel semestre estivo 2026/27.",
+      "availability": "ongoing",
+      "icon": "code",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [
+        "pia-startup101-gen-2027"
+      ],
+      "preparation_notes": "Strumenti per passare da un’idea a un progetto imprenditoriale possono aiutare a contribuire a ReLoad. Le selezioni Enactus e il corso hanno calendari indipendenti."
+    },
+    {
+      "key": "enactus-shea-matters",
+      "title": "Shea Matters",
+      "kind": "project",
+      "organization_keys": [
+        "enactus"
+      ],
+      "description": "Sostiene i produttori di karité di Kumbungu, in Ghana, attraverso accesso al mercato italiano e reinvestimenti nella sostenibilità della comunità.",
+      "source_url": "https://www.enactuspolimi.org/projects",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto dichiarato attivo; ingresso nel team secondo i cicli di selezione.",
+      "location": "Milano",
+      "official_requirements": "Per candidarsi a Enactus: essere studenti Polimi; nessun corso di laurea obbligatorio. La pagina Join us indica il prossimo ciclo di selezione nel semestre estivo 2026/27.",
+      "availability": "ongoing",
+      "icon": "design",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [
+        "pia-cooperazione-2030-2026"
+      ],
+      "preparation_notes": "La cooperazione allo sviluppo offre un contesto utile per ragionare sull’impatto sociale del progetto. È un approfondimento facoltativo con selezione propria."
+    },
+    {
+      "key": "passionlab-debate",
+      "title": "Debate · PassionLab",
+      "kind": "project",
+      "organization_keys": [
+        "passionlab"
+      ],
+      "description": "Club dedicato al confronto di idee e prospettive. La pagina invita a contattare PassionLab per il collegamento aggiornato al gruppo.",
+      "source_url": "https://www.passionlabpolimi.it/clubs/debate",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Club presente nel sito; incontri e modalità di adesione da confermare.",
+      "location": "Milano",
+      "official_requirements": "Non specificati nella pagina consultata.",
+      "availability": "unknown",
+      "icon": "people",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "passionlab-photography",
+      "title": "Photography · PassionLab",
+      "kind": "project",
+      "organization_keys": [
+        "passionlab"
+      ],
+      "description": "Club per condividere l’interesse per la fotografia. Per partecipare è indicato il contatto diretto con PassionLab, mentre il link al gruppo è in aggiornamento.",
+      "source_url": "https://www.passionlabpolimi.it/clubs/photography",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Club presente nel sito; incontri e modalità di adesione da confermare.",
+      "location": "Milano",
+      "official_requirements": "Non specificati nella pagina consultata.",
+      "availability": "unknown",
+      "icon": "design",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "biglie-laboratori",
+      "title": "Laboratori teatrali · Teatro delle Biglie",
+      "kind": "course",
+      "organization_keys": [
+        "teatro-biglie"
+      ],
+      "description": "Laboratori teatrali gratuiti proposti ogni semestre dagli studenti. La scheda d’ateneo conferma l’attività ricorrente, senza pubblicare il calendario della singola edizione.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/teatro-delle-biglie",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Offerta semestrale; date della prossima edizione da confermare.",
+      "location": "Milano",
+      "official_requirements": "Aperti agli studenti iscritti al Politecnico di Milano.",
+      "availability": "unknown",
+      "icon": "people",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "gbu-incontri",
+      "title": "Incontri di dialogo sui testi biblici",
+      "kind": "event",
+      "organization_keys": [
+        "gbu"
+      ],
+      "description": "Incontri settimanali per confrontarsi sulla fede cristiana e sui testi biblici in un ambiente aperto anche a chi ha convinzioni diverse.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/gbu-milano-politecnico",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Incontri settimanali; giorno e sede da chiedere al gruppo.",
+      "location": "Politecnico di Milano; aula da confermare",
+      "official_requirements": "Aperti a tutti, senza vincoli di appartenenza religiosa.",
+      "availability": "ongoing",
+      "icon": "people",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "poliradio-redazione",
+      "title": "Redazione e produzione di POLI.RADIO",
+      "kind": "project",
+      "organization_keys": [
+        "poliradio"
+      ],
+      "description": "Partecipa alla radio studentesca lavorando a programmi, interviste, selezione musicale, grafica o aspetti tecnici. La scheda Polimi invita a iniziare anche senza competenze specifiche.",
+      "source_url": "https://www.polimi.it/studenti/associazioni-degli-studenti/poliradio",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Attività continuativa; calendario da confermare con l’associazione.",
+      "location": "Edificio 9A, campus Leonardo",
+      "official_requirements": "Non sono richieste competenze specifiche iniziali; disponibilità a imparare.",
+      "availability": "ongoing",
+      "icon": "signal",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [
+        "passionlab-debate"
+      ],
+      "preparation_notes": "Fare pratica nel parlare e confrontarsi può aiutare chi vuole condurre in radio. La redazione non richiede esperienza iniziale e comprende anche ruoli tecnici e organizzativi."
+    },
+    {
+      "key": "poliradio-disco-punk-2026",
+      "title": "Disco e Punk: dalle radio all’eternità",
+      "kind": "event",
+      "organization_keys": [
+        "poliradio"
+      ],
+      "description": "Talk di POLI.RADIO insieme a Radio Bicocca alla Milano Music Week: la storia di due culture musicali e il ruolo delle radio nella loro diffusione.",
+      "source_url": "https://www.milanomusicweek.it/evento/disco-e-punk-dalle-radio-alleternita",
+      "program": "",
+      "starts_at": "2026-11-18T18:00:00+01:00",
+      "ends_on": "2026-11-18",
+      "enrollment_deadline": null,
+      "period": "18 novembre 2026, ore 18",
+      "location": "Pavilion Fuorimano, Milano",
+      "official_requirements": "Ingresso gratuito con registrazione; disponibilità dei posti da verificare sul sito dell’evento.",
+      "availability": "open",
+      "icon": "signal",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "alpine-ferrata-erna-2026",
+      "title": "Ferrata ai Piani d’Erna",
+      "kind": "event",
+      "organization_keys": [
+        "alpine"
+      ],
+      "description": "Ferrata annunciata nel calendario di Alpine Polimi; dettagli organizzativi da confermare.",
+      "source_url": "https://www.alpinepolimi.it/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": "2026-11-14",
+      "enrollment_deadline": null,
+      "period": "2026-11-14; orario non pubblicato.",
+      "location": "Piani d’Erna",
+      "official_requirements": "Da confermare con Alpine Polimi.",
+      "availability": "unknown",
+      "icon": "flag",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "alpine-crag-climbing-2026",
+      "title": "Giornata di arrampicata in falesia",
+      "kind": "event",
+      "organization_keys": [
+        "alpine"
+      ],
+      "description": "Giornata in falesia segnalata nel calendario; sede e orario da confermare.",
+      "source_url": "https://www.alpinepolimi.it/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": "2026-11-21",
+      "enrollment_deadline": null,
+      "period": "2026-11-21; orario non pubblicato.",
+      "location": "Località da confermare",
+      "official_requirements": "Da confermare con Alpine Polimi.",
+      "availability": "unknown",
+      "icon": "flag",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "alpine-cima-lemma-2026",
+      "title": "Escursione a Cima di Lemma",
+      "kind": "event",
+      "organization_keys": [
+        "alpine"
+      ],
+      "description": "Escursione annunciata a Cima di Lemma; itinerario e difficoltà da confermare.",
+      "source_url": "https://www.alpinepolimi.it/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": "2026-11-22",
+      "enrollment_deadline": null,
+      "period": "2026-11-22; orario non pubblicato.",
+      "location": "Cima di Lemma",
+      "official_requirements": "Da confermare con Alpine Polimi.",
+      "availability": "unknown",
+      "icon": "flag",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "alpine-cena-rifugio-2026",
+      "title": "Cena in rifugio · Alpine Polimi",
+      "kind": "event",
+      "organization_keys": [
+        "alpine"
+      ],
+      "description": "Incontro in rifugio segnalato dal calendario; prenotazione, costi e sede da confermare.",
+      "source_url": "https://www.alpinepolimi.it/",
+      "program": "",
+      "starts_at": null,
+      "ends_on": "2026-11-29",
+      "enrollment_deadline": null,
+      "period": "2026-11-29; orario non pubblicato.",
+      "location": "Rifugio da confermare",
+      "official_requirements": "Da confermare con Alpine Polimi.",
+      "availability": "unknown",
+      "icon": "flag",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "esn-vanzago-2026",
+      "title": "Visita all’Oasi WWF di Vanzago",
+      "kind": "event",
+      "organization_keys": [
+        "esn"
+      ],
+      "description": "Uscita con visita guidata in inglese, picnic e passeggiata nel bosco. La quota annunciata è di 8 euro, oltre al viaggio in treno.",
+      "source_url": "https://milanopolitecnico.esn.it/events/day-nature-discover-wwf-oasis-vanzago",
+      "program": "",
+      "starts_at": "2026-11-15T09:10:00+01:00",
+      "ends_on": "2026-11-15",
+      "enrollment_deadline": null,
+      "period": "15 novembre 2026: ritrovo 09:10, treno alle 09:30; confermare il ritrovo con ESN.",
+      "location": "Ritrovo Milano Porta Garibaldi; visita a Vanzago",
+      "official_requirements": "Registrazione obbligatoria, 20 posti per studenti Erasmus. Portare pranzo, acqua e abbigliamento adatto a sentieri e pioggia.",
+      "availability": "open",
+      "icon": "design",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "esn-tandem",
+      "title": "Tandem Project",
+      "kind": "project",
+      "organization_keys": [
+        "esn"
+      ],
+      "description": "Scambio linguistico tra studenti italiani e internazionali: ESN facilita l’abbinamento e i partecipanti concordano autonomamente quando incontrarsi.",
+      "source_url": "https://milanopolitecnico.esn.it/tandem-project",
+      "program": "",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Attività continuativa; calendario da confermare con l’associazione.",
+      "location": "Luogo concordato dai partecipanti",
+      "official_requirements": "Registrazione al servizio indicato da ESN, selezionando Politecnico di Milano; modalità aggiornate da verificare.",
+      "availability": "ongoing",
+      "icon": "people",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-cortalp-2026",
+      "title": "CortAlp – Festival del cortometraggio di montagna “Manlio Armellini”, 5ª edizione",
+      "kind": "project",
+      "organization_keys": [
+        "polimi",
+        "alpi-milano",
+        "cai"
+      ],
+      "description": "Concorso di cortometraggi sul rapporto tra montagna, cultura e progetto. Le opere selezionate arrivano alla proiezione e premiazione del festival milanese dell’11 dicembre.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/cortalp-concorso-e-festival-del-cortometraggio-di-montagna-milano-34manlio-armellini34-5a-edizione",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": "2026-12-11",
+      "enrollment_deadline": "2026-11-15T23:59:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Milano Bovisa; festival all’Auditorium Testori, Palazzo Lombardia",
+      "official_requirements": "Riservato agli studenti Polimi. Corti di 3–5 minuti e materiali di candidatura secondo il bando; priorità alla Scuola del Design se si superano 100 opere.",
+      "availability": "open",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "passionlab-photography"
+      ],
+      "preparation_notes": "Confrontarsi su immagini e composizione può essere utile prima di realizzare un cortometraggio. Il club non è un requisito del concorso."
+    },
+    {
+      "key": "pia-creativita-2026",
+      "title": "Creatività e innovazione: possiamo imparare ad essere creativi?",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Due incontri con esercizi per esplorare il pensiero creativo e il suo ruolo nella formazione e nel lavoro.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/creativita-e-innovazione-possiamo-imparare-ad-essere-creativi-12",
+      "program": "passion",
+      "starts_at": "2026-12-10T17:30:00+01:00",
+      "ends_on": "2026-12-14",
+      "enrollment_deadline": "2026-12-03T12:00:00+01:00",
+      "period": "Dicembre 2026 – Dicembre 2026",
+      "location": "Milano Città Studi",
+      "official_requirements": "La scheda non indica prerequisiti specifici.",
+      "availability": "open",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-employability-2026",
+      "title": "EmployAbility",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Incontri dedicati alle competenze trasversali richieste nel lavoro: organizzazione dei progetti, gestione del tempo, comunicazione personale, innovazione e valorizzazione della ricerca.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/employability-7",
+      "program": "passion",
+      "starts_at": "2026-11-23T17:30:00+01:00",
+      "ends_on": "2026-12-09",
+      "enrollment_deadline": "2026-11-17T12:00:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Milano Città Studi",
+      "official_requirements": "La scheda non indica prerequisiti specifici.",
+      "availability": "open",
+      "icon": "people",
+      "reviewed_on": "2026-11-12",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-audio-automotive-2026",
+      "title": "Tecnologie per il suono e l’audio in ambito automotive: dalla ricerca all’applicazione",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Seminari sulle tecnologie audio per i veicoli con interventi di aziende del settore. Il corso collega ricerca acustica, progettazione e applicazioni industriali.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/tecnologie-per-il-suono-e-l39audio-in-ambito-automotive-dalla-ricerca-all39applicazione",
+      "program": "passion",
+      "starts_at": "2026-11-13T14:00:00+01:00",
+      "ends_on": "2026-12-11",
+      "enrollment_deadline": "2026-11-10T12:00:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Cremona, Milano Città Studi",
+      "official_requirements": "La selezione favorisce chi ha studiato acustica, elettroacustica o elaborazione dei segnali, soprattutto nei corsi Music and Acoustic Engineering e Telecomunicazioni.",
+      "availability": "closed",
+      "icon": "signal",
+      "reviewed_on": "2026-11-12",
+      "source_notes": "Il calendario è dichiarato provvisorio.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-be3i-2026",
+      "title": "BE3I – Sviluppo personale e consapevolezza per il percorso universitario",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Attività per lavorare su obiettivi personali, benessere e relazioni durante l’università, con strumenti per affrontare stress, decisioni e collaborazione.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/be3i-sviluppo-personale-e-consapevolezza-per-il-percorso-universitario",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2026-11-09T00:00:00+01:00",
+      "period": "Novembre 2026 – Luglio 2027",
+      "location": "Online, Milano Città Studi, Milano Bovisa",
+      "official_requirements": "Nessun requisito tecnico. In caso di richieste eccessive hanno precedenza gli iscritti al primo anno di Ingegneria Industriale e dell’Informazione.",
+      "availability": "closed",
+      "icon": "people",
+      "reviewed_on": "2026-11-12",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-mestiere-architetto-2027",
+      "title": "Mi piace questo mestiere... Corso di orientamento al lavoro di architetto",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Incontri e visite per conoscere la professione dell’architetto attraverso il confronto con studi, progettisti e contesti di lavoro.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/mi-piace-questo-mestiere-corso-di-orientamento-al-lavoro-di-architetto",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": "2027-05-31",
+      "enrollment_deadline": "2026-12-15T23:59:00+01:00",
+      "period": "Marzo 2027 – Maggio 2027",
+      "location": "Sedi esterne, Milano Città Studi",
+      "official_requirements": "Terzo anno di Progettazione dell’Architettura; primo o secondo anno delle magistrali di Architettura; quarto o quinto anno di Ingegneria Edile-Architettura. Selezione tramite CV.",
+      "availability": "open",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "starts_on": "2027-03-01",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-identikit-consulente-2026",
+      "title": "Identikit del consulente: risolvi il caso tecnico",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Quattro appuntamenti con imprese di consulenza per affrontare simulazioni di casi tecnici e comprendere come si svolge un colloquio professionale.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/identikit-del-consulente-risolvi-il-caso-tecnico-13",
+      "program": "passion",
+      "starts_at": "2026-11-16T12:15:00+01:00",
+      "ends_on": "2026-12-10",
+      "enrollment_deadline": "2026-11-09T12:00:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Milano Bovisa",
+      "official_requirements": "Destinato agli iscritti alle magistrali di ingegneria e design elencate nella scheda ufficiale; verificare il proprio corso nel bando.",
+      "availability": "closed",
+      "icon": "people",
+      "reviewed_on": "2026-11-12",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-think-code-drive-2027",
+      "title": "Think, Code, Drive: The Electric Vehicle Efficiency Challenge",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Squadre di studenti programmano un veicolo elettrico in scala con Simulink e microcontrollori. La sfida finale valuta le strategie sviluppate per ridurre il consumo di energia.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/think-code-drive-the-electric-vehicle-efficiency-challenge-1",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2027-02-22T12:00:00+01:00",
+      "period": "Marzo 2027 – Maggio 2027",
+      "location": "Milano Città Studi",
+      "official_requirements": "Sono utili, ma non obbligatorie, basi di controlli e azionamenti elettrici. Priorità ai corsi indicati nella scheda, a partire da Elettrica, Elettronica e Automazione.",
+      "availability": "open",
+      "icon": "robot",
+      "reviewed_on": "2026-11-12",
+      "source_notes": "Calendario definitivo non pubblicato: incontri previsti il mercoledì, 16:00–19:30, tra marzo e maggio 2027.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-finanza-personale-2027",
+      "title": "Corso di finanza personale",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Esercizi e casi pratici su budget, pagamenti, prestiti, investimenti e pianificazione delle proprie risorse finanziarie.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/corso-di-finanza-personale-1",
+      "program": "passion",
+      "starts_at": "2027-01-19T17:00:00+01:00",
+      "ends_on": "2027-02-09",
+      "enrollment_deadline": "2027-01-12T12:00:00+01:00",
+      "period": "Gennaio 2027 – Febbraio 2027",
+      "location": "Milano Città Studi",
+      "official_requirements": "Non sono richieste conoscenze pregresse di finanza.",
+      "availability": "open",
+      "icon": "people",
+      "reviewed_on": "2026-11-12",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-startup101-gen-2027",
+      "title": "Startup 101 – Dall’idea all’azione · gennaio 2027",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Introduzione alla costruzione e verifica di un’idea imprenditoriale. Si lavora su clienti, proposta di valore e modello di business, con collegamenti alla preparazione di Switch2Product.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/startup-101-dallidea-allazione-16",
+      "program": "passion",
+      "starts_at": "2027-01-11T17:30:00+01:00",
+      "ends_on": "2027-01-18",
+      "enrollment_deadline": "2027-01-08T12:00:00+01:00",
+      "period": "Gennaio 2027 – Gennaio 2027",
+      "location": "Online",
+      "official_requirements": "La scheda non indica prerequisiti specifici.",
+      "availability": "open",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "source_notes": "Il mese nel titolo distingue editorialmente le due edizioni ufficiali.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-smart-campus-2026",
+      "title": "Ideare, inventare, innovare: dalle idee ai prototipi. Passi verso un campus più connesso",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Prototipi per rendere il campus più accessibile e connesso usando sensori, Arduino UNO Q e machine learning. Il lavoro esplora anche accessi digitali, integrazione delle API e trattamento dei dati.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/ideare-inventare-innovare-dalle-idee-ai-prototipi-passi-verso-un-campus-piu-connesso",
+      "program": "passion",
+      "starts_at": "2026-11-19T18:00:00+01:00",
+      "ends_on": "2027-01-29",
+      "enrollment_deadline": "2026-11-16T12:00:00+01:00",
+      "period": "Novembre 2026 – Gennaio 2027",
+      "location": "Milano Città Studi",
+      "official_requirements": "La scheda non indica prerequisiti specifici.",
+      "availability": "open",
+      "icon": "circuit",
+      "reviewed_on": "2026-11-12",
+      "additional_source_urls": [
+        "https://www.polimi.it/formazione/passion-in-action/dettaglio/ideare-inventare-innovare-dalle-idee-ai-prototipi-passi-verso-un-campus-piu-connesso-1"
+      ],
+      "source_notes": "Due schede ufficiali presentano titolo, contenuti e calendario identici, ma 30/24 ore e categorie diverse. Raggruppate in una sola attività; non sono state inventate fasi sequenziali.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-arduino"
+      ],
+      "preparation_notes": "Un primo progetto con sensori e microcontrollori è una preparazione possibile al lavoro su prototipi per il campus."
+    },
+    {
+      "key": "pia-fpga-amd-2026",
+      "title": "Introduzione al design FPGA con AMD",
+      "kind": "course",
+      "organization_keys": [
+        "polimi",
+        "amd"
+      ],
+      "description": "Primo laboratorio di progettazione FPGA: logica digitale, VHDL, macchine a stati e strumenti AMD Vivado, fino a un progetto pratico su scheda.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduzione-al-design-fpga-con-amd",
+      "program": "passion",
+      "starts_at": "2026-11-16T18:00:00+01:00",
+      "ends_on": "2026-12-14",
+      "enrollment_deadline": "2026-11-12T12:00:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Milano Città Studi",
+      "official_requirements": "Pensato per studenti con poca o nessuna esperienza di FPGA. Non è indicato un esame obbligatorio.",
+      "availability": "closed",
+      "icon": "circuit",
+      "reviewed_on": "2026-11-12",
+      "source_notes": "Iscrizioni scadute oggi alle 12:00. Nel calendario una voce 07/11/2026 è fuori sequenza rispetto a novembre–dicembre: data conservata come anomalia, senza correggerla arbitrariamente.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-rust-2026",
+      "title": "Safe Programming with Rust",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Introduzione alla programmazione con Rust e ai problemi di gestione della memoria, per capire come costruire software efficiente e più sicuro.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/safe-programming-with-rust",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": "2026-12-11",
+      "enrollment_deadline": "2026-11-20T12:00:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Milano Città Studi",
+      "official_requirements": "Conoscenze fondamentali di informatica e programmazione.",
+      "availability": "open",
+      "icon": "code",
+      "reviewed_on": "2026-11-12",
+      "starts_on": "2026-11-24",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-python"
+      ],
+      "preparation_notes": "Il corso Rust richiede basi di programmazione. Python può introdurre variabili, funzioni e controllo del flusso, pur essendo un linguaggio diverso."
+    },
+    {
+      "key": "pia-pagani-interfaces-2026",
+      "title": "Pagani Signature Interfaces. Designing Tangible Human–Machine Experiences",
+      "kind": "course",
+      "organization_keys": [
+        "polimi",
+        "pagani"
+      ],
+      "description": "Workshop internazionale di progettazione delle interfacce fisiche in automobile. I gruppi sviluppano esperienze e comandi coerenti con l’identità Pagani, attraverso concept e prototipi.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/pagani-signature-interfaces-designing-tangible-human-machine-experiences",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2026-11-13T12:00:00+01:00",
+      "period": "Novembre 2026 – Gennaio 2027",
+      "location": "Online, Milano Bovisa",
+      "official_requirements": "Magistrali Design & Engineering, Integrated Product Design, Digital and Interaction Design o Ingegneria Meccanica. La familiarità con modellazione e prototipazione è preferenziale; candidatura motivazionale.",
+      "availability": "open",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "source_notes": "Avvio ipotizzato il 16 novembre, calendario definitivo da confermare. Partner universitari giapponesi non nominati: nessuna attribuzione aggiunta.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "bea-3d-printing"
+      ],
+      "preparation_notes": "La prototipazione fisica è una preparazione utile alle interfacce tangibili. Restano i vincoli sui corsi di laurea e la selezione del bando."
+    },
+    {
+      "key": "pia-startup101-giu-2027",
+      "title": "Startup 101 – Dall’idea all’azione · giugno 2027",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Edizione di giugno del laboratorio introduttivo all’imprenditorialità: ipotesi sui clienti, verifica delle idee e strumenti per descrivere il valore di un nuovo progetto.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/startup-101-dallidea-allazione-17",
+      "program": "passion",
+      "starts_at": "2027-06-07T17:30:00+02:00",
+      "ends_on": "2027-06-14",
+      "enrollment_deadline": "2027-06-01T12:00:00+02:00",
+      "period": "Giugno 2027 – Giugno 2027",
+      "location": "Online",
+      "official_requirements": "La scheda non indica prerequisiti specifici.",
+      "availability": "open",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "source_notes": "Il mese nel titolo distingue editorialmente le due edizioni ufficiali.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-design-explorer-2026",
+      "title": "Design Explorer 2026/2027",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Un passaporto personale raccoglie la partecipazione a iniziative di design. Raggiunto il punteggio previsto, la Scuola del Design può convalidare le esperienze come crediti extracurriculari.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/design-explorer-20262027",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2026-12-04T12:00:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Sedi esterne, Online, Milano Bovisa",
+      "official_requirements": "Secondo o terzo anno di laurea e primo o secondo anno di magistrale. Prima della registrazione serve il passaporto validato dalla Scuola del Design con almeno 100 punti.",
+      "availability": "open",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "source_notes": "La scheda indica novembre–dicembre 2026, ma elenca cinque finestre di convalida fino al 10 settembre 2027. La scadenza registrata è quella della prima finestra, non la fine dell’intero programma.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-polimi-pride-2027",
+      "title": "Polimi Pride – Call for Concepts: nuovi sistemi di identità visiva",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Laboratorio per ideare la comunicazione visiva di Polimi Pride 2027. I concept selezionati possono proseguire verso lo sviluppo dei materiali per l’iniziativa.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/polimi-pride-call-for-concepts-nuovi-sistemi-di-identita-visiva",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2026-11-23T12:00:00+01:00",
+      "period": "Dicembre 2026 – Marzo 2027",
+      "location": "Milano Bovisa",
+      "official_requirements": "Laurea o magistrale in Design della Comunicazione. Selezione su competenze di progetto grafico, comunicazione sociale e portfolio.",
+      "availability": "open",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-python-ai-2026",
+      "title": "Python: From Fundamentals to ML, Neural Networks, and Secure Federated Learning",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Si parte dall’ambiente di lavoro e dalle basi di Python per arrivare a dati, machine learning e reti neurali. La parte finale introduce l’apprendimento federato e il lavoro con informazioni sensibili.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/python-from-fundamentals-to-ml-neural-networks-and-secure-federated-learning-1",
+      "program": "passion",
+      "starts_at": "2026-11-10T17:30:00+01:00",
+      "ends_on": "2026-12-15",
+      "enrollment_deadline": "2026-11-05T12:00:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Milano Città Studi",
+      "official_requirements": "Nessuna esperienza di programmazione richiesta. Servono competenze informatiche di base e un computer portatile personale.",
+      "availability": "closed",
+      "icon": "code",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-fpga101-2026",
+      "title": "FPGA101: From Reconfigurable to Domain-Specific Systems",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Laboratori su architetture riconfigurabili, progettazione hardware/software e accelerazione. Gli strumenti trattati comprendono Vivado, HLS, PYNQ e piattaforme per il calcolo specializzato.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/fpga101-from-reconfigurable-to-domain-specific-systems-3",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2026-10-01T12:00:00+02:00",
+      "period": "Ottobre 2026 – Gennaio 2027",
+      "location": "Milano Città Studi",
+      "official_requirements": "La versione inglese richiede basi di programmazione e interesse per attività pratiche sui sistemi di calcolo.",
+      "availability": "closed",
+      "icon": "circuit",
+      "reviewed_on": "2026-11-12",
+      "starts_on": "2026-10-06",
+      "course_status": "ongoing",
+      "source_notes": "La scheda colloca il corso tra ottobre e gennaio; le lezioni elencate terminano il 9 novembre, con supporto Q&A su richiesta. Non è pubblicata una data conclusiva.",
+      "additional_source_urls": [
+        "https://www.polimi.it/en/corsi/passion-in-action/detail/fpga101-from-reconfigurable-to-domain-specific-systems-3"
+      ],
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [
+        "poul-python"
+      ],
+      "preparation_notes": "Le basi di programmazione sono citate dalla fonte. Il corso è già iniziato: questo ramo suggerisce una preparazione generale, non una sequenza di iscrizioni ancora aperte."
+    },
+    {
+      "key": "pia-stress-nov-2026",
+      "title": "Gestione dello stress · novembre 2026",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Tre incontri online per riconoscere come si manifesta lo stress nello studio e sperimentare tecniche di rilassamento e confronto in gruppo.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/gestione-dello-stress-19",
+      "program": "passion",
+      "starts_at": "2026-11-12T17:30:00+01:00",
+      "ends_on": "2026-11-26",
+      "enrollment_deadline": "2026-11-06T12:00:00+01:00",
+      "period": "Novembre 2026 – Novembre 2026",
+      "location": "Online",
+      "official_requirements": "La scheda non indica prerequisiti specifici.",
+      "availability": "closed",
+      "icon": "people",
+      "reviewed_on": "2026-11-12",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-campi-elettromagnetici-2026",
+      "title": "Introduction to the Computation of Electromagnetic Fields",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Metodi numerici per simulare campi elettromagnetici, con applicazioni elettriche, elettroniche e biomediche. Le attività impiegano COMSOL, Ansys Maxwell e MATLAB.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduction-to-the-computation-of-electromagnetic-fields-1",
+      "program": "passion",
+      "starts_at": "2026-09-28T18:00:00+02:00",
+      "ends_on": "2026-11-30",
+      "enrollment_deadline": "2026-09-22T12:00:00+02:00",
+      "period": "Settembre 2026 – Dicembre 2026",
+      "location": "Milano Città Studi",
+      "official_requirements": "Conoscenze iniziali di elettromagnetismo.",
+      "availability": "closed",
+      "icon": "signal",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "source_notes": "Periodo dichiarato settembre–dicembre, ma ultima lezione pubblicata il 30 novembre.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-ai-network-loop-2026",
+      "title": "The AI–Network Loop: Infrastructure, Technology, Strategy, and Economy",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Seminari e un progetto sulle relazioni fra intelligenza artificiale e reti: infrastrutture per il calcolo, hardware, gestione delle reti e scelte economiche e strategiche.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/the-ai-network-loop-infrastructure-technology-strategy-and-economy",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2026-10-09T12:00:00+02:00",
+      "period": "Settembre 2026 – Novembre 2026",
+      "location": "Online, Milano Città Studi, Milano Bovisa",
+      "official_requirements": "Nozioni di base su reti e telecomunicazioni.",
+      "availability": "closed",
+      "icon": "signal",
+      "reviewed_on": "2026-11-12",
+      "source_notes": "Periodo dichiarato settembre–novembre. Il calendario provvisorio riporta solo 16 e 30 ottobre e 6 novembre, mentre sono descritti quattro seminari e una presentazione finale: conclusione non verificabile.",
+      "course_status": "uncertain",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-mobility-futures-2026",
+      "title": "Mobility Futures. Oggetti, servizi e scenari oltre i mezzi di trasporto",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Sviluppo di concept per una mobilità più inclusiva e sostenibile, destinati al RIMOWA Design Prize. Il laboratorio accompagna le candidature selezionate fino alla consegna di dicembre.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/mobility-futures-oggetti-servizi-e-scenari-oltre-i-mezzi-di-trasporto",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": "2026-12-07",
+      "enrollment_deadline": "2026-11-02T18:00:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Milano Bovisa",
+      "official_requirements": "Magistrali della Scuola del Design in prodotto, DID, D&E o PSSD; candidatura individuale o in coppia. Nessun componente deve laurearsi prima di luglio 2027.",
+      "availability": "closed",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "source_notes": "Il laboratorio Polimi prepara al concorso RIMOWA, che prosegue nel 2027. RIMOWA è indicata come promotrice del concorso esterno, non attribuita automaticamente come ente proponente del corso.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-fisica-inquieti-2026",
+      "title": "Gabriella Greison – Fisica per inquieti",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "La fisica moderna diventa uno strumento per esplorare incertezza, limiti della conoscenza e decisioni. Incontri narrativi e attività partecipative collegano scienza, cultura e responsabilità.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/gabriella-greison-fisica-per-inquieti",
+      "program": "passion",
+      "starts_at": "2026-10-05T17:15:00+02:00",
+      "ends_on": "2026-11-23",
+      "enrollment_deadline": "2026-09-30T12:00:00+02:00",
+      "period": "Ottobre 2026 – Novembre 2026",
+      "location": "Milano Città Studi",
+      "official_requirements": "Nessun requisito disciplinare; è richiesta partecipazione attiva e apertura al confronto fra discipline.",
+      "availability": "closed",
+      "icon": "people",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-commuting-2026",
+      "title": "Spostarsi fra territorio e città. Una nuova relazione.",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Laboratorio sulla mobilità quotidiana tra Milano e hinterland, con Cesano Maderno come caso di studio. Si immaginano servizi, spazi e infrastrutture attorno alle stazioni e ai nodi di scambio.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/spostarsi-fra-territorio-e-citta-una-nuova-relazione",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2026-07-17T12:00:00+02:00",
+      "period": "Luglio 2026 – Dicembre 2026",
+      "location": "Sedi esterne",
+      "official_requirements": "Capacità di disegno, visualizzazione e scrittura; conoscenza iniziale dei trasporti milanesi. Occorre un portatile con strumenti di disegno ed editing. Selezione con CV e motivazione.",
+      "availability": "closed",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "source_notes": "Cinque giornate tra luglio e dicembre, tutte indicate come date da confermare; non è inventato un giorno di inizio.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-zero-one-lab-2026",
+      "title": "0 > 1 LAB",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Team multidisciplinari esplorano applicazioni di tecnologie e brevetti del Polimi. Il laboratorio accompagna la nascita dell’idea, la verifica delle opportunità e la presentazione finale a una giuria.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/0-gt-1-lab",
+      "program": "passion",
+      "starts_at": "2026-09-30T14:00:00+02:00",
+      "ends_on": "2026-12-17",
+      "enrollment_deadline": "2026-09-18T12:00:00+02:00",
+      "period": "Settembre 2026 – Dicembre 2026",
+      "location": "Milano Città Studi",
+      "official_requirements": "Nessun requisito tecnico; selezione mediante curriculum e lettera motivazionale. Disponibilità al lavoro in gruppo e al confronto con tutor.",
+      "availability": "closed",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "source_notes": "La fonte attribuisce il format THALEA LABS a OTTOZEROUNO; non viene dedotto un ruolo di coorganizzatore dal solo uso del format.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-geoinformatica-2026",
+      "title": "L’ingegneria geoinformatica è il percorso giusto per i tuoi interessi e le tue capacità?",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Incontri per scoprire come i dati geografici aiutano a studiare ambiente, città e rischi. Esperienze di ricerca e lavoro orientano la scelta di una futura specializzazione.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/lingegneria-geoinformatica-e-il-percorso-giusto-per-i-tuoi-interessi-e-le-tue-capacita",
+      "program": "passion",
+      "starts_at": "2026-10-16T16:30:00+02:00",
+      "ends_on": null,
+      "enrollment_deadline": "2026-10-02T23:59:00+02:00",
+      "period": "Ottobre 2026 – Dicembre 2026",
+      "location": "Online, Milano Città Studi",
+      "official_requirements": "Rivolto agli studenti di laurea triennale; nessun prerequisito specifico.",
+      "availability": "closed",
+      "icon": "signal",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "source_notes": "Solo il primo incontro ha data pubblicata; il resto del calendario viene comunicato durante il corso.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-cooperazione-2030-2026",
+      "title": "Cooperazione per lo sviluppo nell’era dell’Agenda 2030: dalla teoria alla pratica",
+      "kind": "course",
+      "organization_keys": [
+        "polimi",
+        "colomba"
+      ],
+      "description": "MOOC, seminari e progetti di gruppo sui temi dello sviluppo sostenibile. Il programma comprende anche attività di educazione e sensibilizzazione rivolte alle scuole.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/cooperazione-per-lo-sviluppo-nellera-dellagenda-2030-dalla-teoria-alla-pratica",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2026-09-23T12:00:00+02:00",
+      "period": "Settembre 2026 – Febbraio 2027",
+      "location": "Milano Bovisa",
+      "official_requirements": "Selezione tramite carriera universitaria, CV, motivazione e colloquio; è richiesta partecipazione continuativa alle attività.",
+      "availability": "closed",
+      "icon": "people",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "source_notes": "Periodo settembre 2026–febbraio 2027; incontri il mercoledì 14:00–18:00, senza date di avvio e conclusione pubblicate.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-studenti-cantiere-2026",
+      "title": "Workshop “Studenti in cantiere”",
+      "kind": "course",
+      "organization_keys": [
+        "polimi",
+        "fondazione-renzo-piano",
+        "rpbw"
+      ],
+      "description": "Quattro giornate tra visite al cantiere del campus Komorebi in Bovisa e lavoro in aula. Il progetto architettonico viene osservato attraverso dettagli costruttivi, materiali e trasformazione del sito.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/workshop-34studenti-in-cantiere34",
+      "program": "passion",
+      "starts_at": "2026-10-22T09:30:00+02:00",
+      "ends_on": "2026-12-03",
+      "enrollment_deadline": "2026-10-12T23:59:00+02:00",
+      "period": "Ottobre 2026 – Dicembre 2026",
+      "location": "Sedi esterne, Milano Città Studi, Milano Bovisa",
+      "official_requirements": "Selezione sulla media degli esami. Frequenza obbligatoria alle quattro giornate e scarpe antinfortunistiche; verificare compatibilità con gli impegni curriculari.",
+      "availability": "closed",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-diventare-designer-2026",
+      "title": "Diventare designer · edizione 3",
+      "kind": "course",
+      "organization_keys": [
+        "polimi",
+        "adi"
+      ],
+      "description": "Sette incontri con professionisti per esplorare osservazione, immaginazione, progetto e comunicazione. Le conversazioni collegano la cultura del design alla pratica professionale.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/diventare-designer-ed-3",
+      "program": "passion",
+      "starts_at": "2026-09-29T17:30:00+02:00",
+      "ends_on": "2026-12-01",
+      "enrollment_deadline": "2026-10-27T12:00:00+01:00",
+      "period": "Settembre 2026 – Dicembre 2026",
+      "location": "Sedi esterne, Milano Bovisa",
+      "official_requirements": "Aperto agli studenti della Scuola del Design; sono ammessi esterni fino a esaurimento posti. Per i crediti occorre seguire almeno quattro incontri.",
+      "availability": "closed",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "source_notes": "Il calendario è provvisorio. L’iscrizione Passion in Action è chiusa; la fonte descrive separatamente l’accesso libero agli incontri entro la capienza.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-design-engineering-dialogues-2026",
+      "title": "Design&Engineering Dialogues: Steering Committee Conversations for Future Designers",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Dialoghi con professionisti su creatività, gestione dei progetti e progettazione sostenibile. Gli incontri aiutano a collegare gli strumenti del design ai problemi dei contesti di lavoro.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/designampengineering-dialogues-steering-committee-conversations-for-future-designers",
+      "program": "passion",
+      "starts_at": "2026-10-28T17:30:00+01:00",
+      "ends_on": "2026-11-27",
+      "enrollment_deadline": "2026-10-16T12:00:00+02:00",
+      "period": "Ottobre 2026 – Dicembre 2026",
+      "location": "Milano Bovisa",
+      "official_requirements": "Iscrizione alla laurea magistrale in Design & Engineering.",
+      "availability": "closed",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "additional_source_urls": [
+        "https://www.polimi.it/formazione/passion-in-action/dettaglio/dampe-dialogues-steering-committee-conversations-for-future-designers"
+      ],
+      "source_notes": "Una scheda di maggio propone temi e ospiti sovrapponibili con date autunnali non definite. Si presenta la scheda autunnale con calendario esplicito, evitando una duplicazione.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-pitch-match-2026",
+      "title": "Pitch&Match",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Incontri con il mondo delle costruzioni per conoscere le competenze richieste e allenarsi a presentare un progetto o sostenere un colloquio. È previsto un confronto finale con imprese, da confermare.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/pitchampmatch-1",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": "2026-10-09T12:00:00+02:00",
+      "period": "Ottobre 2026 – Febbraio 2027",
+      "location": "Milano Città Studi",
+      "official_requirements": "Nessun prerequisito; non è prevista una selezione.",
+      "availability": "closed",
+      "icon": "people",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "source_notes": "Periodo ottobre 2026–febbraio 2027. Calendario riservato a WeBeep, non consultato: nessuna data puntuale inventata.",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-arcteryx-circular-2026",
+      "title": "Circular by Design Workshop by Arc’teryx",
+      "kind": "course",
+      "organization_keys": [
+        "polimi",
+        "arcteryx"
+      ],
+      "description": "Concept di prodotti ad alte prestazioni realizzati a partire da materiali recuperati. Gli studenti lavorano con il team Arc’teryx e il Fashion & Textile Living Lab, fino alla presentazione a una giuria.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/circular-by-design-workshop-by-arc39teryx",
+      "program": "passion",
+      "starts_at": null,
+      "ends_on": "2026-11-26",
+      "enrollment_deadline": "2026-10-25T23:59:00+01:00",
+      "period": "Novembre 2026 – Novembre 2026",
+      "location": "Milano Bovisa",
+      "official_requirements": "Studenti della Scuola del Design. Utile esperienza iniziale in prodotto, moda o tessile; lavoro in inglese. Selezione su motivazione e portfolio; previsti accordi su riservatezza e diritti dei progetti.",
+      "availability": "closed",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "starts_on": "2026-11-05",
+      "course_status": "ongoing",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-form-follows-feminism-2026",
+      "title": "Form Follows Feminism",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Ricerca e prototipazione su oggetti legati a femminismi, cura e autodeterminazione. Il workshop culmina in una mostra collettiva con artefatti e documentazione del loro uso e significato.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/form-follows-feminism",
+      "program": "passion",
+      "starts_at": "2026-11-10T14:00:00+01:00",
+      "ends_on": "2026-11-19",
+      "enrollment_deadline": "2026-11-02T12:00:00+01:00",
+      "period": "Novembre 2026 – Novembre 2026",
+      "location": "Milano Bovisa",
+      "official_requirements": "Studenti di laurea o magistrale della Scuola del Design; nessun ulteriore requisito disciplinare.",
+      "availability": "closed",
+      "icon": "design",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "pia-matlab-2026",
+      "title": "Introduction to MATLAB for Second Year Students",
+      "kind": "course",
+      "organization_keys": [
+        "polimi"
+      ],
+      "description": "Laboratorio in inglese per usare MATLAB su problemi collegati ai primi due anni di ingegneria, con attività pratiche e lavoro in gruppo.",
+      "source_url": "https://www.polimi.it/formazione/passion-in-action/dettaglio/introduction-to-matlab-for-second-year-students-1",
+      "program": "passion",
+      "starts_at": "2026-11-03T12:15:00+01:00",
+      "ends_on": "2026-12-22",
+      "enrollment_deadline": "2026-10-27T23:59:00+01:00",
+      "period": "Novembre 2026 – Dicembre 2026",
+      "location": "Milano Città Studi",
+      "official_requirements": "Priorità agli studenti del secondo anno di Ingegneria Civile; la scheda non elenca esami obbligatori.",
+      "availability": "closed",
+      "icon": "code",
+      "reviewed_on": "2026-11-12",
+      "course_status": "ongoing",
+      "technology": true,
+      "community": false,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "polimi-x-culture",
+      "title": "X-Culture · Team Polimi",
+      "description": "Lavoro in team internazionali a distanza per sviluppare una proposta di crescita sui mercati esteri per un’impresa reale.",
+      "kind": "project",
+      "organization_keys": [
+        "polimi"
+      ],
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/x-culture",
+      "program": "",
+      "icon": "design",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto ricorrente · prossima edizione da verificare",
+      "location": "Politecnico di Milano / team internazionali",
+      "official_requirements": "Selezione fra gli studenti di Invest in Foreign Market Lab della magistrale in Ingegneria Gestionale; richiesto il Readiness test di X-Culture.",
+      "availability": "unknown",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [
+        "esn-tandem",
+        "passionlab-debate"
+      ],
+      "preparation_notes": "Conversazione in altre lingue e confronto di idee sono esercizi utili per un team internazionale. Il recruiting resta legato al laboratorio curricolare e al test ufficiale."
+    },
+    {
+      "key": "polimi-irec-international-real-estate-challenge",
+      "title": "IREC · International Real Estate Challenge",
+      "description": "Team universitari di Paesi diversi sviluppano una proposta immobiliare per un investitore, alternando collaborazione online e incontri in presenza.",
+      "kind": "project",
+      "organization_keys": [
+        "polimi"
+      ],
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/irec-international-real-estate-challenge",
+      "program": "",
+      "icon": "design",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto ricorrente · prossima edizione da verificare",
+      "location": "Politecnico di Milano / team internazionali",
+      "official_requirements": "Selezione annuale fra studenti del Master REM e della magistrale Management of Built Environment. La pagina non indica una nuova finestra di candidatura.",
+      "availability": "unknown",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    },
+    {
+      "key": "polimi-cfa-institute-research-challenge",
+      "title": "CFA Institute Research Challenge · Team Polimi",
+      "description": "Analisi di una società quotata, preparazione di un report finanziario e presentazione a una giuria, con il supporto di docenti e di un mentor CFA.",
+      "kind": "project",
+      "organization_keys": [
+        "polimi"
+      ],
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/cfa-institute-research-challenge",
+      "program": "",
+      "icon": "design",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto ricorrente · prossima edizione da verificare",
+      "location": "Politecnico di Milano / team internazionali",
+      "official_requirements": "Ogni anno vengono selezionati cinque studenti della magistrale in Management Engineering. Nessuna finestra corrente di candidatura indicata nella scheda.",
+      "availability": "unknown",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [
+        "passionlab-debate"
+      ],
+      "preparation_notes": "Fare pratica con argomentazioni e presentazioni può aiutare nella discussione del report. La preparazione specialistica finanziaria e la selezione restano esterne a questo ramo."
+    },
+    {
+      "key": "polimi-students-reinventing-city",
+      "title": "Students Reinventing City · Team Polimi",
+      "description": "Progetti di rigenerazione urbana sostenibile e inclusiva, sviluppati attraverso workshop e sopralluoghi insieme a studenti di altre università.",
+      "kind": "project",
+      "organization_keys": [
+        "polimi"
+      ],
+      "source_url": "https://www.polimi.it/campus-e-servizi/sport-e-tempo-libero/competizioni-internazionali/students-reinventing-city",
+      "program": "",
+      "icon": "design",
+      "starts_at": null,
+      "ends_on": null,
+      "enrollment_deadline": null,
+      "period": "Progetto ricorrente · prossima edizione da verificare",
+      "location": "Politecnico di Milano / team internazionali",
+      "official_requirements": "La fonte documenta la partecipazione del Polimi, ma non indica criteri di selezione o un bando attualmente aperto.",
+      "availability": "unknown",
+      "technology": false,
+      "community": true,
+      "predecessor_keys": [],
+      "preparation_notes": ""
+    }
+  ]
+}

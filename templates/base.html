@@ -35,7 +35,6 @@
             <a class="brand" href="{% url 'home' %}" aria-label="PoliSkilled, attività">Poli<span>Skilled</span></a>
             <nav class="main-nav" aria-label="Navigazione principale">
                 <a href="{% url 'home' %}" {% if request.resolver_match.url_name == 'home' or request.resolver_match.url_name == 'activity' %}aria-current="page"{% endif %}>Attività</a>
-                <a href="{% url 'tracks' %}" {% if request.resolver_match.url_name == 'tracks' or request.resolver_match.url_name == 'track' %}aria-current="page"{% endif %}>Percorsi</a>
                 <a href="{% url 'organizations' %}" {% if request.resolver_match.url_name == 'organizations' %}aria-current="page"{% endif %}>Enti</a>
             </nav>
             <div class="account-nav">

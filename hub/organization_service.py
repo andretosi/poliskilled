@@ -26,6 +26,7 @@ def save_organization(form, user):
             current = construct_instance(form, current, form._meta.fields)
             if identity != (current.name, current.website):
                 current.verified = False
+                current.catalog_source_url = ""
             current.review_reason = ""
             current.revision += 1
             if form.cleaned_data["remove_logo"]:

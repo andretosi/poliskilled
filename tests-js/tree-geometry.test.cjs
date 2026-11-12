@@ -9,7 +9,7 @@ const node = (id, level, x, top, bottom, parents = []) => ({
   bottom: { x, y: bottom },
 });
 
-test("unequal titles share a clear level-wide connector lane", () => {
+test("different destinations get distinct lanes clear of the longest title", () => {
   const nodes = [
     node("a", 1, 40, 300, 400),
     node("b", 1, 140, 300, 400),
@@ -17,8 +17,9 @@ test("unequal titles share a clear level-wide connector lane", () => {
     node("d", 2, 140, 100, 220, ["b"]),
   ];
   const edges = skillEdges(nodes, 300, null);
-  assert.equal(edges[0].route, "M 40 300 V 260 H 40 V 180");
-  assert.equal(edges[1].route, "M 140 300 V 260 H 140 V 220");
+  const lanes = edges.map((edge) => Number(edge.route.split(" V ")[1].split(" ")[0]));
+  assert.notEqual(lanes[0], lanes[1]);
+  assert.ok(lanes.every((y) => y > 220 && y < 300));
 });
 test("a dependency skipping a level routes outside intermediate nodes", () => {
   const nodes = [
@@ -29,7 +30,7 @@ test("a dependency skipping a level routes outside intermediate nodes", () => {
   const edges = skillEdges(nodes, 300, null);
   assert.equal(
     edges.find((e) => e.from === "a" && e.to === "c").route,
-    "M 40 500 V 440 H 288 V 240 H 40 V 180",
+    "M 40 500 V 460 H 288 V 240 H 40 V 180",
   );
   assert.equal(edges.length, 3);
 });

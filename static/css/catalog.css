@@ -212,3 +212,5 @@
 .result-count {
   font-family: var(--mono);
 }
+
+.card-goal { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 18px; color: var(--accent); font-size: 12px; font-weight: 700; }

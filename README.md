@@ -7,28 +7,35 @@ Una dashboard pubblica e skill tree per scoprire cosa fare, costruire il proprio
 percorso e incontrare gli enti della community. Progetto indipendente, non affiliato al Politecnico.
 
 ![Dashboard pubblica di PoliSkilled](docs/images/dashboard.png)
-![Skill tree con percorsi e attività collegate](docs/images/skill-tree.png)
+![Albero di preparazione verso ARGO](docs/images/skill-tree.png)
 
 ## Cosa puoi fare
 
 - **Esplora subito.** Ricerca, tre categorie, pochi tag e livelli suggeriti. Mobile first,
   colori pieni, nessun gradiente o immagine decorativa.
 - **Costruisci il tuo percorso.** I collegamenti si generano dalle attività approvate:
-  scegli percorso, icona e tappe precedenti. Nessuna coordinata da mantenere a mano.
-- **Salva le tue scelte.** Completamenti, interessi e percorsi seguiti rimangono nel browser
+  scegli un’attività come obiettivo. Chi propone seleziona icona e attività preparatorie;
+  livelli, rami e colori si aggiornano da soli. Nessun percorso separato da creare.
+- **Salva le tue scelte.** Completamenti e obiettivi salvati rimangono nel browser
   senza account; accedendo vengono sincronizzati. Profilo e preferenze si gestiscono dall'account.
 - **Proponi con un ente.** Profilo con logo, attività condivise fra più enti, bozze e
   revisione con motivazioni, commenti e versioni. Una modifica pubblicata torna in revisione.
 - **Gestisci la community.** I gestori verificano gli enti, approvano le proposte e cercano
   gli account per assegnare o rimuovere il ruolo di gestore. Nessuna auto-approvazione.
 - **Leggi i risultati.** Visite e browser stimati per mese, interessi, completamenti e
-  follower dei percorsi. Ogni ente vede le proprie attività; i gestori hanno la vista globale.
+  persone che hanno scelto ogni obiettivo e coinvolgimento nelle sue tappe. Ogni ente vede le proprie attività; i gestori hanno la vista globale.
   I report mostrano conteggi aggregati, senza liste di nomi o email dei partecipanti.
 
 Politecnico di Milano è un ente. *Passion in Action* è un programma di corsi, che possono
-essere proposti dal Poli insieme ad altri enti. Le schede iniziali si basano su
-[fonti reali](docs/sources.md); percorsi, livelli e schede dimostrative sono esplicitamente
-indicati e non costituiscono requisiti ufficiali, iscrizioni o certificazioni.
+essere proposti dal Poli insieme ad altri enti. Il catalogo contiene **107 attività reali**
+e **49 enti**, verificati il **12 novembre 2026**: 35 Passion in Action, iniziative delle
+associazioni e progetti competitivi. Le fonti e i limiti della ricerca sono in
+[Fonti](docs/sources.md).
+
+**47 obiettivi hanno preparazioni consigliate da PoliSkilled.** Sono collegamenti
+editoriali fra attività reali, distinti dai requisiti ufficiali. Non certificano
+competenze e non impongono di completare tutti i rami. Un corso con iscrizioni chiuse
+rimane riconoscibile; il grafo non è un calendario di iscrizioni garantite.
 
 ## Avvio locale
 
@@ -49,6 +56,9 @@ In WSL usa il filesystem Linux, per esempio `~/projects/poliskilled`.
 
 La registrazione personale è libera. Registrare un ente crea una richiesta da
 verificare; non consente di rivendicare un ente già esistente.
+Se l’ente è già nel catalogo, il referente crea un account personale: un gestore
+lo collega da **Gestione → Enti e referenti**, dopo averne verificato l’identità.
+Il collegamento è registrato nello storico e non approva automaticamente l’ente.
 Per abilitare il primo gestore, il responsabile del server esegue:
 
 ```bash
@@ -81,7 +91,7 @@ Nessun framework frontend o passaggio di build per aprire il sito.
 | `poliskilled/` | Impostazioni e URL del progetto |
 | `hub/` | Catalogo, proposte, enti, moderazione e skill tree |
 | `accounts/` | Profilo, preferenze ed email |
-| `insights/` | Interessi, percorsi seguiti e statistiche |
+| `insights/` | Obiettivi salvati e statistiche |
 | `templates/`, `static/` | Interfaccia e interazioni |
 | `deploy/` | Esempi per servizio, proxy HTTPS e pulizia periodica |
 
@@ -104,7 +114,7 @@ Worktree facoltativo:
 Ambiente e database sono separati per worktree. Se main avanza, aggiorna la branch
 personale, risolvi i conflitti e verifica prima del merge.
 
-[Regole](AGENTS.md) · [Decisioni del brief](agents.py) · [Task](docs/poliskilled-work.md)
+[Regole](AGENTS.md) · [Decisioni del brief](agents.py) · [Task](docs/objective-work.md)
 
 ## Verifica e distribuzione
 

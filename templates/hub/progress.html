@@ -4,13 +4,13 @@
 {% block content %}
 {{ progress_snapshot|json_script:"progress-snapshot" }}
 <section class="page-width catalog-section">
-    <div class="section-heading"><h1 class="page-title">I miei progressi<span class="title-mark"> /</span></h1><a class="inline-link" href="{% url 'tracks' %}">Apri skill tree ↗</a></div>
+    <div class="section-heading"><h1 class="page-title">I miei progressi<span class="title-mark"> /</span></h1><a class="inline-link" href="{% url 'home' %}">Esplora attività ↗</a></div>
     <p class="small-note" data-sync-status role="status">Sincronizzazione…</p>
     <div class="activity-grid" data-progress-list>
         {% for activity in activities %}
             {% include "hub/partials/card.html" %}
         {% empty %}
-            <div class="empty-state"><h2>La tua prossima tappa ti aspetta.</h2><p>Segna le attività completate nello skill tree o nella loro scheda.</p><a class="button" href="{% url 'tracks' %}">Scegli un percorso ↗</a></div>
+            <div class="empty-state"><h2>La tua prossima tappa ti aspetta.</h2><p>Segna le attività completate nello skill tree o nella loro scheda.</p><a class="button" href="{% url 'home' %}">Scegli un obiettivo ↗</a></div>
         {% endfor %}
     </div>
     {% saved_intents %}

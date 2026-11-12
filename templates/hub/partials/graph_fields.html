@@ -1,6 +1,5 @@
 <details class="optional-details" {% if form.errors %}open{% endif %}>
-    <summary>Percorsi e collegamenti <span class="muted">· facoltativi</span></summary>
-    {% include "hub/partials/form_field.html" with field=form.tracks %}
+    <summary>Prepara il tuo albero <span class="muted">· facoltativo</span></summary>
     <fieldset class="icon-options">
         <legend>Icona della tappa</legend>
         {% for choice in form.icon %}
@@ -8,9 +7,10 @@
         {% endfor %}
     </fieldset>
     {{ form.icon.errors }}
-    <label for="predecessor-search">Tappe precedenti</label>
-    <p class="small-note" id="predecessor-help">Collega le attività da fare prima di questa. Le tappe successive e la posizione nella mappa si aggiornano da sole.</p>
+    <label for="predecessor-search">Preparazione consigliata</label>
+    <p class="small-note" id="predecessor-help">Scegli le attività utili prima di questa. L’albero si compone da solo, fino al tuo obiettivo. Sono consigli, non vincoli d’iscrizione.</p>
     <input type="search" id="predecessor-search" placeholder="Filtra le attività…" data-predecessor-search aria-describedby="predecessor-help">
     <div class="predecessor-options">{{ form.predecessors }}</div>
     {{ form.predecessors.errors }}
+    {% include "hub/partials/form_field.html" with field=form.preparation_notes %}
 </details>

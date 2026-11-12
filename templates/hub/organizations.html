@@ -9,6 +9,7 @@
                     {% if org.logo %}<img class="org-logo" src="{% url 'org_logo' org.pk %}" width="64" height="64" alt="">{% endif %}
                     <h2>{{ org.name }}</h2>
                     <p>{{ org.description }}</p>
+                    {% if org.catalog_source_url %}<p class="small-note">Profilo da fonti pubbliche{% if not org.members.all %} · Nessun account dell’ente collegato{% endif %}.</p>{% endif %}
                     {% if org.website %}
                         <a class="inline-link"
                            href="{{ org.website }}"

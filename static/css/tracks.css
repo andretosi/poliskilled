@@ -26,32 +26,6 @@
 .title-mark {
   color: var(--accent);
 }
-.track-tabs {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  margin-bottom: 20px;
-}
-.track-tab {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid var(--line);
-  padding: 12px;
-  min-height: 56px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.4;
-}
-.track-tab[aria-current] {
-  background: var(--track-soft);
-  border-color: var(--track);
-  color: var(--track);
-}
-.track-index {
-  font: 11px var(--mono);
-  opacity: 0.8;
-}
 .skill-map {
   border: 1px solid var(--line);
   background: var(--paper);
@@ -160,6 +134,7 @@ progress::-webkit-progress-value {
   min-width: 100%;
   position: relative;
   padding: 22px 28px 0;
+  padding-right: var(--route-gutter, 28px);
   overflow: hidden;
 }
 .tree-connections {
@@ -250,15 +225,6 @@ progress::-webkit-progress-value {
   background: var(--track);
 }
 @media (min-width: 768px) {
-  .track-tabs {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .track-tab {
-    min-width: 240px;
-    padding: 12px 20px;
-    font-size: 14px;
-  }
   .skill-map-header {
     padding: 24px 32px;
   }
@@ -286,6 +252,7 @@ progress::-webkit-progress-value {
     max-width: none;
     margin: auto;
     padding: 28px 80px 0;
+    padding-right: max(80px, var(--route-gutter, 28px));
   }
   .tree-stage {
     padding-bottom: 38px;

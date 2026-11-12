@@ -8,6 +8,20 @@ from insights.models import ActivityInterest, TrackFollow
 
 
 class EngagementTests(HubTestCase):
+    def test_interest_requires_at_least_one_verified_or_catalogued_organizer(self):
+        self.activity.status = "published"
+        self.activity.save()
+        self.activity.organizations.clear()
+        self.client.force_login(self.owner)
+        url = f"/api/interessi/{self.activity.pk}/"
+        self.assertEqual(self.client.post(url, {"active": "true"}).status_code, 404)
+        self.org.verified = False
+        self.org.catalog_source_url = "https://example.test/catalogued"
+        self.org.save()
+        self.activity.organizations.add(self.org, self.partner)
+        self.assertEqual(self.client.post(url, {"active": "true"}).status_code, 200)
+        self.assertEqual(ActivityInterest.objects.count(), 1)
+
     def test_delayed_guest_import_cannot_resurrect_an_acknowledged_undo(self):
         self.activity.status = "published"
         self.activity.save()
